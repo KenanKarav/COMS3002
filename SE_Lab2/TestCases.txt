@@ -1,0 +1,8 @@
+Scenarios
+
+1. Non perfect square X 
+2. Input not a number or decimal 
+3. Too large input - time taken more than  
+4. Below 2 input 
+5. Correct output - small number
+6. correct output - large number 
