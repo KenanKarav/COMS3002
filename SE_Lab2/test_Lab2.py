@@ -16,7 +16,6 @@ class TestLab2(unittest.TestCase):
                          "Exited Normally")
                          
                          
-                         
         #Test a large correct input
         #Input: 1000
         #Output: [List from 2 -> 1000], Exit code 1, Exit message "Exited Normally"
@@ -30,27 +29,19 @@ class TestLab2(unittest.TestCase):
                          
                          
         #Test a Value Error
-        #Input: 1
+        #Input: 1, 0, -1
         #Output: Exit code -1, Exit Message: Invalid Input. Input must an integer greater than 1 to produce prime numbers
         self.assertEqual(Lab2.generate_eratothenes_list(1)["exit_code"], -1)
         self.assertEqual(Lab2.generate_eratothenes_list(1)["exit_message"], "Invalid input. Input must be an integer greater than 1 to produce prime number")
-
-        #Test a Value Error
-        #Input: 0
-        #Output: Exit code -1, Exit Message: Invalid Input. Input must an integer greater than 1 to produce prime numbers
         self.assertEqual(Lab2.generate_eratothenes_list(0)["exit_code"], -1)
         self.assertEqual(Lab2.generate_eratothenes_list(0)["exit_message"],
                          "Invalid input. Input must be an integer greater than 1 to produce prime number")
-                         
-      #Test a Value Error
-      #Input: -1
-      #Output: Exit code -1, Exit Message: Invalid Input. Input must an integer greater than 1 to produce prime numbers
         self.assertEqual(Lab2.generate_eratothenes_list(-1)["exit_code"], -1)
         self.assertEqual(Lab2.generate_eratothenes_list(-1)["exit_message"],
                          "Invalid input. Input must be an integer greater than 1 to produce prime number")
                          
         #Test a Type Error
-        #Input: 6.4
+        #Input: 6.4, "2", "six"
         #Output: Exit code -1, Exit Message: Invalid Input. Only Integers allowed
         self.assertEqual(Lab2.generate_eratothenes_list(6.4)["exit_code"], -1)
         self.assertEqual(Lab2.generate_eratothenes_list(6.4)["exit_message"],
@@ -63,7 +54,11 @@ class TestLab2(unittest.TestCase):
                          "Invalid input. Only integers allowed")
 
 
+
     def test_remove_composites(self):
+        #Test Function is succesfully removing -1
+        #Input: [2,3,-1,5,-1,7]
+        #Output: {[2,3,5,7], 1, Exited Normally}
         self.assertIsInstance(Lab2.remove_composites([2,3,-1,5,-1,7])["list"], list)
         self.assertEqual(Lab2.remove_composites([2,3,-1,5,-1,7])["list"],[2,3,5,7])
         self.assertEqual(Lab2.remove_composites([2,3,-1,5,-1,7])["exit_code"],
@@ -71,6 +66,7 @@ class TestLab2(unittest.TestCase):
         self.assertEqual(Lab2.remove_composites([2,3,-1,5,-1,7])["exit_message"],
                          "Exited Normally")
 
+    
 
 
 
@@ -80,7 +76,6 @@ class TestLab2(unittest.TestCase):
         self.assertIsInstance(Lab2.PrimeNumbers(1000)["list"], list)
         self.assertEqual(Lab2.PrimeNumbers(1000)["list"],
                         [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691, 701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997])
-                        
         self.assertEqual(Lab2.PrimeNumbers(1000)["exit_code"], 1)
         self.assertEqual(Lab2.PrimeNumbers(1000)["exit_message"], "Exited Normally")
 
