@@ -31,7 +31,7 @@ def PrimeNumbers(x):
         all_numbers = list_dict["list"]
     else:
         return list_dict
-    # Optimization to stop at squareroot of number X
+    # Optimization to stop at square root of number X
     index_of_sqrt = all_numbers.index(math.ceil(math.sqrt(x)))
     
     start_time = time.time()
@@ -52,10 +52,12 @@ def PrimeNumbers(x):
 
     #Remove all marked values, these are all NOT prime
     all_numbers[:] = remove_composites(all_numbers)["list"]
+    print(all_numbers)
     
     return {"exit_code": 1,
                 "exit_message": "Exited Normally",
                 "list": all_numbers}
-            
+
+PrimeNumbers(1000)
 
 

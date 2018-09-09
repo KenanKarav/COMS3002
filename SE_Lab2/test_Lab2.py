@@ -1,16 +1,23 @@
 import unittest
-import SE_Lab2.Lab2 as Lab2
+import Lab2 as Lab2
 
 class TestLab2(unittest.TestCase):
-
+    
     def test_generate_eratothenes_list(self):
+        
+        #Test a small correct input
+        #Input: 3
+        #Output: [2,3], Exit code 1, Exit message "Exited Normally"
         self.assertIsInstance(Lab2.generate_eratothenes_list(3)["list"], list)
         self.assertEqual(Lab2.generate_eratothenes_list(3)["list"],[2,3])
         self.assertEqual(Lab2.generate_eratothenes_list(3)["exit_code"],
                          1)
         self.assertEqual(Lab2.generate_eratothenes_list(3)["exit_message"],
                          "Exited Normally")
-
+                         
+                         
+                         
+        #Test a large correct input
         self.assertEqual(Lab2.generate_eratothenes_list(100)["list"],[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
                                                               18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
                                                               32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45,
@@ -48,6 +55,9 @@ class TestLab2(unittest.TestCase):
                          1)
         self.assertEqual(Lab2.remove_composites([2,3,-1,5,-1,7])["exit_message"],
                          "Exited Normally")
+
+
+
 
     def test_PrimeNumbers(self):
 
