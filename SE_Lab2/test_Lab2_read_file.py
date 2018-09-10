@@ -13,8 +13,6 @@ class TestLab2(unittest.TestCase):
             lines = f.read().splitlines()
            
             for line in lines:
-           
-               # testType = int(line.split(";")[0])
                 parameter = line.split(";")[0]
                 if "." not in parameter:
                     if('\'' in parameter):
@@ -70,6 +68,38 @@ class TestLab2(unittest.TestCase):
                 elif(expectedOutputType == 3):#int
                     self.assertEqual(Lab2.remove_composites(parameter)[dictIndex],int(expectedOutput))
 
+    def test_PrimeNumbers(self): 
+         
+        with open("test_PrimeNumbers.txt", "r") as f:
+            lines = f.read().splitlines()
+           
+            for line in lines:
+                parameter = line.split(";")[0]
+                if "." not in parameter:
+                    if('\'' in parameter):
+                       parameter= parameter#str
+                    else:
+                        parameter = int(parameter)
+                else:
+                    parameter = Decimal(parameter.replace(',',''))
+            
+                dictIndex = line.split(";")[1] 
+         
+                expectedOutput = line.split(";")[2]
+
+                expectedOutputType = int(line.split(";")[3]) #can take on values: 0-list(object), 1-list, 2-str,3-int
+
+   
+                if(expectedOutputType == 0): #list(object)
+                    self.assertIsInstance(Lab2.PrimeNumbers(parameter)[dictIndex], list)
+                elif(expectedOutputType == 1):#list
+                    array = literal_eval(expectedOutput)
+                    self.assertEqual(Lab2.PrimeNumbers(parameter)[dictIndex],array)
+                elif(expectedOutputType == 2):#str
+                    self.assertEqual(Lab2.PrimeNumbers(parameter)[dictIndex],expectedOutput)
+                elif(expectedOutputType == 3):#int
+                    self.assertEqual(Lab2.PrimeNumbers(parameter)[dictIndex],int(expectedOutput))         
+       
 
 if __name__ == '__main__':
     unittest.main()
