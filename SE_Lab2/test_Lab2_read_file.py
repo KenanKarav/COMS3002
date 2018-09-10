@@ -24,11 +24,8 @@ class TestLab2(unittest.TestCase):
                     parameter = Decimal(parameter.replace(',',''))
             
                 dictIndex = line.split(";")[1] 
-         
                 expectedOutput = line.split(";")[2]
-
                 expectedOutputType = int(line.split(";")[3]) #can take on values: 0-list(object), 1-list, 2-str,3-int
-
    
                 if(expectedOutputType == 0): #list(object)
                     self.assertIsInstance(Lab2.generate_eratothenes_list(parameter)[dictIndex], list)
@@ -44,9 +41,7 @@ class TestLab2(unittest.TestCase):
          with open("test_remove_composites.txt", "r") as f:
      
             lines = f.read().splitlines()
-           
             for line in lines:
-           
                # testType = int(line.split(";")[0])
                 parameter = literal_eval(line.split(";")[0])
                 dictIndex = line.split(";")[1] 

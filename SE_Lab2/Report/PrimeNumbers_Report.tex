@@ -6,7 +6,7 @@
 \usepackage{url}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
- 
+\usepackage[linesnumbered,ruled,vlined ]{algorithm2e}
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks,
@@ -37,12 +37,11 @@ The main goal of this lab is to implement and understand the testing procedures 
 \subsection{Overview of Solution}
 
 The Sieve of Eratosthenes prime number generating algorithm was implemented in this work. The algorithm was coded along with various helper functions to enhance the modularity of the solution.
-This was implemented in the Python programming language. Furthermore, unit testing is done for the main algorithm and aforementioned helper functions of the module Lab2.py. This is done using the unittest Python Unit Testing Framework in the $test_Lab2.py$ module.
-The  $test_Lab2.py$ module is separated by different test conditions described in the scenarios section later in this document. The tests have been written to maximize test coverage while preventing redundant testing. 
+This was implemented in the Python programming language. Furthermore, unit testing is done for the main algorithm and aforementioned helper functions of the module Lab2.py. This is done using the unittest Python Unit Testing Framework in the $test\_Lab2.py$ module.
+The $test\_Lab2.py$ module is separated by different test conditions described in the scenarios section later in this document. To align to the requirements of the project, the $test\_Lab2\_read\_file.py$ was written to read inputs and outputs for each test case from a text file. The tests have been written to maximize test coverage while preventing redundant testing. 
 
 Due to the nature of integration testing and the fact that there is only a single module. Integration testing cannot be performed. However potential strategies for Integration testing are described later in this document.
 
-\subsection{How to run the program and its tests}
 
 
 \section{Program Description}
@@ -60,6 +59,12 @@ The following describes the functional requirements of the Prime Number Generato
 	\item The Module shall return a meaningful error code and message if the input is not a positive integer greater than 1.
 \end{itemize}
 
+\subsubsection{Modifications to Input/Output}
+\begin{itemize}
+    \item Returning a dict type that includes the list of prime numbers, error code and error message as opposed to returning a single array of prime numbers or an error code contained in the array as described in lab brief.
+    \item Input only integer X.
+
+\end{itemize}
 \subsubsection{Testing Requirements}
 The following describes the requirements for testing the Prime Number Generator:
 \paragraph{Unit Testing}
@@ -77,10 +82,48 @@ Due to the existence of only one module in the system (other than the Test-Drive
 Similarly to Integration Testing, the existence of only a single model prevents full system testing beyond the unit testing done on the Prime Number Generator. However a strategy for system testing is described later in this report.
 
 \subsection{Core Algorithm}
-Sieve of Eratosthenes is a simple and ancient algorithm used to find the \href{https://brilliant.org/wiki/prime-numbers/}{prime numbers} up to any given limit. It is one of the most efficient ways to find small prime numbers\textsuperscript{2}. The idea is to find numbers in the table that are multiples of a number and therefore composite, to discard them as prime. The numbers that are left will be prime numbers\textsuperscript{3}.
+Sieve of Eratosthenes is a simple and ancient algorithm used to find the \href{https://brilliant.org/wiki/prime-numbers/}{prime numbers} up to any given limit. It is one of the most efficient ways to find small prime numbers. The idea is to find numbers in the table that are multiples of a number and therefore composite, to discard them as prime. The numbers that are left will be prime numbers. Below is the pseudocode for the algorithm used in this solution.
+\newline
+\begin{algorithm}[H]
+\SetAlgoLined
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+\Input{Integer X}
+\Output{List of Prime Numbers up to X, Exit Code, Error Message or Exit Code, Error Message}
 
-\subsection{Running the Program}
-A user opens the $``$Lab2.py$"$  file using a terminal. The terminal then runs the program, which asks the user to input a number greater than 1 of their choice. Once inputted, the program then runs and computes a list of prime numbers less than or equal to the given inputted number. The output is then shown in an array to the user, using the terminal as an interface.
+
+numberList = list from 2 to X\;
+sqrtNumber = square root of X\;
+indexSqrt = index of sqrtNumber in numberList\;
+
+
+\For{$i\gets0$ \KwTo $indexSqrt$}
+{
+\tcc{optimization to stop at square root of X}
+    currentNumber = value at $i$ in numberList\;
+    \eIf{currentNumber is not -1}
+    {
+    \For{each value V in numberList}
+        {
+        \tcc{iterate over all numbers in numberList}
+             \eIf{V is not -1 AND V is not currentNumber AND (V)mod(CurrentNumber) is 0}
+             {
+                numberList at index of V = -1
+             }
+             {
+               do nothing
+             }
+        }
+    }
+    {
+    do nothing
+    }
+}
+remove all elements with value -1 from numberList\;
+\caption{Sieve of Eratosthenes}
+\end{algorithm}
+
+
 
 \section{Testing}
 \subsection{Description}
@@ -92,28 +135,58 @@ Due to the scope of the testing only being one module, it is unnecessary to perf
 \newline
 3. Given invalid input, are the correct exceptions raised?
 
+\subsection{Running the Tests}
+A user runs the $``$./runtests.sh$"$  script using a terminal. The terminal then runs the units tests for the module "Lab2.py", reading from the various input files (.txt files)
 
 \subsection{Testing Scenarios}
 
 \subsubsection{Description of input file}
+In order to allow for easy adding and/or changing of input to tests cases, input files were used.
+\newline
+There are 3 text files that contain encoded tests. Each text file corresponds to input for the unit tests: 
+\begin{itemize}
+  \item test\_generate\_eratothenes\_list \item test\_remove\_composites 
+  \item test\_PrimeNumbers
+\end{itemize}
+
+The encoding is as follows:
+$Input(parameter);DictionaryIndex;ExpectedOutput;OutputType$
+\newline\newline
+OutputType can take on values:
+\begin{itemize}
+
+    \item 0 - List Object
+\item 1 - Filled List
+\item 2 - String
+\item 3 - int
+\end{itemize}
+  
 
 
-Constraint 
+
+Example:
+$self.assertEqual(Lab2.generate\_eratothenes\_list(3)["exit\_code"],1)$
+
+Encoded as: 3;exit\_code;1;3
 
 \subsubsection{Unit tests}
 
-Unit testing is used since any errors contained in each individual unit of the source code could lead to incorrect output being produced. The aforementioned test is broken up into three macro subtests, namely test\_generate\_eratothenes\_list, test\_remove\_composites and test\_PrimeNumbers. These test whether the Eratosthenes list has been generated correctly, whether all composite numbers have correctly been removed and whether the output of prime numbers is correct, respectively. 
+Unit testing is used since any errors contained in each individual unit of the source code could lead to incorrect output being produced. The aforementioned test is broken up into three macro subtests, namely test\_generate\_eratothenes\_list, test\_remove\_composites and test\_PrimeNumbers. These test whether the Eratosthenes list has been generated correctly, whether all composite numbers have correctly been removed and whether the output of prime numbers is correct, respectively. The hard-coded tests are contained in the "test\_Lab2.py" file and the "test\_Lab2
+\_read\_file.py" file reads the required inputs and outputs from the various textfiles. Both these files are included for ease of understanding for the marker. 
 
 
-\paragraph{test\_PrimeNumbers:}
+\paragraph{test\_eratosthenes\_list:}
 
 This macro test is used to validate whether the list generated by the algorithm is correct.
 
 \begin{itemize}
 	\item Test a small correct input\hfill \newline\newline
 This scenario tests for correctness given a small valid input. If a small number, such as “7”, is entered, a small list of outputted numbers should be returned in particular [2,3,5,7]. This test will ensure that the algorithm does not crash or produce an incorrect output when there is little computation to be done.
+
 	\item Test a large correct input\hfill \newline\newline
 This scenario tests for correctness given a large valid input. Similarly to the above test case, if a large number is entered as input, the algorithm needs to run correctly and not crash due to the given number being too large.
+
+
 	\item Test a Value Error (Input: 1)\hfill \newline\newline
 This scenario tests whether a “1” was entered as an input, which is not accepted by the algorithm. A prime number is defined as a natural number greater than or equal to 2 with 2 factors, 1 and itself. Since 1 is less than 2 and only has 1 factor, it is not a prime and hence no primes can be generated that are less than or equal to it.
 	\item Test a Value Error (Input: 0)\hfill \newline\newline
@@ -127,14 +200,35 @@ This scenario tests whether an integer was entered as input. If not, then it is 
 
 \paragraph{test\_remove\_composites}
 This macro tests whether all composite numbers have been removed by the algorithm. This will ensure that the algorithm is performing accurately.
+\hfill \newline
+Input: [2,-1,3,-1,5]
+Output: [2,3,5]
 
 \paragraph{test\_eratosthenes\_list}
+\begin{itemize}
+
+
+\item Testing return type \hfill \newline\newline
+This scenario tests whether a valid list of prime numbers is returned. A list of natural numbers less than or equal to the inputted number needs to be returned, otherwise the algorithm can be deemed to be incorrect.
+\item Test non-perfect square input \hfill \newline\newline
+This scenario tests the edge cases when the inputted number is not a perfect square, detecting potential one-off errors.For example, the number “80” is tested as input as it is not a perfect square and may give an invalid index in the array created by the algorithm. This needs to be tested to ensure correctness of the algorithm.
+\item Check Type Error \hfill \newline\newline
+This scenario tests whether an integer was entered as input. A list of natural numbers less than or equal to the inputted number needs to be returned, otherwise the algorithm can be deemed to be incorrect.
+\item Check Value Error as defined by a prime number being greater than 2 \hfill \newline\newline
+This scenario tests whether the input number is less than “2”. If the numbers are less than 2 it cannot be deemed a prime and hence the algorithm will be deemed to be incorrect.
+\end{itemize}
+
+\subsubsection{Considerations for Improvement}
+\begin{itemize}
+    \item Returning outputs from the function was constraint of project. To further improve, to align with best practices. The program should use the $raise$ statement in python to raise an exception with customized exception messages.
+    \item Runtime Exceeded error. It was decided not to test inputs deemed too large as processing power varies between users and the runtime can vary. For example a user wanting all prime numbers below $1,000,000$ may be able to obtain it in largely a smaller runtime than another user.
+\end{itemize}
 
 \subsubsection{Integration Testing}
 The following describes a strategy for Integration testing should more modules be added to the system.
 
 \paragraph{}
-A Detailed design document that clearly defines all interactions between components is required to perform good integration testing. The correctness of these interactions is what is tested during integration testing so working from a well defined source of truth is paramount.
+A detailed design document that clearly defines all interactions between components is required to perform good integration testing. The correctness of these interactions is what is tested during integration testing so working from a well defined source of truth is paramount.
 
 To conduct Integration testing via the bottom-up approach, the design of the system needs to be broken into distinct sections i.e grouping modules that should integrate to perform a single task. Each module in a group should be unit tested before integration testing. The interface between these components is then tested. This testing is typically done in a pairwise manner on each pair of modules. Once the pairwise testing is complete the full group of modules is then integrated and testing occurs once again. 
 
@@ -149,38 +243,6 @@ First and Foremost a well defined system requirements document should exist. The
 This phase of testing is done after integration testing where the whole system is integrated into a complete system.
 
 A list of requirements should be given to the tester (preferably a tester who has not used the system before). The tester should then seek to evaluate whether each relevant requirement in the system requirements document is met. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 \end{document}

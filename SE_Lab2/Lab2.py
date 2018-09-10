@@ -1,6 +1,6 @@
 
 import math
-import time
+
 
 
 def generate_eratothenes_list(x):
@@ -34,19 +34,13 @@ def PrimeNumbers(x):
     # Optimization to stop at square root of number X
     index_of_sqrt = all_numbers.index(math.ceil(math.sqrt(x)))
 
-    start_time = time.time()
+
     #Sieve of Eratothenes Algorithm
     for pos in range(0, index_of_sqrt+1):
         current_number = all_numbers[pos]
         # Skip marked values 
         if(current_number != -1):
             for a in all_numbers:
-                end_time = time.time() - start_time
-                if(end_time > 10):
-                    return {"exit_code": -1,
-                "exit_message": "Runtime exceeded, try a smaller input",
-                "list": []}
-
                 if(a != -1 and a != current_number and a%current_number ==0):
                    all_numbers[all_numbers.index(a)] = -1
 

@@ -15,7 +15,6 @@ class TestLab2(unittest.TestCase):
         self.assertEqual(Lab2.generate_eratothenes_list(3)["exit_message"],
                          "Exited Normally")
                          
-                         
         #Test a large correct input
         #Input: 1000
         #Output: [List from 2 -> 1000], Exit code 1, Exit message "Exited Normally"
@@ -56,6 +55,7 @@ class TestLab2(unittest.TestCase):
 
 
     def test_remove_composites(self):
+        
         #Test Function is succesfully removing -1
         #Input: [2,3,-1,5,-1,7]
         #Output: {[2,3,5,7], 1, Exited Normally}

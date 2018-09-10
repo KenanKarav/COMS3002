@@ -1,2 +1,2 @@
 #!/bin/sh
-python test_Lab2.py
+python test_Lab2_read_file.py
