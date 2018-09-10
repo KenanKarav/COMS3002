@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  10 SEP 2018 14:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  10 SEP 2018 14:23
 entering extended mode
 **./PrimeNumbers_Report.tex
 (PrimeNumbers_Report.tex
@@ -694,29 +694,31 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip45
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 17.
+
 (PrimeNumbers_Report.aux)
 \openout1 = `PrimeNumbers_Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
  (C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count106
@@ -744,7 +746,16 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring OFF on input line 14.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+Package hyperref Info: Link coloring ON on input line 21.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -754,9 +765,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count112
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (PrimeNumbers_Report.out) (PrimeNumbers_Report.out)
 \@outlinefile=\write3
@@ -776,67 +787,60 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2]
 [3] [4]
-Overfull \hbox (3.82834pt too wide) in paragraph at lines 98--99
+Overfull \hbox (3.82834pt too wide) in paragraph at lines 105--106
 \OT1/cmr/m/n/10 test is bro-ken up into three macro sub-tests, namely test[]gen
 erate[]eratothenes[]list,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--108
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--110
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--114
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
 [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
  (PrimeNumbers_Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
-
-
-Package rerunfilecheck Warning: File `PrimeNumbers_Report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `PrimeNumbers_Report.out':
-(rerunfilecheck)             Before: 26AD3181F386FE673A0C0D2FE0CC1AF0;1002
-(rerunfilecheck)             After:  B52694AADFA8E193B5D82826E9A371D8;1175.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
+Package rerunfilecheck Info: File `PrimeNumbers_Report.out' has not changed.
+(rerunfilecheck)             Checksum: B52694AADFA8E193B5D82826E9A371D8;1175.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
  ) 
 Here is how much of TeX's memory you used:
- 6449 strings out of 493303
- 93291 string characters out of 3138859
- 179998 words of memory out of 3000000
- 9910 multiletter control sequences out of 15000+200000
+ 6494 strings out of 493303
+ 94017 string characters out of 3138859
+ 180898 words of memory out of 3000000
+ 9951 multiletter control sequences out of 15000+200000
  5792 words of font info for 21 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,5n,28p,543b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,6n,28p,543b,396s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\t
 crm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/P
@@ -846,9 +850,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmr7.pfb>
-Output written on PrimeNumbers_Report.pdf (7 pages, 131907 bytes).
+Output written on PrimeNumbers_Report.pdf (7 pages, 133062 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
+ 176 PDF objects out of 1000 (max. 8388607)
  33 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
