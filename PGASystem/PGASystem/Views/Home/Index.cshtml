@@ -1,0 +1,39 @@
+﻿@model UploadFileModel
+
+
+<div class="container body-content">
+       <div class="row upload-container">
+           <div class="upload-form drop-shadow">
+               <form asp-controller="Home" asp-action="UploadNewFile"
+                     method="post"
+                     class="form-horizontal"
+                     enctype="multipart/form-data">
+
+
+                   <div class="form-group">
+                       <label asp-for="Title"></label>
+                       <input asp-for="Title" class="form-control" />
+                   </div>
+
+
+
+                   <div>
+                       <label class="btn btn-default btn-file">
+                           Browser for File
+                           <input type="file" name="file" style="display: none" />
+                       </label>
+
+                   </div>
+
+                   <div class="submit">
+                       <button type="submit" id="btn-upload" class="btn btn-info">
+                           Submit
+                       </button>
+                   </div>
+               </form>
+           </div>
+       </div>
+</div>
+
+
+
