@@ -4759,17 +4759,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Preshen/Desktop/PGASystem/PGASystem/PGASystemServices/PGASystemServices.csproj",
+      "projectUniqueName": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/PGASystemServices.csproj",
       "projectName": "PGASystemServices",
-      "projectPath": "/Users/Preshen/Desktop/PGASystem/PGASystem/PGASystemServices/PGASystemServices.csproj",
+      "projectPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/PGASystemServices.csproj",
       "packagesPath": "/Users/Preshen/.nuget/packages/",
-      "outputPath": "/Users/Preshen/Desktop/PGASystem/PGASystem/PGASystemServices/obj/",
+      "outputPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Preshen/.nuget/NuGet/NuGet.Config"
+        "/Users/Preshen/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -4780,8 +4780,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Users/Preshen/Desktop/PGASystem/PGASystem/PGASystemData/PGASystemData.csproj": {
-              "projectPath": "/Users/Preshen/Desktop/PGASystem/PGASystem/PGASystemData/PGASystemData.csproj"
+            "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj": {
+              "projectPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj"
             }
           }
         }
@@ -4795,15 +4795,15 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "WindowsAzure.Storage": {
+            "target": "Package",
+            "version": "9.3.2"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.1.0, )",
+            "version": "2.1",
             "autoReferenced": true
-          },
-          "WindowsAzure.Storage": {
-            "target": "Package",
-            "version": "[9.3.2, )"
           }
         },
         "imports": [

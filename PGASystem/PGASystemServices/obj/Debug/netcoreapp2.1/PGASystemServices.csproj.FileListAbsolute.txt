@@ -22,3 +22,15 @@
 /Users/Preshen/Desktop/PGASystem/PGASystem/PGASystemServices/obj/Debug/netcoreapp2.1/PGASystemServices.csproj.CopyComplete
 /Users/Preshen/Desktop/PGASystem/PGASystem/PGASystemServices/obj/Debug/netcoreapp2.1/PGASystemServices.dll
 /Users/Preshen/Desktop/PGASystem/PGASystem/PGASystemServices/obj/Debug/netcoreapp2.1/PGASystemServices.pdb
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/bin/Debug/netcoreapp2.1/PGASystemServices.deps.json
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/bin/Debug/netcoreapp2.1/PGASystemServices.dll
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/bin/Debug/netcoreapp2.1/PGASystemServices.pdb
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/bin/Debug/netcoreapp2.1/PGASystemData.dll
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/bin/Debug/netcoreapp2.1/PGASystemData.pdb
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/obj/Debug/netcoreapp2.1/PGASystemServices.csprojAssemblyReference.cache
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/obj/Debug/netcoreapp2.1/PGASystemServices.csproj.CoreCompileInputs.cache
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/obj/Debug/netcoreapp2.1/PGASystemServices.AssemblyInfoInputs.cache
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/obj/Debug/netcoreapp2.1/PGASystemServices.AssemblyInfo.cs
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/obj/Debug/netcoreapp2.1/PGASystemServices.csproj.CopyComplete
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/obj/Debug/netcoreapp2.1/PGASystemServices.dll
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/obj/Debug/netcoreapp2.1/PGASystemServices.pdb

@@ -1,0 +1,35 @@
+﻿@model UploadFileModel
+
+<div class="container body-content">
+    <div class="row upload-container">
+        <div class="upload-form drop-shadow">
+            <form asp-controller="Application" asp-action="UploadNewFile"
+                  method="post"
+                  class="form-horizontal"
+                  enctype="multipart/form-data"
+                  id="upload-form">
+
+                <div class="form-group">
+                    <label asp-for="Title"></label>
+                    <input asp-for="Title" class="form-control" value="Previous Qualification" readonly="readonly" />
+                    <input type="file" name="file" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Title"></label>
+                    <input asp-for="Title" class="form-control" value="South African ID or Passport" readonly="readonly"  />
+                    <input type="file" name="file" />
+                </div>
+
+
+                <div class="submit">
+                    <button type="submit" id="btn-upload" class="btn btn-info">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 
 namespace PGASystem.Models
 {
     public class UploadFileModel
     {
-        public string Title { get; set; }
-        public IFormFile FileUpload { get; set; }
+        public List<string> Title { get; set; }
+        public IEnumerable<IFormFile> FileUpload { get; set; }
     }
 }

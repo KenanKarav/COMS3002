@@ -7,7 +7,8 @@
                <form asp-controller="Home" asp-action="UploadNewFile"
                      method="post"
                      class="form-horizontal"
-                     enctype="multipart/form-data">
+                     enctype="multipart/form-data"
+                     id="upload-form">
 
 
                    <div class="form-group">
@@ -19,7 +20,7 @@
 
                    <div>
                        <label class="btn btn-default btn-file">
-                           Browser for File
+                           Browse for File
                            <input type="file" name="file" style="display: none" />
                        </label>
 

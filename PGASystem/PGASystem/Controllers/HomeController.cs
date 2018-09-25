@@ -27,24 +27,13 @@ namespace PGASystem.Controllers
 
         public IActionResult Index()
         {
-            /*var fileList = _application.GetAllFiles(8);
-
-            var application = new ApplicationViewModel 
-            {   
-                Files  = fileList
-            };
-            return View(application);*/
+            /* Create an empty ViewModel */
             var model = new UploadFileModel();
-
             return View(model);
-
         }
 
 
-     /*   public IActionResult Upload()
-        {
-
-        }*/
+ 
 
 
         [HttpPost]
@@ -54,7 +43,8 @@ namespace PGASystem.Controllers
             string azureConnection = _config.GetConnectionString("AzureStorageConnectionString");
             var container = _applicationFiles.GetBlobContainer(azureConnection, "applicationfiles");
             var content = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
-            /* Returns name with quotes */ 
+
+            /* Returns name without quotes */ 
             var fileName = content.FileName.Trim('"');
 
             /* Get a reference to a block blob */
@@ -62,13 +52,16 @@ namespace PGASystem.Controllers
             await blockBlob.UploadFromStreamAsync(file.OpenReadStream());
             await _applicationFiles.SetFile(title, blockBlob.Uri);
 
-
-
             return RedirectToAction("Index", "Home");
         }
 
+
+
+
+/* CODE FOR STORING FILE IN SQL DATABASE 
+
         // POST: /Account/Register
-  /*      [HttpPost]
+        [HttpPost]
 
         public async Task<IActionResult> UploadFiles(ApplicationViewModel model)
         {
@@ -86,15 +79,12 @@ namespace PGASystem.Controllers
                     await model.AvatarImage.CopyToAsync(memoryStream);
                     user.image = memoryStream.ToArray();
                 }
-                // additional logic omitted
+
                 _context.Applications.Add(user);
                 _context.SaveChanges();
 
               
-               
-                //System.IO.File.WriteAllBytes("myfile.pdf", returnImage);
-                // Don't rely on or trust the model.AvatarImage.FileName property 
-                // without validation.
+
             }
 
             return View("Index");
@@ -115,6 +105,11 @@ namespace PGASystem.Controllers
 
             returnModel.ReturnImage = System.Convert.ToBase64String(user.image);
             return View(returnModel);
-        }*/
+        }
+
+
+                                                                                         */
+
+
     }
 }
