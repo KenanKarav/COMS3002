@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
@@ -32,7 +33,12 @@ namespace PGASystemServices
             {
                 Title = title,
                 Created = DateTime.Now,
-                Url = uri.AbsoluteUri
+                Url = uri.AbsoluteUri,
+
+                /* use last added application for reference */ 
+                Application = _ctx.Applications.Last()
+
+
             };
 
             _ctx.ApplicationFile.Add(file);

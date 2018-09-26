@@ -8,5 +8,6 @@ namespace PGASystemData
     public interface IProgramme
     {
         List<SelectListItem> GetAllProgrammes();
+        Programme GetProgrammeById(int programmeId);
     }
 }

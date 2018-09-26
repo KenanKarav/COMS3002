@@ -8,5 +8,6 @@ namespace PGASystemData
     public interface IUser
     {
         List<SelectListItem> GetSupervisors();
+        Users GetSupervisorById(int userId);
     }
 }

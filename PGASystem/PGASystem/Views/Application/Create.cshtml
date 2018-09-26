@@ -16,6 +16,16 @@
                     <div class="panel-content-padding">
 
                         <div class="form-group">
+                            <label asp-for="FirstName">First Name:</label>
+                            <input asp-for="FirstName" type="text" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LastName">Last Name</label>
+                            <input asp-for="LastName" type="text" class="form-control"/>
+                        </div>
+
+                        <div class="form-group">
                             <label asp-for="SupervisorId">Select Supervisor: <br /></label>
                             <select asp-for="SupervisorId"
                                     asp-items="Model.Supervisors"></select>

@@ -23,13 +23,21 @@ namespace PGASystemServices
 
         public List<SelectListItem> GetSupervisors()
         {
-            return _ctx.Users.Select(u => new SelectListItem() 
+            return _ctx.Users
+
+                       .Select(u => new SelectListItem() 
                           {
                               Value = u.Id.ToString(),
                             Text = u.FirstName + " " +  u.LastName
-            }).ToList()
-                       ;
+                            })
+                       .ToList();
            
+        }
+
+        public Users GetSupervisorById(int userId)
+        {
+            return _ctx.Users.Include(u => u.Position)
+                       .FirstOrDefault(u => u.Id == userId);
         }
 
     }

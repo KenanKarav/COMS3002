@@ -32,6 +32,11 @@ namespace PGASystemServices
              * perform the extra work required to set up tracking. */
         }
 
-        
+        public Programme GetProgrammeById(int programmeId)
+        {
+            return _ctx.Programme
+
+                       .FirstOrDefault(u => u.Id == programmeId);
+        }
     }
 }

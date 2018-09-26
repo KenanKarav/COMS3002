@@ -56,8 +56,25 @@ namespace PGASystem.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> UploadNewFile(IEnumerable<IFormFile> file, List<string> title)
+        public async Task<IActionResult> UploadNewFile(
+            [Bind("FirstName", "LastName", "SupervisorId", "ProgrammeId" )] UploadApplicationModel uploadApplication,
+            IEnumerable<IFormFile> file, 
+            List<string> title)
         {
+
+            /* Create a new object application with attributes from the HttpPost to add to the database */
+            var application = new Application
+            {
+                FirstName = uploadApplication.FirstName,
+                LastName = uploadApplication.LastName,
+                Programme = _programme.GetProgrammeById(uploadApplication.ProgrammeId),
+                Supervisor = _user.GetSupervisorById(uploadApplication.SupervisorId)
+            };
+
+
+
+             await _application.Add(application);
+
 
             int i = 0; 
             foreach (var f in file)

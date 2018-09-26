@@ -6,6 +6,7 @@ using PGASystemData;
 using PGASystemData.Models;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
+using System.Threading.Tasks;
 
 namespace PGASystemServices
 {
@@ -24,6 +25,16 @@ namespace PGASystemServices
                        .Include( a => a.ApplicationFiles)
                        .FirstOrDefault(a => a.Id == applicationId).ApplicationFiles;
         }
+
+        public async Task Add(Application application)
+        {
+            _ctx.Add(application);
+            await _ctx.SaveChangesAsync();
+
+            /* return the ID of the most recently added application */ 
+
+        }
+
 
        
 
