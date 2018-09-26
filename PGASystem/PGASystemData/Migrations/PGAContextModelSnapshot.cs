@@ -91,7 +91,7 @@ namespace PGASystemData.Migrations
                     b.ToTable("Programme");
                 });
 
-            modelBuilder.Entity("PGASystemData.Models.User", b =>
+            modelBuilder.Entity("PGASystemData.Models.Users", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -111,7 +111,7 @@ namespace PGASystemData.Migrations
 
                     b.HasIndex("PositionId");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("PGASystemData.Models.Application", b =>
@@ -120,7 +120,7 @@ namespace PGASystemData.Migrations
                         .WithMany()
                         .HasForeignKey("ProgrammeId");
 
-                    b.HasOne("PGASystemData.Models.User", "Supervisor")
+                    b.HasOne("PGASystemData.Models.Users", "Supervisor")
                         .WithMany()
                         .HasForeignKey("SupervisorId");
                 });
@@ -132,7 +132,7 @@ namespace PGASystemData.Migrations
                         .HasForeignKey("ApplicationId");
                 });
 
-            modelBuilder.Entity("PGASystemData.Models.User", b =>
+            modelBuilder.Entity("PGASystemData.Models.Users", b =>
                 {
                     b.HasOne("PGASystemData.Models.Position", "Position")
                         .WithMany()

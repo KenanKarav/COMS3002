@@ -10,7 +10,26 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Demographic Details</div>
+                    <div class="panel-heading">Demographic Details
+                    </div>
+
+                    <div class="panel-content-padding">
+
+                        <div class="form-group">
+                            <label asp-for="SupervisorId">Select Supervisor: <br /></label>
+                            <select asp-for="SupervisorId"
+                                    asp-items="Model.Supervisors"></select>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="ProgrammeId">Select Programme:</label>
+                            <select asp-for="ProgrammeId"
+                                    asp-items="Model.Programmes"></select>
+                        </div>
+
+
+                    </div>
+
 
 
                 </div>
@@ -18,7 +37,7 @@
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">Application Files</div>
-                    <div class="panel-files">
+                    <div class="panel-content-padding">
                         <div class="form-group">
                             <label asp-for="Title"></label>
                             <input asp-for="Title" class="form-control" value="Previous Qualification" readonly="readonly" />

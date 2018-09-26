@@ -15,14 +15,22 @@ namespace PGASystem.Controllers
     {
         private readonly IApplication _application;
         private readonly IApplicationFiles _applicationFiles;
+        private readonly IProgramme _programme;
+        private readonly IUser _user; 
         private IConfiguration _config;
 
         /* Dependency injection, decoupled from database */
-        public ApplicationController(IApplication application, IConfiguration configuration, IApplicationFiles applicationFiles)
+        public ApplicationController(IApplication application, 
+                                     IConfiguration configuration, 
+                                     IApplicationFiles applicationFiles, 
+                                     IProgramme programme,
+                                     IUser user)
         {
             _config = configuration;
             _application = application;
             _applicationFiles = applicationFiles;
+            _user = user;
+            _programme = programme;
         }
 
         public IActionResult Index()
@@ -34,7 +42,12 @@ namespace PGASystem.Controllers
         public IActionResult Create()
         {
             /* Create an empty ViewModel */
-            var model = new UploadApplicationModel();
+            var model = new UploadApplicationModel()
+            {
+                /* Send a SelectListItem type to the view */
+                Programmes = _programme.GetAllProgrammes(),
+                Supervisors = _user.GetSupervisors()
+            };
             return View(model);
         }
 
@@ -45,7 +58,7 @@ namespace PGASystem.Controllers
         [HttpPost]
         public async Task<IActionResult> UploadNewFile(IEnumerable<IFormFile> file, List<string> title)
         {
-            /* Send the connection string and the name of the container on Azure Blob Storage */
+
             int i = 0; 
             foreach (var f in file)
             {
@@ -54,6 +67,7 @@ namespace PGASystem.Controllers
                 string fileTitle = title.ElementAt(i);
                 i = i + 1;
 
+                /* Send the connection string and the name of the container on Azure Blob Storage */
                 string azureConnection = _config.GetConnectionString("AzureStorageConnectionString");
                 var container = _applicationFiles.GetBlobContainer(azureConnection, "applicationfiles");
                 var content = ContentDispositionHeaderValue.Parse(f.ContentDisposition);

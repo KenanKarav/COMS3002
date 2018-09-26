@@ -21,4 +21,7 @@
   <ItemGroup>
     <Folder Include="Views\Application\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\IProgramme.cs" />
+  </ItemGroup>
 </Project>

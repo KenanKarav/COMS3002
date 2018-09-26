@@ -11,7 +11,7 @@ namespace PGASystemData.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public Programme Programme { get; set; }
-        public User Supervisor { get; set; }
+        public Users Supervisor { get; set; }
         public IEnumerable<ApplicationFiles> ApplicationFiles {get; set;}
 
         /* Attributes for PGC, Supervisor approval */
