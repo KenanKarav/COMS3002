@@ -8,7 +8,7 @@ namespace PGASystem.Models
 {
     public class ApplicationViewModel
     {
-       
-        public List<SelectListItem> Files; 
+        public Application application { get; set; }
+        public List<SelectListItem> Files { get; set; } 
     }
 }

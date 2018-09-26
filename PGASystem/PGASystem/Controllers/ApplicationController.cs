@@ -159,6 +159,7 @@ namespace PGASystem.Controllers
             /* Create an empty ViewModel */
             var model = new ApplicationViewModel()
             {
+                application = _application.GetApplication(Id),
                 Files= _applicationFiles.GetFilesForApplication(Id)
             };
             return View(model);

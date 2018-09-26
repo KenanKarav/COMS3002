@@ -9,6 +9,8 @@ namespace PGASystemData
     {
         IEnumerable<ApplicationFiles> GetAllFiles(int applicationId);
         Task Add(Application application);
-       
+        Application GetApplication(int applicationId);
+
+
     }
 }

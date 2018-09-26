@@ -26,6 +26,15 @@ namespace PGASystemServices
                        .FirstOrDefault(a => a.Id == applicationId).ApplicationFiles;
         }
 
+        public Application GetApplication(int applicationId)
+        {
+            return _ctx.Applications
+                       .Include(a => a.ApplicationFiles)
+                       .Include(a=> a.Supervisor)
+                       .Include(a => a.Programme)
+                       .FirstOrDefault(a => a.Id == applicationId);
+        }
+
         public async Task Add(Application application)
         {
             _ctx.Add(application);

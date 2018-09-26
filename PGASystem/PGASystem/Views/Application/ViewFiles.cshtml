@@ -8,29 +8,34 @@
                     Application Files
                 </div>
                 <div class="panel-content-padding">
-                    <iframe class="" height="500" src="https://docs.google.com/viewer?url=https://seproject.blob.core.windows.net/applicationfiles/DeleteAllTablesAzure.txt&embedded=true"></iframe>
+                    <div class="row" style="margin: 10px">
+                        <label>Select File: </label>
+                        <select asp-items="Model.Files" onchange="changeDoc(this.value)"></select>
+                    </div>
 
-                        <div class="row">
-                            <select asp-items="Model.Files"></select>
-                        </div>
-
+                        <iframe id="frame" height="500" src="https://docs.google.com/viewer?url=@Model.Files[0].Value&embedded=true">Your browser does not support iframes</iframe>
                     
-                   
+
                 </div>
-
-
             </div>
 
         </div>
-
-        <div class="col-md-2">
+        <div class="col-md-3">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    Demographic Details
+                    Application Details
+
+                </div>
+                <div class="panel-content-padding">
+
+                    <h6>Applicant: @Model.application.FirstName @Model.application.LastName</h6>
+                    <h6>Programme: @Model.application.Programme.ProgrammeName</h6>
+                    <h6>Supervisor: @Model.application.Supervisor.FirstName @Model.application.Supervisor.LastName </h6>
+
                 </div>
             </div>
          </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     Supervisor Approval
@@ -41,3 +46,18 @@
     </div>
 
 </div>
+
+<script type="text/javascript">
+    function changeDoc(url)
+        {
+    
+            var theFrame = document.getElementById("frame");
+
+            var str1 = "https://docs.google.com/viewer?url=";
+            var str2 = url;
+            var str3 = "&embedded=true";
+            var res = (str1.concat(str2)).concat(str3);
+            theFrame.setAttribute("src", res);
+            theFrame.contentWindow.location.reload();
+    }
+ </script>
