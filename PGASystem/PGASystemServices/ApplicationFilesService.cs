@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.Storage;
@@ -45,8 +46,11 @@ namespace PGASystemServices
             await _ctx.SaveChangesAsync();
         }
 
-
-
+        public IEnumerable<ApplicationFiles> getFilesForApplication(int applicationId)
+        {
+            Application application = _ctx.Applications.FirstOrDefault(a => a.Id == applicationId);
+            return  _ctx.ApplicationFile.Where(a => a.Application == application);
+        }
 
     }
 }

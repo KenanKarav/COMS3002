@@ -23,5 +23,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controllers\IProgramme.cs" />
+    <Compile Remove="Views\Application\ViewFiles.cshtml.cs" />
   </ItemGroup>
 </Project>

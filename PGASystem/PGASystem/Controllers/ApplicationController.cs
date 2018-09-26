@@ -18,6 +18,7 @@ namespace PGASystem.Controllers
         private readonly IProgramme _programme;
         private readonly IUser _user; 
         private IConfiguration _config;
+        
 
         /* Dependency injection, decoupled from database */
         public ApplicationController(IApplication application, 
@@ -50,9 +51,6 @@ namespace PGASystem.Controllers
             };
             return View(model);
         }
-
-
-
 
 
         [HttpPost]
@@ -154,9 +152,15 @@ namespace PGASystem.Controllers
                     return View(returnModel);
                 }
 
-
-                                                                                                 */
-
-
+                                                                       */
+        public IActionResult ViewFiles(int applicationID)
+        {
+            /* Create an empty ViewModel */
+            var model = new ApplicationViewModel()
+            {
+                Files= _applicationFiles.getFilesForApplication(applicationID)
+            };
+            return View(model);
+        }
     }
 }
