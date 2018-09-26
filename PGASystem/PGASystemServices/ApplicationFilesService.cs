@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using PGASystemData;
@@ -46,10 +47,15 @@ namespace PGASystemServices
             await _ctx.SaveChangesAsync();
         }
 
-        public IEnumerable<ApplicationFiles> getFilesForApplication(int applicationId)
+        public List<SelectListItem> GetFilesForApplication(int applicationId)
         {
-            Application application = _ctx.Applications.FirstOrDefault(a => a.Id == applicationId);
-            return  _ctx.ApplicationFile.Where(a => a.Application == application);
+           
+            return  _ctx.ApplicationFile.Where(a => a.Application.Id == applicationId)
+                        .Select(u => new SelectListItem()
+                        {
+                            Value = u.Url,
+                            Text = u.Title
+                        }).ToList();
         }
 
     }

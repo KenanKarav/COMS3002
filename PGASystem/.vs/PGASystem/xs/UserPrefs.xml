@@ -1,28 +1,23 @@
 ﻿<Properties StartupConfiguration="{7027F6FA-D4F4-4BD0-A40E-5D67B8E677D7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PGASystem/Views/Application/ViewFiles.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PGASystemData/IApplicationFiles.cs">
     <Files>
-      <File FileName="PGASystemData/IUser.cs" Line="1" Column="1" />
-      <File FileName="PGASystemServices/ApplicationFilesService.cs" Line="52" Column="83" />
-      <File FileName="PGASystemServices/ApplicationService.cs" Line="22" Column="44" />
-      <File FileName="PGASystemServices/ProgrammeService.cs" Line="26" Column="39" />
-      <File FileName="PGASystem/Controllers/ApplicationController.cs" Line="156" Column="39" />
-      <File FileName="PGASystem/Models/ApplicationViewModel.cs" Line="10" Column="45" />
-      <File FileName="PGASystem/Models/UploadApplicationModel.cs" Line="11" Column="8" />
-      <File FileName="PGASystemServices/UserService.cs" Line="1" Column="1" />
+      <File FileName="PGASystem/Views/Application/ViewFiles.cshtml" Line="12" Column="33" />
+      <File FileName="PGASystem/Controllers/ApplicationController.cs" Line="162" Column="65" />
+      <File FileName="PGASystem/Models/ApplicationViewModel.cs" Line="11" Column="8" />
       <File FileName="PGASystemData/Models/ApplicationFiles.cs" Line="1" Column="1" />
-      <File FileName="PGASystemData/IApplicationFiles.cs" Line="13" Column="35" />
-      <File FileName="PGASystem/Views/Application/Create.cshtml" Line="76" Column="8" />
-      <File FileName="PGASystem/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="PGASystem/Views/Application/ViewFiles.cshtml" Line="64" Column="8" />
+      <File FileName="PGASystemServices/ApplicationFilesService.cs" Line="56" Column="43" />
+      <File FileName="PGASystem/Models/UploadApplicationModel.cs" Line="20" Column="36" />
+      <File FileName="PGASystemServices/ProgrammeService.cs" Line="23" Column="50" />
+      <File FileName="PGASystemData/IApplicationFiles.cs" Line="13" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/marc/Desktop/COMS3002/PGASystem/PGASystem/Controllers/ApplicationController.cs" relfile="PGASystem/Controllers/ApplicationController.cs" line="72" column="13" />
+      <Breakpoint file="/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystem/Controllers/ApplicationController.cs" relfile="PGASystem/Controllers/ApplicationController.cs" line="72" column="13" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.PGASystem PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
 </Properties>

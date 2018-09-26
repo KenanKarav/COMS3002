@@ -145,3 +145,4 @@
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/PGASystem.dll
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/PGASystem.pdb
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Application/ViewFiles.g.cshtml.cs
+/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Application/ViewFiles.g.cshtml.cs

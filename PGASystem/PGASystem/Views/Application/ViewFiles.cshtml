@@ -1,2 +1,43 @@
 ﻿@model ApplicationViewModel
 
+<div class="container">
+    <div class="row-fluid">
+        <div class="col-md-6 embed-responsive-item">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Application Files
+                </div>
+                <div class="panel-content-padding">
+                    <iframe class="" height="500" src="https://docs.google.com/viewer?url=https://seproject.blob.core.windows.net/applicationfiles/DeleteAllTablesAzure.txt&embedded=true"></iframe>
+
+                        <div class="row">
+                            <select asp-items="Model.Files"></select>
+                        </div>
+
+                    
+                   
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="col-md-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Demographic Details
+                </div>
+            </div>
+         </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Supervisor Approval
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

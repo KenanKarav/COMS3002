@@ -151,14 +151,15 @@ namespace PGASystem.Controllers
                     returnModel.ReturnImage = System.Convert.ToBase64String(user.image);
                     return View(returnModel);
                 }
+*/
+  
 
-                                                                       */
-        public IActionResult ViewFiles(int applicationID)
+        public IActionResult ViewFiles(int Id)
         {
             /* Create an empty ViewModel */
             var model = new ApplicationViewModel()
             {
-                Files= _applicationFiles.getFilesForApplication(applicationID)
+                Files= _applicationFiles.GetFilesForApplication(Id)
             };
             return View(model);
         }
