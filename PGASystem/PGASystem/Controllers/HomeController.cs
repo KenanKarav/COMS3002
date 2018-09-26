@@ -27,35 +27,16 @@ namespace PGASystem.Controllers
 
         public IActionResult Index()
         {
-            /* Create an empty ViewModel */
-            var model = new UploadFileModel();
-            return View(model);
+          
+          
+            return View();
         }
 
 
  
 
 
-        [HttpPost]
-        public async Task<IActionResult> UploadNewFile(IFormFile file, string title)
-        {
-            /* Send the connection string and the name of the container on Azure Blob Storage */
-            string azureConnection = _config.GetConnectionString("AzureStorageConnectionString");
-            var container = _applicationFiles.GetBlobContainer(azureConnection, "applicationfiles");
-            var content = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
-
-            /* Returns name without quotes */ 
-            var fileName = content.FileName.Trim('"');
-
-            /* Get a reference to a block blob */
-            var blockBlob = container.GetBlockBlobReference(fileName);
-            await blockBlob.UploadFromStreamAsync(file.OpenReadStream());
-            await _applicationFiles.SetFile(title, blockBlob.Uri);
-
-            return RedirectToAction("Index", "Home");
-        }
-
-
+  
 
 
 /* CODE FOR STORING FILE IN SQL DATABASE 

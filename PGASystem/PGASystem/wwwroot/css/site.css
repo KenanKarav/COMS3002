@@ -87,3 +87,7 @@ header.custom-header {
     padding-left: 15px;
     padding-right: 15px; 
 }
+
+.panel-files{
+    padding: 35px;
+}

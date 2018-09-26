@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace PGASystem.Models
 {
-    public class UploadFileModel
+    public class UploadApplicationModel
     {
         public List<string> Title { get; set; }
         public IEnumerable<IFormFile> FileUpload { get; set; }

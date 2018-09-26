@@ -4763,13 +4763,13 @@
       "projectName": "PGASystemServices",
       "projectPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/PGASystemServices.csproj",
       "packagesPath": "/Users/Preshen/.nuget/packages/",
-      "outputPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/obj",
+      "outputPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Preshen/.config/NuGet/NuGet.Config"
+        "/Users/Preshen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -4795,15 +4795,15 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "WindowsAzure.Storage": {
-            "target": "Package",
-            "version": "9.3.2"
-          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.1",
+            "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "WindowsAzure.Storage": {
+            "target": "Package",
+            "version": "[9.3.2, )"
           }
         },
         "imports": [

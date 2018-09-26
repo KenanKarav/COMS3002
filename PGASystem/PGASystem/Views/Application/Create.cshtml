@@ -1,35 +1,47 @@
-﻿@model UploadFileModel
+﻿@model UploadApplicationModel
 
-<div class="container body-content">
-    <div class="row upload-container">
-        <div class="upload-form drop-shadow">
-            <form asp-controller="Application" asp-action="UploadNewFile"
-                  method="post"
-                  class="form-horizontal"
-                  enctype="multipart/form-data"
-                  id="upload-form">
 
-                <div class="form-group">
-                    <label asp-for="Title"></label>
-                    <input asp-for="Title" class="form-control" value="Previous Qualification" readonly="readonly" />
-                    <input type="file" name="file" />
+<form asp-controller="Application" asp-action="UploadNewFile"
+      method="post"
+      class=""
+      enctype="multipart/form-data">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Demographic Details</div>
+
+
                 </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Application Files</div>
+                    <div class="panel-files">
+                        <div class="form-group">
+                            <label asp-for="Title"></label>
+                            <input asp-for="Title" class="form-control" value="Previous Qualification" readonly="readonly" />
+                            <input type="file" name="file" />
+                        </div>
 
-                <div class="form-group">
-                    <label asp-for="Title"></label>
-                    <input asp-for="Title" class="form-control" value="South African ID or Passport" readonly="readonly"  />
-                    <input type="file" name="file" />
+                        <div class="form-group">
+                            <label asp-for="Title"></label>
+                            <input asp-for="Title" class="form-control" value="South African ID or Passport" readonly="readonly" />
+                            <input type="file" name="file" />
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="submit">
-                    <button type="submit" id="btn-upload" class="btn btn-info">
-                        Submit
-                    </button>
-                </div>
-            </form>
+            </div>
         </div>
+        <div class="row">
+            <div class="submit">
+                <button type="submit" id="btn-upload" class="btn btn-info">
+                    Submit
+                </button>
+            </div>
+        </div>
+
     </div>
-</div>
 
-
+</form>

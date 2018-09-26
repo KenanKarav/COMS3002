@@ -27,15 +27,14 @@ namespace PGASystem.Controllers
 
         public IActionResult Index()
         {
-            /* Create an empty ViewModel */
-            var model = new UploadFileModel();
-            return View(model);
+
+            return View();
         }
 
         public IActionResult Create()
         {
             /* Create an empty ViewModel */
-            var model = new UploadFileModel();
+            var model = new UploadApplicationModel();
             return View(model);
         }
 

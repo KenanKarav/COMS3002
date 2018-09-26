@@ -7,8 +7,14 @@ namespace PGASystemData.Models
     public class Application
     {
         public int Id { get; set; }
-        public int studentNumber { get; set; }
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public Programme Programme { get; set; }
+        public User Supervisor { get; set; }
         public IEnumerable<ApplicationFiles> ApplicationFiles {get; set;}
+
+        /* Attributes for PGC, Supervisor approval */
 
     }
 }

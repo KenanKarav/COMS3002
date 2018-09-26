@@ -25,9 +25,19 @@ namespace PGASystemData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("studentNumber");
+                    b.Property<string>("FirstName");
+
+                    b.Property<string>("LastName");
+
+                    b.Property<int?>("ProgrammeId");
+
+                    b.Property<int?>("SupervisorId");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProgrammeId");
+
+                    b.HasIndex("SupervisorId");
 
                     b.ToTable("Applications");
                 });
@@ -53,11 +63,80 @@ namespace PGASystemData.Migrations
                     b.ToTable("ApplicationFile");
                 });
 
+            modelBuilder.Entity("PGASystemData.Models.Position", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("PositionName");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Position");
+                });
+
+            modelBuilder.Entity("PGASystemData.Models.Programme", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("ProgrammeName");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Programme");
+                });
+
+            modelBuilder.Entity("PGASystemData.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email");
+
+                    b.Property<string>("FirstName");
+
+                    b.Property<string>("LastName");
+
+                    b.Property<string>("Password");
+
+                    b.Property<int?>("PositionId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PositionId");
+
+                    b.ToTable("User");
+                });
+
+            modelBuilder.Entity("PGASystemData.Models.Application", b =>
+                {
+                    b.HasOne("PGASystemData.Models.Programme", "Programme")
+                        .WithMany()
+                        .HasForeignKey("ProgrammeId");
+
+                    b.HasOne("PGASystemData.Models.User", "Supervisor")
+                        .WithMany()
+                        .HasForeignKey("SupervisorId");
+                });
+
             modelBuilder.Entity("PGASystemData.Models.ApplicationFiles", b =>
                 {
                     b.HasOne("PGASystemData.Models.Application")
                         .WithMany("ApplicationFiles")
                         .HasForeignKey("ApplicationId");
+                });
+
+            modelBuilder.Entity("PGASystemData.Models.User", b =>
+                {
+                    b.HasOne("PGASystemData.Models.Position", "Position")
+                        .WithMany()
+                        .HasForeignKey("PositionId");
                 });
 #pragma warning restore 612, 618
         }
