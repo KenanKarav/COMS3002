@@ -40,6 +40,7 @@ namespace PGASystem
             services.AddScoped<IApplicationFiles, ApplicationFilesService>();
             services.AddScoped<IUser, UserService>();
             services.AddScoped<IProgramme, ProgrammeService>();
+            services.AddScoped<IEmail, EmailService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSingleton(Configuration);
 

@@ -1,14 +1,22 @@
 ﻿<Properties StartupConfiguration="{7027F6FA-D4F4-4BD0-A40E-5D67B8E677D7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PGASystemServices/ApplicationService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PGASystem/Startup.cs">
     <Files>
-      <File FileName="PGASystem/Views/Application/ViewFiles.cshtml" Line="12" Column="45" />
-      <File FileName="PGASystem/Views/Application/Create.cshtml" Line="1" Column="1" />
-      <File FileName="PGASystem/Models/ApplicationViewModel.cs" Line="15" Column="1" />
-      <File FileName="PGASystem/Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="PGASystem/Views/Application/ViewFiles.cshtml" Line="52" Column="97" />
       <File FileName="PGASystem/Models/UploadApplicationModel.cs" Line="11" Column="15" />
-      <File FileName="PGASystem/Controllers/ApplicationController.cs" Line="162" Column="43" />
-      <File FileName="PGASystemServices/ApplicationService.cs" Line="29" Column="5" />
-      <File FileName="PGASystemData/IApplication.cs" Line="12" Column="9" />
+      <File FileName="PGASystem/Controllers/ApplicationController.cs" Line="176" Column="2" />
+      <File FileName="PGASystem/Views/Application/Create.cshtml" Line="71" Column="19" />
+      <File FileName="PGASystem/Models/ApplicationViewModel.cs" Line="11" Column="39" />
+      <File FileName="PGASystemServices/ApplicationService.cs" Line="13" Column="3" />
+      <File FileName="PGASystemData/Models/Application.cs" Line="25" Column="6" />
+      <File FileName="PGASystemData/IApplication.cs" Line="15" Column="2" />
+      <File FileName="PGASystemData/IEmail.cs" Line="6" Column="96" />
+      <File FileName="PGASystemData/IProgramme.cs" Line="8" Column="4" />
+      <File FileName="PGASystemData/IApplicationFiles.cs" Line="13" Column="45" />
+      <File FileName="PGASystemServices/EmailService.cs" Line="31" Column="1" />
+      <File FileName="PGASystemServices/ApplicationFilesService.cs" Line="47" Column="27" />
+      <File FileName="PGASystem/Controllers/HomeController.cs" Line="38" Column="2" />
+      <File FileName="PGASystem/Program.cs" Line="1" Column="1" />
+      <File FileName="PGASystem/Startup.cs" Line="42" Column="64" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

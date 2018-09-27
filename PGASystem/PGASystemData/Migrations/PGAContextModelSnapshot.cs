@@ -29,9 +29,19 @@ namespace PGASystemData.Migrations
 
                     b.Property<string>("LastName");
 
+                    b.Property<string>("PGCApproval");
+
+                    b.Property<string>("PGCRejectReason");
+
                     b.Property<int?>("ProgrammeId");
 
+                    b.Property<bool>("SIMSOutcome");
+
+                    b.Property<string>("SupervisorApproval");
+
                     b.Property<int?>("SupervisorId");
+
+                    b.Property<string>("SupervisorRejectReason");
 
                     b.HasKey("Id");
 
@@ -106,6 +116,8 @@ namespace PGASystemData.Migrations
                     b.Property<string>("Password");
 
                     b.Property<int?>("PositionId");
+
+                    b.Property<string>("Title");
 
                     b.HasKey("Id");
 

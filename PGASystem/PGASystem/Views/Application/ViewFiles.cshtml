@@ -2,6 +2,27 @@
 
 <div class="container">
     <div class="row-fluid">
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Application Details
+
+                </div>
+                <div class="panel-content-padding">
+                    <h6>Applicant:</h6>
+                    <h4>@Model.application.FirstName @Model.application.LastName</h4>
+                    <h6>Programme: </h6>
+                    <h4>@Model.application.Programme.ProgrammeName</h4>
+                    <h6>Supervisor: </h6>
+                    <h4>@Model.application.Supervisor.FirstName @Model.application.Supervisor.LastName </h4>
+                    <h6>Supervisor Approval: </h6>
+                    <input type="checkbox" disabled asp-for=@Model.application.SupervisorApproval  />
+                    <h6>PGC Approval: </h6>
+                    <input type="checkbox" disabled asp-for=@Model.application.PGCApproval/>
+
+                </div>
+            </div>
+        </div>
         <div class="col-md-6 embed-responsive-item">
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -13,36 +34,44 @@
                         <select asp-items="Model.Files" onchange="changeDoc(this.value)"></select>
                     </div>
 
-                        <iframe id="frame" height="500" src="https://docs.google.com/viewer?url=@Model.Files[0].Value&embedded=true">Your browser does not support iframes</iframe>
-                    
+                    <iframe id="frame" height="500" src="https://docs.google.com/viewer?url=@Model.Files[0].Value&embedded=true">Your browser does not support iframes</iframe>
+
 
                 </div>
             </div>
 
         </div>
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Application Details
-
-                </div>
-                <div class="panel-content-padding">
-
-                    <h6>Applicant: @Model.application.FirstName @Model.application.LastName</h6>
-                    <h6>Programme: @Model.application.Programme.ProgrammeName</h6>
-                    <h6>Supervisor: @Model.application.Supervisor.FirstName @Model.application.Supervisor.LastName </h6>
-
-                </div>
-            </div>
-         </div>
         <div class="col-md-3">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     Supervisor Approval
                 </div>
+                <div>
+                    <form asp-controller="Application" asp-action="SupervisorApproval"
+                        method="post"
+                        onsubmit="return confirm('Do you want to approve/reject this Application?');">
+
+                        <div class="panel-content-padding">
+                            <div class="form-group">
+                                <input asp-for="application.Id" hidden value="@Model.application.Id"/> 
+                                <label asp-for="application.SupervisorApproval">Approve: </label>
+                                <input asp-for="application.SupervisorApproval" />
+                            </div>
+
+                            <div class="form-group submit">
+                                    <button type="submit" id="btn-upload" class="btn btn-success">
+                                        Submit
+                                    </button>
+
+
+                            </div>
+
+
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-
     </div>
 
 </div>
@@ -52,7 +81,6 @@
         {
     
             var theFrame = document.getElementById("frame");
-
             var str1 = "https://docs.google.com/viewer?url=";
             var str2 = url;
             var str3 = "&embedded=true";

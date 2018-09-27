@@ -14,7 +14,13 @@ namespace PGASystemData.Models
         public Users Supervisor { get; set; }
         public IEnumerable<ApplicationFiles> ApplicationFiles {get; set;}
 
-        /* Attributes for PGC, Supervisor approval */
+        public string SupervisorApproval { get; set; }
+        public string PGCApproval { get; set; }
 
+        public bool SIMSOutcome { get; set; }
+
+
+        public string SupervisorRejectReason { get; set; }
+        public string PGCRejectReason { get; set; }
     }
 }

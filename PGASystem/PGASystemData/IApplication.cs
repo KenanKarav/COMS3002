@@ -10,7 +10,7 @@ namespace PGASystemData
         IEnumerable<ApplicationFiles> GetAllFiles(int applicationId);
         Task Add(Application application);
         Application GetApplication(int applicationId);
-
-
+        Task ApplicationSupervisorApproval(int applicationId, string supervisorApproval);
+        int GetLastApplicationId();
     }
 }

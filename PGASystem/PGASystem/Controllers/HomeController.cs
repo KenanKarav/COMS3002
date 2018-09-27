@@ -16,6 +16,7 @@ namespace PGASystem.Controllers
         private readonly IApplication _application;
         private readonly IApplicationFiles _applicationFiles;
         private IConfiguration _config;
+  
 
         /* Dependency injection, decoupled from database */
         public HomeController(IApplication application, IConfiguration configuration, IApplicationFiles applicationFiles)
@@ -23,11 +24,14 @@ namespace PGASystem.Controllers
             _config = configuration;
             _application = application;
             _applicationFiles = applicationFiles;
+     
         }
 
         public IActionResult Index()
         {
+           
             return View();
+
         }
 
 

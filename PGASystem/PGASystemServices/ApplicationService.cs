@@ -35,6 +35,25 @@ namespace PGASystemServices
                        .FirstOrDefault(a => a.Id == applicationId);
         }
 
+        public int GetLastApplicationId()
+        {
+            return _ctx.Applications
+                       .Include(a => a.ApplicationFiles)
+                       .Include(a => a.Supervisor)
+                       .Include(a => a.Programme)
+                       .Last().Id;
+        }
+
+        public async Task ApplicationSupervisorApproval(int applicationId, string supervisorApproval)
+        {
+           var application =  _ctx.Applications
+                       .FirstOrDefault(a => a.Id == applicationId);
+
+            application.SupervisorApproval = supervisorApproval;
+
+            await _ctx.SaveChangesAsync();
+        }
+
         public async Task Add(Application application)
         {
             _ctx.Add(application);

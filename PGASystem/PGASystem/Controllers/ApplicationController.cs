@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ namespace PGASystem.Controllers
         private readonly IProgramme _programme;
         private readonly IUser _user; 
         private IConfiguration _config;
+        private IEmail _email;
         
 
         /* Dependency injection, decoupled from database */
@@ -25,13 +27,14 @@ namespace PGASystem.Controllers
                                      IConfiguration configuration, 
                                      IApplicationFiles applicationFiles, 
                                      IProgramme programme,
-                                     IUser user)
+                                     IUser user, IEmail email)
         {
             _config = configuration;
             _application = application;
             _applicationFiles = applicationFiles;
             _user = user;
             _programme = programme;
+            _email = email;
         }
 
         public IActionResult Index()
@@ -97,6 +100,8 @@ namespace PGASystem.Controllers
             }
 
 
+
+            _email.sendEmail(application.Supervisor.Email, application.Supervisor.FirstName, "Pending Supervisor approval", "Please view https://localhost:5001/ViewFiles/" + _application.GetLastApplicationId());
             return RedirectToAction("Create");
         }
 
@@ -163,6 +168,21 @@ namespace PGASystem.Controllers
                 Files= _applicationFiles.GetFilesForApplication(Id)
             };
             return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult SupervisorApproval(ApplicationViewModel avm)
+        {
+            _application.ApplicationSupervisorApproval(avm.application.Id, avm.application.SupervisorApproval);
+
+       
+
+
+
+
+
+
+            return RedirectToAction("Create");
         }
     }
 }
