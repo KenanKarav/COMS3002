@@ -1,0 +1,18 @@
+﻿@{
+}
+
+<h2>Please enter your login details</h2>
+
+<div class="mdl-card__actions mdl-card--border">
+    <form asp-controller="Auth" asp-action="Login" method="post">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" />
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" />
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<div class="mdl-card__actions mdl-card--border">
+    <h3>Please enter a valid username and password</h3>
+</div>

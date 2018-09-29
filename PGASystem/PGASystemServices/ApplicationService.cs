@@ -38,7 +38,9 @@ namespace PGASystemServices
         public IEnumerable<Application> GetApplicationsForSupervisor(int supervisorId)
         {
 
-            return _ctx.Applications.Where(a => a.Supervisor.Id == supervisorId);
+            return _ctx.Applications
+                       .Include(a => a.Programme)
+                       .Where(a => a.Supervisor.Id == supervisorId);
         }
         public int GetLastApplicationId()
         {
