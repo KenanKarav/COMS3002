@@ -176,13 +176,18 @@ namespace PGASystem.Controllers
             _application.ApplicationSupervisorApproval(avm.application.Id, avm.application.SupervisorApproval);
 
        
-
-
-
-
-
-
             return RedirectToAction("Create");
+        }
+
+        public IActionResult AssignedApplications(int id)
+        {
+
+            var model = new ApplicationsSupervisor()
+            {
+                ApplicationsAssigned = _application.GetApplicationsForSupervisor(id)
+            };
+            return View(model);
+            
         }
     }
 }

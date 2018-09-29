@@ -22,7 +22,7 @@ namespace PGASystemServices
         public IEnumerable<ApplicationFiles> GetAllFiles(int applicationId)
         {
             return _ctx.Applications
-                       .Include( a => a.ApplicationFiles)
+                       .Include(a => a.ApplicationFiles)
                        .FirstOrDefault(a => a.Id == applicationId).ApplicationFiles;
         }
 
@@ -30,11 +30,16 @@ namespace PGASystemServices
         {
             return _ctx.Applications
                        .Include(a => a.ApplicationFiles)
-                       .Include(a=> a.Supervisor)
+                       .Include(a => a.Supervisor)
                        .Include(a => a.Programme)
                        .FirstOrDefault(a => a.Id == applicationId);
         }
 
+        public IEnumerable<Application> GetApplicationsForSupervisor(int supervisorId)
+        {
+
+            return _ctx.Applications.Where(a => a.Supervisor.Id == supervisorId);
+        }
         public int GetLastApplicationId()
         {
             return _ctx.Applications

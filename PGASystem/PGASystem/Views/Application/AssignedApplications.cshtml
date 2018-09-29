@@ -1,3 +1,44 @@
-﻿@page
+﻿  @model ApplicationsSupervisor
 @{
+    ViewBag.Title = "Assigned Applciations";
 }
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <h3 class="page-header">Current Cases</h3>
+    </div>
+</div>
+
+
+<div id="patronIndex">
+    <table class="mdl-data-table mdl-data-table--selectable mdl-shadow--2dp customTable" id="patronIndexTable">
+        <thead>
+            <tr>
+                <th>Application ID</th>
+                <th>Applicant </th>
+                <th>Programme</th>
+                <th>More info</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var application in Model.ApplicationsAssigned)
+            {
+            <tr>
+
+                <td> @application.Id</td>
+                <td>@application.FirstName @application.LastName</td>
+                <td>@application.Programme</td>
+
+                <td>tba</td>
+
+
+                <!-- <td><a asp-controller="Submissions" asp-action="CreatePage" asp-route-caseId=".Id">Submissions</a></td>-->
+            </tr>
+
+            }
+        </tbody>
+    </table>
+</div>

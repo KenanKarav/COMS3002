@@ -12,5 +12,6 @@ namespace PGASystemData
         Application GetApplication(int applicationId);
         Task ApplicationSupervisorApproval(int applicationId, string supervisorApproval);
         int GetLastApplicationId();
+        IEnumerable<Application> GetApplicationsForSupervisor(int supervisorId);
     }
 }
