@@ -17,7 +17,7 @@ namespace PGASystemData.Models
         public string SupervisorApproval { get; set; }
         public string PGCApproval { get; set; }
 
-        public bool SIMSOutcome { get; set; }
+       
 
 
         public string SupervisorRejectReason { get; set; }
