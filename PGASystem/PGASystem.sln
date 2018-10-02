@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGASystemData", "PGASystemD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGASystemServices", "PGASystemServices\PGASystemServices.csproj", "{B971E78C-AB27-4F2C-BF57-C7BCAFE200C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGASystemServicesTests", "PGASystemServicesTests\PGASystemServicesTests.csproj", "{0F72B8E6-C664-4E41-A72A-2C372FE51EA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{B971E78C-AB27-4F2C-BF57-C7BCAFE200C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B971E78C-AB27-4F2C-BF57-C7BCAFE200C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B971E78C-AB27-4F2C-BF57-C7BCAFE200C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F72B8E6-C664-4E41-A72A-2C372FE51EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F72B8E6-C664-4E41-A72A-2C372FE51EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F72B8E6-C664-4E41-A72A-2C372FE51EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F72B8E6-C664-4E41-A72A-2C372FE51EA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
