@@ -9,14 +9,15 @@
 
                 </div>
                 <div class="panel-content-padding">
-                    <h6>Applicant:</h6>
-                    <h4>@Model.application.FirstName @Model.application.LastName</h4>
-                    <h6>Programme: </h6>
-                    <h4>@Model.application.Programme.ProgrammeName</h4>
-                    <h6>Supervisor: </h6>
-                    <h4>@Model.application.Supervisor.FirstName @Model.application.Supervisor.LastName </h4>
-                    <h6>Supervisor Decision: </h6>
-                    <input type="text" disabled asp-for=@Model.application.SupervisorApproval readonly />
+                    <p>Applicant:</p>
+                    <p><b>@Model.application.FirstName @Model.application.LastName</b></p>
+
+                    <p>Programme: </p>
+                    <p><b>@Model.application.Programme.ProgrammeName</b></p>
+                    <p>Supervisor: </p>
+                    <p><b>@Model.application.Supervisor.FirstName @Model.application.Supervisor.LastName</b> </p>
+                    <p>Supervisor Decision: </p>
+                    <p><b>@Model.application.SupervisorApproval</b> </p>
                     @if(Model.application.SupervisorApproval == "Reject")
                     {
                         <h4>Rejection Reason</h4>
@@ -24,14 +25,12 @@
                            @Model.application.SupervisorRejectReason
                         </textarea>
                     }
-                    <h6>PGC Decision: </h6>
-                    <input type="text" disabled asp-for=@Model.application.PGCApproval readonly/>
+                    <p>PGC Decision: </p>
+                    <p><b>@Model.application.PGCApproval</b></p>
                     @if(Model.application.PGCApproval == "Reject")
                     {
-                        <h4>Rejection Reason</h4>
-                        <textarea rows="10" readonly>
-                           @Model.application.PGCRejectReason
-                        </textarea>
+                        <p>Rejection Reason</p>
+                        <textarea rows="10" readonly>@Model.application.PGCRejectReason</textarea>
                     }
 
                 </div>
