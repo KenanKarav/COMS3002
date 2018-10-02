@@ -66,7 +66,7 @@
             <div>
                 <form   asp-controller="Application" asp-action="SupervisorApproval"
                       method="post"
-                      onsubmit="event.preventDefault();disableScreen();">
+                      onsubmit="return disableScreen();">
                     <div class="panel-content-padding">
                         <div class="form-group">
                             <input asp-for="application.Id" hidden value="@Model.application.Id" />
@@ -98,7 +98,7 @@ else if (User.IsInRole("PGC"))
              <div>
                  <form asp-controller="Application" asp-action="PGCApproval"
                        method="post"
-                       onsubmit="event.preventDefault();disableScreen();">
+                       onsubmit="return disableScreen();">
                      <div class="panel-content-padding">
                          <div class="form-group">
                              <input asp-for="application.Id" hidden value="@Model.application.Id" />
