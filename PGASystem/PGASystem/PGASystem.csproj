@@ -18,6 +18,9 @@
   <ItemGroup>
     <Content Remove="Views\Home\ViewFile.cshtml" />
     <Content Remove="Views\Auth\Welcome.cshtml" />
+    <Content Remove="Views\Home\About.cshtml" />
+    <Content Remove="Views\Home\Contact.cshtml" />
+    <Content Remove="Views\Home\Privacy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Application\" />

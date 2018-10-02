@@ -12,6 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
     <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -25,7 +27,6 @@
 
 
 
-
 </head>
 
 
@@ -33,14 +34,27 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="custom-header mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title logo">Post Graduate Application</span>
+                <span class="logo">Post Graduate Application</span>
                 <div class="mdl-layout-spacer"></div>
-             @if (User.Identity.IsAuthenticated)//User.Identity.IsAuthenticated)
+            @if (User.Identity.IsAuthenticated)//User.Identity.IsAuthenticated)
             {
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a class="mdl-navigation__link" asp-controller="Home" asp-action="Index"> Home</a>
-                    <a class="mdl-navigation__link" asp-controller="Application" asp-action="Create">Applications</a>
-                    <a class="mdl-navigation__link" asp-controller="Application" asp-action="Create">Supervisors</a>
+                    @if (User.IsInRole("PGO"))
+                    {
+                        <a class="mdl-navigation__link" asp-controller="Application" asp-action="Create">Applications</a>
+
+                    }
+                    else if (User.IsInRole("Supervisor"))
+                    {
+                         <a class="mdl-navigation__link" asp-controller="Application" asp-action="SupervisorViewApplications">Applications</a>
+                    }
+                    else if (User.IsInRole("PGC"))
+                    {
+                        <a class="mdl-navigation__link" asp-controller="Application" asp-action="PGCViewApplications">Applications</a>
+                    }
+
+
 
                     <p class="username mdl-navigation__link"><i class="glyphicon glyphicon-user"></i>  <b>@User.Identity.Name</b></p>
                     <style>

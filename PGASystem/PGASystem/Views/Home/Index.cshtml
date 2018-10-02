@@ -1,1 +1,106 @@
 ﻿
+@if (User.IsInRole("PGO"))
+{
+    <div class="container">
+        <div class="page-header">
+            <h3>Navigate</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 border-right-0 border-primary">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Create PG Application</h5>
+                        <p class="card-text">
+                            Create a Postgraduate Application with details and documents from SIMS
+                        </p>
+                        <p>&nbsp;</p>
+
+                        <a asp-controller="Application" asp-action="Create" class="btn btn-primary">Create</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Completed PG Applications</h5>
+                        <p class="card-text">View Postgraduate Appplications that have being reviewed by the Supervisor and Postgraduate Coordinator to upload decision on to SIMS</p>
+
+                        <a asp-controller="Application" asp-action="ReviewedApplications" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pending PG Applications</h5>
+                        <p class="card-text">View Postgraduate Appplications that are in the process of being reviewed by a Supervisor and/or Postgraduate Coordinator</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
+
+
+
+
+}
+else if (User.IsInRole("Supervisor"))
+{
+
+    <div class="container">
+        <div class="page-header">
+            <h3>Navigate</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 border-right-0">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">PG Applications</h5>
+                        <p class="card-text">
+                            Review assigned Applications
+                        </p>
+                        <a asp-controller="Application" asp-action="SupervisorViewApplications" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+else if (User.IsInRole("PGC"))
+{
+    <div class="container">
+        <div class="page-header">
+            <h3>Navigate</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 border-right-0">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">PG Applications</h5>
+                        <p class="card-text">
+                            Review assigned Applications
+                        </p>
+                        <a asp-controller="Application" asp-action="PGCViewApplications" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+

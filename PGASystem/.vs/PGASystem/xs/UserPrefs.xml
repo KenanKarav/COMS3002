@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{7027F6FA-D4F4-4BD0-A40E-5D67B8E677D7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PGASystem/wwwroot/css/site.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PGASystem/Views/Application/ReviewedApplications.cshtml">
     <Files>
-      <File FileName="PGASystem/Controllers/AuthController.cs" Line="70" Column="50" />
-      <File FileName="PGASystem/Startup.cs" Line="40" Column="35" />
-      <File FileName="PGASystem/Program.cs" Line="1" Column="1" />
-      <File FileName="PGASystem/Views/Auth/Index.cshtml" Line="7" Column="137" />
-      <File FileName="PGASystem/Views/Shared/_Layout.cshtml" Line="43" Column="100" />
-      <File FileName="PGASystem/Views/Auth/Denied.cshtml" Line="1" Column="1" />
-      <File FileName="PGASystem/Views/Home/Index.cshtml" Line="1" Column="1" />
-      <File FileName="PGASystem/Controllers/ApplicationController.cs" Line="43" Column="25" />
-      <File FileName="PGASystem/wwwroot/css/site.css" Line="32" Column="24" />
+      <File FileName="PGASystem/Controllers/ApplicationController.cs" Line="158" Column="65" />
+      <File FileName="PGASystem/Views/Application/ViewFiles.cshtml" Line="113" Column="44" />
+      <File FileName="PGASystemServices/ApplicationService.cs" Line="135" Column="1" />
+      <File FileName="PGASystem/Views/Application/Create.cshtml" Line="87" Column="1" />
+      <File FileName="PGASystemData/IApplication.cs" Line="15" Column="9" />
+      <File FileName="PGASystem/wwwroot/css/site.css" Line="128" Column="20" />
+      <File FileName="PGASystem/Views/Application/AssignedApplications.cshtml" Line="9" Column="15" />
+      <File FileName="PGASystem/Models/ApplicationsViewModel.cs" Line="13" Column="2" />
+      <File FileName="PGASystem/Views/Application/ReviewedApplications.cshtml" Line="20" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

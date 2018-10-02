@@ -69,12 +69,13 @@ namespace PGASystem.Controllers
                 FirstName = uploadApplication.FirstName,
                 LastName = uploadApplication.LastName,
                 Programme = _programme.GetProgrammeById(uploadApplication.ProgrammeId),
-                Supervisor = _user.GetSupervisorById(uploadApplication.SupervisorId)
+                Supervisor = _user.GetSupervisorById(uploadApplication.SupervisorId),
+                ApplicationStatus = "Pending_Supervisor_Approval"
             };
 
 
 
-             await _application.Add(application);
+              _application.Add(application);
 
 
             int i = 0; 
@@ -108,64 +109,13 @@ namespace PGASystem.Controllers
 
 
 
-        /* CODE FOR STORING FILE IN SQL DATABASE 
-
-                // POST: /Account/Register
-                [HttpPost]
-
-                public async Task<IActionResult> UploadFiles(ApplicationViewModel model)
-                {
-
-                    if (ModelState.IsValid)
-                    {
-                        var user = new Application
-                        {
-                            Id = model.Id,
-
-
-                        };
-                        using (var memoryStream = new MemoryStream())
-                        {
-                            await model.AvatarImage.CopyToAsync(memoryStream);
-                            user.image = memoryStream.ToArray();
-                        }
-
-                        _context.Applications.Add(user);
-                        _context.SaveChanges();
-
-
-
-                    }
-
-                    return View("Index");
-
-                }
-
-
-
-                [HttpGet]
-                public IActionResult ViewFile()
-                {
-                    var user =  _context.Applications.FirstOrDefault(applicant => applicant.Id == 9);
-
-                    var returnModel = new ApplicationViewModel {
-                        Id = user.Id,
-
-                    };
-
-                    returnModel.ReturnImage = System.Convert.ToBase64String(user.image);
-                    return View(returnModel);
-                }
-*/
-  
-
-        public IActionResult ViewFiles(int Id)
+        public IActionResult ViewFiles(int applicationId)
         {
             /* Create an empty ViewModel */
             var model = new ApplicationViewModel()
             {
-                application = _application.GetApplication(Id),
-                Files= _applicationFiles.GetFilesForApplication(Id)
+                application = _application.GetApplication(applicationId),
+                Files= _applicationFiles.GetFilesForApplication(applicationId)
             };
             return View(model);
         }
@@ -173,21 +123,67 @@ namespace PGASystem.Controllers
         [HttpPost]
         public IActionResult SupervisorApproval(ApplicationViewModel avm)
         {
-            _application.ApplicationSupervisorApproval(avm.application.Id, avm.application.SupervisorApproval);
+            _application.SetSupervisorApproval(avm.application.Id, avm.application.SupervisorApproval);
+            if(avm.application.SupervisorApproval == "Reject")
+            {
+                _application.SetSupervisorRejectionReason(avm.application.Id, avm.application.SupervisorRejectReason);
+            }
+            _application.SetApplicationStatus(avm.application.Id, "Pending_PGC_Approval");
 
        
-            return RedirectToAction("Create");
+            return RedirectToAction("SupervisorViewApplications");
         }
 
-        public IActionResult AssignedApplications(int id)
+        [HttpPost]
+        public  IActionResult PGCApproval(ApplicationViewModel avm)
+        {
+            _application.SetPGCApproval(avm.application.Id, avm.application.PGCApproval);
+            if (avm.application.PGCApproval == "Reject")
+            {
+                _application.SetPGCRejectionReason(avm.application.Id, avm.application.PGCRejectReason);
+            }
+
+            _application.SetApplicationStatus(avm.application.Id, "Pending_PGO_Review");
+
+
+            return RedirectToAction("PGCViewApplications");
+        }
+
+        public IActionResult SupervisorViewApplications()
         {
 
-            var model = new ApplicationsSupervisor()
+            var model = new ApplicationsViewModel()
             {
-                ApplicationsAssigned = _application.GetApplicationsForSupervisor(id)
+                Applications = _application.GetApplicationsForSupervisor(Convert.ToInt16(User.Claims.ElementAt(0).Value))
+               /* Use user claim defined in startup and login, which has the user id to get all applications */ 
             };
-            return View(model);
+          
+            return View("AssignedApplications",model);
             
+        }
+
+        public IActionResult ReviewedApplications()
+        {
+            var model = new ApplicationsViewModel()
+            {
+                Applications = _application.GetReviewedApplications()
+                /* Get all applications that have been reviewed by the supervisor and PGC */ 
+
+            };
+
+            return View(model);
+        }
+
+        public IActionResult PGCViewApplications()
+        {
+            var model = new ApplicationsViewModel()
+            {
+                Applications = _application.GetPGCReviewApplications()
+                /* Get all applications that have been reviewed by the supervisor and PGC */
+
+            };
+
+            return View("AssignedApplications", model);
         }
     }
 }

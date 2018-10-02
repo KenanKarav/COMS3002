@@ -17,10 +17,9 @@ namespace PGASystemData.Models
         public string SupervisorApproval { get; set; }
         public string PGCApproval { get; set; }
 
-       
-
-
         public string SupervisorRejectReason { get; set; }
         public string PGCRejectReason { get; set; }
+
+        public string ApplicationStatus { get; set; }
     }
 }

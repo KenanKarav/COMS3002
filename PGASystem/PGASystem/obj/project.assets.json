@@ -12281,13 +12281,13 @@
       "projectName": "PGASystem",
       "projectPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystem/PGASystem.csproj",
       "packagesPath": "/Users/Preshen/.nuget/packages/",
-      "outputPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystem/obj",
+      "outputPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystem/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Preshen/.config/NuGet/NuGet.Config"
+        "/Users/Preshen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -12319,16 +12319,16 @@
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.1.1"
+            "version": "[2.1.1, )",
+            "autoReferenced": true
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "2.1.3"
+            "version": "[2.1.3, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
-            "version": "2.1",
+            "version": "[2.1.0, )",
             "autoReferenced": true
           }
         },

@@ -24,11 +24,11 @@ namespace PGASystemServices
         public List<SelectListItem> GetSupervisors()
         {
             return _ctx.Users
-
+                       .Where(u => u.Position.PositionName == "Supervisor")
                        .Select(u => new SelectListItem() 
                           {
                               Value = u.Id.ToString(),
-                            Text = u.FirstName + " " +  u.LastName
+                                Text = u.Title + " " + u.FirstName + " " +  u.LastName
                             })
                        .ToList();
            

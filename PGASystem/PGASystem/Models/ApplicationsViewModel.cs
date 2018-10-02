@@ -6,8 +6,8 @@ using PGASystemData.Models;
 
 namespace PGASystem.Models
 {
-    public class ApplicationsSupervisor
+    public class ApplicationsViewModel
     {
-        public IEnumerable<Application> ApplicationsAssigned { get; set; }
+        public IEnumerable<Application> Applications { get; set; }
     }
 }

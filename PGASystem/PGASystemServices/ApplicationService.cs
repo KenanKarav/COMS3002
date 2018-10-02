@@ -35,13 +35,7 @@ namespace PGASystemServices
                        .FirstOrDefault(a => a.Id == applicationId);
         }
 
-        public IEnumerable<Application> GetApplicationsForSupervisor(int supervisorId)
-        {
-
-            return _ctx.Applications
-                       .Include(a => a.Programme)
-                       .Where(a => a.Supervisor.Id == supervisorId);
-        }
+       
         public int GetLastApplicationId()
         {
             return _ctx.Applications
@@ -51,28 +45,90 @@ namespace PGASystemServices
                        .Last().Id;
         }
 
-        public async Task ApplicationSupervisorApproval(int applicationId, string supervisorApproval)
+
+
+        public void  Add(Application application)
         {
-           var application =  _ctx.Applications
-                       .FirstOrDefault(a => a.Id == applicationId);
+            _ctx.Add(application);
+             _ctx.SaveChanges();
+
+
+        }
+
+
+       
+
+        public void  SetApplicationStatus(int applicationId, string status)
+        {
+            Application app = _ctx.Applications.FirstOrDefault(a => a.Id == applicationId);
+            app.ApplicationStatus = status;
+             _ctx.SaveChanges();
+        }
+
+
+
+        /* Set Decision taken and Reject reason in DB*/ 
+        public void SetSupervisorApproval(int applicationId, string supervisorApproval)
+        {
+            var application = _ctx.Applications
+                        .FirstOrDefault(a => a.Id == applicationId);
 
             application.SupervisorApproval = supervisorApproval;
 
-            await _ctx.SaveChangesAsync();
+             _ctx.SaveChanges();
         }
 
-        public async Task Add(Application application)
+
+        public void SetSupervisorRejectionReason(int applicationId, string rejectReason)
         {
-            _ctx.Add(application);
-            await _ctx.SaveChangesAsync();
+            Application app = _ctx.Applications.FirstOrDefault(a => a.Id == applicationId);
+            app.SupervisorRejectReason = rejectReason;
+             _ctx.SaveChanges();
+        }
 
-            /* return the ID of the most recently added application */ 
+        public void SetPGCApproval(int applicationId, string pgcApproval)
+        {
+            var application = _ctx.Applications
+                        .FirstOrDefault(a => a.Id == applicationId);
+
+            application.PGCApproval = pgcApproval;
+
+             _ctx.SaveChanges();
+        }
+
+        public void SetPGCRejectionReason(int applicationId, string rejectReason)
+        {
+            Application app = _ctx.Applications.FirstOrDefault(a => a.Id == applicationId);
+            app.PGCRejectReason = rejectReason;
+            _ctx.SaveChanges();
+        }
+
+
+        public IEnumerable<Application> GetPGCReviewApplications()
+        {
+            return _ctx.Applications
+                       .Include(a=> a.Programme)
+                       .Include(a=>a.Supervisor)
+                       .Where(a => a.ApplicationStatus == "Pending_PGC_Approval");
+        }
+
+        public IEnumerable<Application> GetReviewedApplications()
+        {
+            return _ctx.Applications
+                       .Include(a => a.Programme)
+                       .Include(a => a.Supervisor)
+                       .Where(a => a.ApplicationStatus == "Pending_PGO_Review");
 
         }
 
 
-       
+        public IEnumerable<Application> GetApplicationsForSupervisor(int supervisorId)
+        {
 
-       
+            return _ctx.Applications
+                       .Include(a => a.Programme)
+                       .Include(a => a.Supervisor)
+                       .Where(a => a.Supervisor.Id == supervisorId && a.ApplicationStatus == "Pending_Supervisor_Approval");
+        }
     }
 }
