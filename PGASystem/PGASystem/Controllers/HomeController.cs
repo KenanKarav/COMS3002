@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -27,72 +28,10 @@ namespace PGASystem.Controllers
      
         }
 
+        [Authorize]
         public IActionResult Index()
         {
-           
             return View();
-
         }
-
-
- 
-
-
-  
-
-
-/* CODE FOR STORING FILE IN SQL DATABASE 
-
-        // POST: /Account/Register
-        [HttpPost]
-
-        public async Task<IActionResult> UploadFiles(ApplicationViewModel model)
-        {
-
-            if (ModelState.IsValid)
-            {
-                var user = new Application
-                {
-                    Id = model.Id,
-                   
-
-                };
-                using (var memoryStream = new MemoryStream())
-                {
-                    await model.AvatarImage.CopyToAsync(memoryStream);
-                    user.image = memoryStream.ToArray();
-                }
-
-                _context.Applications.Add(user);
-                _context.SaveChanges();
-
-              
-
-            }
-
-            return View("Index");
-
-        }
-
-      
-
-        [HttpGet]
-        public IActionResult ViewFile()
-        {
-            var user =  _context.Applications.FirstOrDefault(applicant => applicant.Id == 9);
-
-            var returnModel = new ApplicationViewModel {
-                Id = user.Id,
-
-            };
-
-            returnModel.ReturnImage = System.Convert.ToBase64String(user.image);
-            return View(returnModel);
-        }
-
-
-                                                                                         */
-
-
     }
 }

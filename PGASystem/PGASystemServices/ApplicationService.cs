@@ -130,5 +130,16 @@ namespace PGASystemServices
                        .Include(a => a.Supervisor)
                        .Where(a => a.Supervisor.Id == supervisorId && a.ApplicationStatus == "Pending_Supervisor_Approval");
         }
+
+        public IEnumerable<Application> GetPendingApplications() 
+        {
+            /* This method returns all applications that are still in the application process from the db */
+            var pending_status = new List<string> { "Pending_Supervisor_Approval", "Pending_PGC_Approval"};
+            return _ctx.Applications
+                       .Include(a => a.Programme)
+                       .Include(a => a.Supervisor)
+                       .Where(a => pending_status.Contains(a.ApplicationStatus))
+                       .OrderByDescending(a=> a.ApplicationStatus);
+        }
     }
 }

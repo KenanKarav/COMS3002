@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -37,12 +38,14 @@ namespace PGASystem.Controllers
             _email = email;
         }
 
+        [Authorize]
         public IActionResult Index()
         {
 
             return View();
         }
 
+        [Authorize]
         public IActionResult Create()
         {
             /* Create an empty ViewModel */
@@ -55,7 +58,7 @@ namespace PGASystem.Controllers
             return View(model);
         }
 
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> UploadNewFile(
             [Bind("FirstName", "LastName", "SupervisorId", "ProgrammeId" )] UploadApplicationModel uploadApplication,
@@ -108,7 +111,7 @@ namespace PGASystem.Controllers
 
 
 
-
+        [Authorize]
         public IActionResult ViewFiles(int applicationId)
         {
             /* Create an empty ViewModel */
@@ -120,6 +123,7 @@ namespace PGASystem.Controllers
             return View(model);
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult SupervisorApproval(ApplicationViewModel avm)
         {
@@ -134,6 +138,7 @@ namespace PGASystem.Controllers
             return RedirectToAction("SupervisorViewApplications");
         }
 
+        [Authorize]
         [HttpPost]
         public  IActionResult PGCApproval(ApplicationViewModel avm)
         {
@@ -149,6 +154,7 @@ namespace PGASystem.Controllers
             return RedirectToAction("PGCViewApplications");
         }
 
+        [Authorize]
         public IActionResult SupervisorViewApplications()
         {
 
@@ -162,6 +168,7 @@ namespace PGASystem.Controllers
             
         }
 
+        [Authorize]
         public IActionResult ReviewedApplications()
         {
             var model = new ApplicationsViewModel()
@@ -174,6 +181,7 @@ namespace PGASystem.Controllers
             return View(model);
         }
 
+        [Authorize]
         public IActionResult PGCViewApplications()
         {
             var model = new ApplicationsViewModel()
@@ -184,6 +192,21 @@ namespace PGASystem.Controllers
             };
 
             return View("AssignedApplications", model);
+        }
+
+
+        [Authorize]
+        public IActionResult PendingApplications()
+        {
+
+            var model = new ApplicationsViewModel()
+            {
+                Applications = _application.GetPendingApplications()
+                /* Get all applications that are still in the application approval process*/
+
+            };
+
+            return View(model);
         }
     }
 }

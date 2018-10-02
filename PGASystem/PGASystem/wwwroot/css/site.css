@@ -292,6 +292,11 @@ header.custom-header {
 #applications {
     background: url('/images/applications.jpg') #555;
     background-repeat: no-repeat;
-    background-size: 500px 300px;
+    background-size: cover;
 }
 
+#completed_applications {
+    background: url('/images/completed_applications.jpg') #555;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

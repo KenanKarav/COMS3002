@@ -57,7 +57,7 @@ using PGASystem.Models;
             WriteLiteral("\r\n<h2>Please enter your login details</h2>\r\n\r\n<div class=\"mdl-card__actions mdl-card--border\">\r\n    ");
             EndContext();
             BeginContext(107, 342, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0efe202c5da04639a92c164ec502d5d4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2ce9c3e88d4a4e6ba462a09371771cda", async() => {
                 BeginContext(168, 274, true);
                 WriteLiteral(@"
         <label for=""username"">Username</label>

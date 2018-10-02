@@ -25,9 +25,6 @@ namespace PGASystemData
 
         IEnumerable<Application> GetPGCReviewApplications();
         IEnumerable<Application> GetApplicationsForSupervisor(int supervisorId);
-
-
-
-
+        IEnumerable<Application> GetPendingApplications();
     }
 }
