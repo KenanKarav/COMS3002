@@ -66,7 +66,7 @@
             <div>
                 <form   asp-controller="Application" asp-action="SupervisorApproval"
                       method="post"
-                      onsubmit="return confirm('Do you want to approve/reject this Application?');">
+                      onsubmit="disableScreen();">
                     <div class="panel-content-padding">
                         <div class="form-group">
                             <input asp-for="application.Id" hidden value="@Model.application.Id" />
@@ -98,7 +98,7 @@ else if (User.IsInRole("PGC"))
              <div>
                  <form asp-controller="Application" asp-action="PGCApproval"
                        method="post"
-                       onsubmit="return confirm('Do you want to approve/reject this Application?');">
+                       onsubmit="disableScreen();">
                      <div class="panel-content-padding">
                          <div class="form-group">
                              <input asp-for="application.Id" hidden value="@Model.application.Id" />
@@ -131,6 +131,10 @@ else if (User.IsInRole("PGC"))
 <script type="text/javascript">
     function changeDoc(url)
         {
+
+
+
+
             var theFrame = document.getElementById("frame");
             var str1 = "https://docs.google.com/viewer?url=";
             var str2 = url;
@@ -142,7 +146,8 @@ else if (User.IsInRole("PGC"))
 
     function displayRejectReason()
     {
-        
+
+
         var decisionDropdown = document.getElementById("decisionDropdown");
         var decisionText = decisionDropdown.options[decisionDropdown.selectedIndex].text;
         var rejectReasonText = document.getElementById("rejectReasonText");
@@ -157,21 +162,27 @@ else if (User.IsInRole("PGC"))
         }
         else
         {
-                
+
                 rejectReasonLabel.setAttributeNode(document.createAttribute("hidden"));
                 rejectReasonText.setAttributeNode(document.createAttribute("hidden"));
 
         }
 
-   
+
     }
- </script>
+</script>
 
 
 <script>
-
 function disableScreen() {
-    // creates <div class="overlay"></div> and
+
+
+
+
+    if(confirm('Do you really want to submit the form?'))
+
+    {
+     // creates <div class="overlay"></div> and
     // adds it to the DOM
     var div= document.createElement("div");
     div.className += "overlay";
@@ -185,6 +196,14 @@ function disableScreen() {
     div3.className += "ring-1";
     div2.appendChild(div3);
 
+    return true;
+
+
+
+    } else{
+    return false;
+
+    }
 
 
 
@@ -192,6 +211,7 @@ function disableScreen() {
 
 
 
-}
 
-</script>
+
+
+}</script>

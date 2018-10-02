@@ -4734,23 +4734,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/Preshen/.nuget/packages/": {},
+    "/Users/marc/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj",
+      "projectUniqueName": "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj",
       "projectName": "PGASystemData",
-      "projectPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj",
-      "packagesPath": "/Users/Preshen/.nuget/packages/",
-      "outputPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemData/obj/",
+      "projectPath": "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj",
+      "packagesPath": "/Users/marc/.nuget/packages/",
+      "outputPath": "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemData/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Preshen/.nuget/NuGet/NuGet.Config"
+        "/Users/marc/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -4774,25 +4774,25 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[2.1.3, )"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "[2.1.3, )"
+            "version": "2.1.3"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
-            "version": "[2.1.3, )"
+            "version": "2.1.3"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "2.1.3"
+          },
+          "WindowsAzure.Storage": {
+            "target": "Package",
+            "version": "9.3.2"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.1.0, )",
+            "version": "2.1",
             "autoReferenced": true
-          },
-          "WindowsAzure.Storage": {
-            "target": "Package",
-            "version": "[9.3.2, )"
           }
         },
         "imports": [

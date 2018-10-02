@@ -5,7 +5,7 @@
       <File FileName="PGASystem/Views/Application/ViewFiles.cshtml" Line="113" Column="44" />
       <File FileName="PGASystemServices/ApplicationService.cs" Line="135" Column="1" />
       <File FileName="PGASystem/Views/Application/Create.cshtml" Line="87" Column="1" />
-      <File FileName="PGASystemData/IApplication.cs" Line="15" Column="9" />
+      <File FileName="PGASystemData/IApplication.cs" Line="15" Column="1" />
       <File FileName="PGASystem/wwwroot/css/site.css" Line="128" Column="20" />
       <File FileName="PGASystem/Views/Application/AssignedApplications.cshtml" Line="9" Column="15" />
       <File FileName="PGASystem/Models/ApplicationsViewModel.cs" Line="13" Column="2" />

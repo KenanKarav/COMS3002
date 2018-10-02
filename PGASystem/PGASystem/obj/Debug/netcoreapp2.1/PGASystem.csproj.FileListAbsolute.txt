@@ -125,10 +125,7 @@
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/PGASystem.TagHelpers.output.cache
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/PGASystem.RazorCoreGenerate.cache
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Application/Create.g.cshtml.cs
-/Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Home/About.g.cshtml.cs
-/Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Home/Contact.g.cshtml.cs
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Home/Index.g.cshtml.cs
-/Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Home/Privacy.g.cshtml.cs
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Error.g.cshtml.cs
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs
@@ -148,3 +145,6 @@
 /Users/Preshen/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Auth/Denied.g.cshtml.cs
 /Users/Preshen/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Auth/Index.g.cshtml.cs
 /Users/Preshen/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Application/ReviewedApplications.g.cshtml.cs
+/Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Application/ReviewedApplications.g.cshtml.cs
+/Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Auth/Denied.g.cshtml.cs
+/Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Auth/Index.g.cshtml.cs
