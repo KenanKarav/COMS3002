@@ -62,7 +62,25 @@ The development of the system has various contributors each with their own prior
 	\item Database View: This contains the Entity-Relationship Diagram for the system database.
 \end{enumerate} 
 \subsection{Architectural Design Patterns}
-discuss mvc etc
+ASP.NET Core framework was used in the implementation of the system. This follows the Model-View-Controller(MVC) design pattern. This design pattern separates the project into three distinct layers:
+
+\begin{enumerate}
+	\item Model: Defines the data structures of the system and directly handles all logic and data within the system. A model class communicates exclusively with its controller.
+	\item View: A visual representation of a model. Typically in the form of a web page or a component of the web page. The view communicates exclusively with its controller.
+	\item Controller: Accepts user input and maps it to instructions for models, views and potentially other controllers. Directly responsible for communication between components of the system.
+	
+	  
+\end{enumerate} 
+
+This framework and design pattern was chosen to enhance modularity of the system. This allows for: 
+\begin{itemize}
+	\item Parallel development
+	\item Efficient code reuse
+	\item Faster bug detection and tracking.
+	\item Greater unit testing coverage.
+	
+\end{itemize} 
+ 
 \subsection{Architectural Process}
 what process was used to design the system.
 \section{Architectural View Decomposition}
@@ -71,15 +89,15 @@ use case diagram plus short description of each use case.
 \subsubsection{Architecturally Significant Use Cases}
 describe in detail the use cases that use the most critical part of the system (possibly fully dressed use cases for this)
 \subsection{Design View}
-architecture diagram
+architecture diagram, class view
 \subsubsection{Overview}
 \subsection{Process View}
 Activity diagram, ssds of significant use cases etc.
 \subsection{Component View}
 UI organization and organization of overall system.
 \subsubsection{Overview}
-\subsection{Deployment View}
-describes the different nodes that make up the system (different servers and client etc.)
+\subsection{Database View}
+ERD
 \section{Size and Performance}
 any metrics for the size and performance of the current system go here.
 \section{Quality}
