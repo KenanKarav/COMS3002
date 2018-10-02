@@ -48,7 +48,12 @@
                         <select asp-items="Model.Files" onchange="changeDoc(this.value)"></select>
                     </div>
 
-                    <iframe id="frame" height="500" src="https://docs.google.com/viewer?url=@Model.Files[0].Value&embedded=true">Your browser does not support iframes</iframe>
+                    <!-- Do not load iframe if no files exist for an application, will cause application to crash-->
+                    @if (Model.Files.Count !=0)
+                    {
+                         <iframe id="frame" height="500" src="https://docs.google.com/viewer?url=@Model.Files[0].Value&embedded=true">Your browser does not support iframes</iframe>
+                    }
+
 
 
                 </div>
@@ -179,7 +184,7 @@ function disableScreen() {
 
 
 
-    if(confirm('Do you really want to submit the form?'))
+    if(confirm('Do you want to submit the form?'))
 
     {
      // creates <div class="overlay"></div> and
@@ -204,14 +209,6 @@ function disableScreen() {
     return false;
 
     }
-
-
-
-
-
-
-
-
 
 
 }</script>

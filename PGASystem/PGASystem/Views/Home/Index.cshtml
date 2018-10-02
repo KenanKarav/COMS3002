@@ -1,79 +1,68 @@
 ﻿
+
+
+<div class="container">
+    <div class="page-header">
+        <h3>Navigate</h3>
+    </div>
+</div>
+
+
+
 @if (User.IsInRole("PGO"))
 {
-    <div class="container">
-        <div class="page-header">
-            <h3>Navigate</h3>
+
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--4-col card-font">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand" id="applications">
+                    <h2 class="mdl-card__title-text homeLabel">Create PG Application</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Create a Postgraduate Application with details and documents from SIMS
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored" asp-controller="Application" asp-action="Create">
+                        View Applications
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4 border-right-0 border-primary">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Create PG Application</h5>
-                        <p class="card-text">
-                            Create a Postgraduate Application with details and documents from SIMS
-                        </p>
-                        <p>&nbsp;</p>
 
-                        <a asp-controller="Application" asp-action="Create" class="btn btn-primary">Create</a>
-                    </div>
+        <div class="mdl-cell mdl-cell--4-col card-font">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand" id="applications">
+                    <h2 class="mdl-card__title-text homeLabel">Completed PG Applications</h2>
                 </div>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Completed PG Applications</h5>
-                        <p class="card-text">View Postgraduate Appplications that have being reviewed by the Supervisor and Postgraduate Coordinator to upload decision on to SIMS</p>
-
-                        <a asp-controller="Application" asp-action="ReviewedApplications" class="btn btn-primary">View</a>
-                    </div>
+                <div class="mdl-card__supporting-text">
+                    View Postgraduate Appplications that have being reviewed by the Supervisor and Postgraduate Coordinator to upload decision on to SIMS
                 </div>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Pending PG Applications</h5>
-                        <p class="card-text">View Postgraduate Appplications that are in the process of being reviewed by a Supervisor and/or Postgraduate Coordinator</p>
-                        <a href="#" class="btn btn-primary">View</a>
-                    </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored" asp-controller="Application" asp-action="ReviewedApplications">
+                        View Applications
+                    </a>
                 </div>
+
             </div>
-
-
-
-        </div>
-        <div class="row">
-
         </div>
     </div>
-
-
-
-
 }
 else if (User.IsInRole("Supervisor"))
 {
+    <div class="mdl-grid">
 
-    <div class="container">
-        <div class="page-header">
-            <h3>Navigate</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 border-right-0">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">PG Applications</h5>
-                        <p class="card-text">
-                            Review assigned Applications
-                        </p>
-                        <a asp-controller="Application" asp-action="SupervisorViewApplications" class="btn btn-primary">View</a>
-                    </div>
+        <div class="mdl-cell mdl-cell--4-col">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand" id="applications">
+                    <h2 class="mdl-card__title-text homeLabel">Postgraduate Applications</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Review assigned Applications
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored" asp-controller="Application" asp-action="SupervisorViewApplications">
+                        View Applications
+                    </a>
                 </div>
             </div>
         </div>
@@ -82,25 +71,26 @@ else if (User.IsInRole("Supervisor"))
 }
 else if (User.IsInRole("PGC"))
 {
-    <div class="container">
-        <div class="page-header">
-            <h3>Navigate</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 border-right-0">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">PG Applications</h5>
-                        <p class="card-text">
-                            Review assigned Applications
-                        </p>
-                        <a asp-controller="Application" asp-action="PGCViewApplications" class="btn btn-primary">View</a>
-                    </div>
+
+    <div class="mdl-grid">
+
+        <div class="mdl-cell mdl-cell--4-col card-font">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand" id="applications">
+                    <h2 class="mdl-card__title-text homeLabel">Postgraduate Applications</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Review assigned Applications
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored" asp-controller="Application" asp-action="PGCViewApplications">
+                        View Applications
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+
 }
 
 

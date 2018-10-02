@@ -286,3 +286,12 @@ header.custom-header {
     opacity: .5; /* in FireFox */
     filter: alpha(opacity=50); /* in IE */
 }
+
+
+
+#applications {
+    background: url('/images/applications.jpg') #555;
+    background-repeat: no-repeat;
+    background-size: 500px 300px;
+}
+
