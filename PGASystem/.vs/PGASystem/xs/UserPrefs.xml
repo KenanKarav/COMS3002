@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{7027F6FA-D4F4-4BD0-A40E-5D67B8E677D7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PGASystem/Views/Application/ReviewedApplications.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PGASystem/Views/Application/ViewFiles.cshtml">
     <Files>
       <File FileName="PGASystem/Controllers/ApplicationController.cs" Line="158" Column="65" />
-      <File FileName="PGASystem/Views/Application/ViewFiles.cshtml" Line="113" Column="44" />
       <File FileName="PGASystemServices/ApplicationService.cs" Line="135" Column="1" />
       <File FileName="PGASystem/Views/Application/Create.cshtml" Line="87" Column="1" />
       <File FileName="PGASystemData/IApplication.cs" Line="15" Column="1" />
@@ -10,6 +9,7 @@
       <File FileName="PGASystem/Views/Application/AssignedApplications.cshtml" Line="9" Column="15" />
       <File FileName="PGASystem/Models/ApplicationsViewModel.cs" Line="13" Column="2" />
       <File FileName="PGASystem/Views/Application/ReviewedApplications.cshtml" Line="20" Column="29" />
+      <File FileName="PGASystem/Views/Application/ViewFiles.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
