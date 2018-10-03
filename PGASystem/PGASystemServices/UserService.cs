@@ -12,32 +12,39 @@ namespace PGASystemServices
     {
         private readonly PGAContext _ctx;
 
-       
+
 
         public UserService(PGAContext ctx)
         {
             _ctx = ctx;
         }
 
-      
+
 
         public List<SelectListItem> GetSupervisors()
         {
             return _ctx.Users
                        .Where(u => u.Position.PositionName == "Supervisor")
-                       .Select(u => new SelectListItem() 
-                          {
-                              Value = u.Id.ToString(),
-                                Text = u.Title + " " + u.FirstName + " " +  u.LastName
-                            })
+                       .Select(u => new SelectListItem()
+                       {
+                           Value = u.Id.ToString(),
+                           Text = u.Title + " " + u.FirstName + " " + u.LastName
+                       })
                        .ToList();
-           
+
         }
 
         public Users GetSupervisorById(int userId)
         {
-            return _ctx.Users.Include(u => u.Position)
+            var user = _ctx.Users.Include(u => u.Position)
                        .FirstOrDefault(u => u.Id == userId);
+
+            if (user is null)
+            {
+                throw new Exception("Supervisor does not exist");
+            }
+
+            return user;
         }
 
     }

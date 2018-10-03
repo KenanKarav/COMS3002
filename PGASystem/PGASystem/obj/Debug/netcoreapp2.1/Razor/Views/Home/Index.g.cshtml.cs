@@ -58,7 +58,7 @@ using PGASystem.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             BeginContext(0, 40, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e7714c8950c4b5c874d67f477d9e1d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31f7affb451e4cceb7ce67a342231f0e", async() => {
                 BeginContext(6, 27, true);
                 WriteLiteral("\r\n    <title>Home</title>\r\n");
                 EndContext();
@@ -98,7 +98,7 @@ using PGASystem.Models;
                     ");
             EndContext();
             BeginContext(807, 147, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5df9712cd8e43ae9bef4778961a685c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a68ef3c2848c45dfbbc4dea7fb6919e1", async() => {
                 BeginContext(898, 52, true);
                 WriteLiteral("\r\n                        View\r\n                    ");
                 EndContext();
@@ -137,7 +137,7 @@ using PGASystem.Models;
                     ");
             EndContext();
             BeginContext(1630, 160, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bae9021934ab45a892622e1539637c1d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a203aa791c8b4883b1980bfee2ee6369", async() => {
                 BeginContext(1734, 52, true);
                 WriteLiteral("\r\n                        View\r\n                    ");
                 EndContext();
@@ -177,7 +177,7 @@ using PGASystem.Models;
                     ");
             EndContext();
             BeginContext(2464, 161, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "696d586923174920879e56c59c60f69f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a0f648ec9a742e78654fff565c94b83", async() => {
                 BeginContext(2569, 52, true);
                 WriteLiteral("\r\n                        View\r\n                    ");
                 EndContext();
@@ -223,7 +223,7 @@ else if (User.IsInRole("Supervisor"))
                     ");
             EndContext();
             BeginContext(3316, 167, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3fd945adc0b3484ebba9076d1b22a822", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a461edb08d3c4dac876f30fe3e6148ca", async() => {
                 BeginContext(3427, 52, true);
                 WriteLiteral("\r\n                        View\r\n                    ");
                 EndContext();
@@ -271,7 +271,7 @@ else if (User.IsInRole("PGC"))
                     ");
             EndContext();
             BeginContext(4175, 160, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "82904c1d06924df2b056932b0846326f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84d130f6cf014975b87e0d675af74d3c", async() => {
                 BeginContext(4279, 52, true);
                 WriteLiteral("\r\n                        View\r\n                    ");
                 EndContext();

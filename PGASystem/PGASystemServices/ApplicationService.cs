@@ -14,6 +14,7 @@ namespace PGASystemServices
     {
         private readonly PGAContext _ctx;
 
+
         public ApplicationService(PGAContext ctx)
         {
             _ctx = ctx;
@@ -21,21 +22,37 @@ namespace PGASystemServices
 
         public IEnumerable<ApplicationFiles> GetAllFiles(int applicationId)
         {
-            return _ctx.Applications
+
+
+            Application application = _ctx.Applications
                        .Include(a => a.ApplicationFiles)
-                       .FirstOrDefault(a => a.Id == applicationId).ApplicationFiles;
+                       .FirstOrDefault(a => a.Id == applicationId);
+
+            if (application is null)
+            {
+                throw new Exception("Application does not exist");
+            }
+
+            return application.ApplicationFiles;
         }
 
         public Application GetApplication(int applicationId)
         {
-            return _ctx.Applications
+            Application application = _ctx.Applications
                        .Include(a => a.ApplicationFiles)
                        .Include(a => a.Supervisor)
                        .Include(a => a.Programme)
                        .FirstOrDefault(a => a.Id == applicationId);
+
+            if (application is null)
+            {
+                throw new Exception("Application does not exist");
+            }
+
+            return application;
         }
 
-       
+
         public int GetLastApplicationId()
         {
             return _ctx.Applications
@@ -47,27 +64,27 @@ namespace PGASystemServices
 
 
 
-        public void  Add(Application application)
+        public void Add(Application application)
         {
             _ctx.Add(application);
-             _ctx.SaveChanges();
+            _ctx.SaveChanges();
 
 
         }
 
 
-       
 
-        public void  SetApplicationStatus(int applicationId, string status)
+
+        public void SetApplicationStatus(int applicationId, string status)
         {
             Application app = _ctx.Applications.FirstOrDefault(a => a.Id == applicationId);
             app.ApplicationStatus = status;
-             _ctx.SaveChanges();
+            _ctx.SaveChanges();
         }
 
 
 
-        /* Set Decision taken and Reject reason in DB*/ 
+        /* Set Decision taken and Reject reason in DB*/
         public void SetSupervisorApproval(int applicationId, string supervisorApproval)
         {
             var application = _ctx.Applications
@@ -75,7 +92,7 @@ namespace PGASystemServices
 
             application.SupervisorApproval = supervisorApproval;
 
-             _ctx.SaveChanges();
+            _ctx.SaveChanges();
         }
 
 
@@ -83,7 +100,7 @@ namespace PGASystemServices
         {
             Application app = _ctx.Applications.FirstOrDefault(a => a.Id == applicationId);
             app.SupervisorRejectReason = rejectReason;
-             _ctx.SaveChanges();
+            _ctx.SaveChanges();
         }
 
         public void SetPGCApproval(int applicationId, string pgcApproval)
@@ -93,7 +110,7 @@ namespace PGASystemServices
 
             application.PGCApproval = pgcApproval;
 
-             _ctx.SaveChanges();
+            _ctx.SaveChanges();
         }
 
         public void SetPGCRejectionReason(int applicationId, string rejectReason)
@@ -107,8 +124,8 @@ namespace PGASystemServices
         public IEnumerable<Application> GetPGCReviewApplications()
         {
             return _ctx.Applications
-                       .Include(a=> a.Programme)
-                       .Include(a=>a.Supervisor)
+                       .Include(a => a.Programme)
+                       .Include(a => a.Supervisor)
                        .Where(a => a.ApplicationStatus == "Pending_PGC_Approval");
         }
 
@@ -131,15 +148,15 @@ namespace PGASystemServices
                        .Where(a => a.Supervisor.Id == supervisorId && a.ApplicationStatus == "Pending_Supervisor_Approval");
         }
 
-        public IEnumerable<Application> GetPendingApplications() 
+        public IEnumerable<Application> GetPendingApplications()
         {
             /* This method returns all applications that are still in the application process from the db */
-            var pending_status = new List<string> { "Pending_Supervisor_Approval", "Pending_PGC_Approval"};
+            var pending_status = new List<string> { "Pending_Supervisor_Approval", "Pending_PGC_Approval" };
             return _ctx.Applications
                        .Include(a => a.Programme)
                        .Include(a => a.Supervisor)
                        .Where(a => pending_status.Contains(a.ApplicationStatus))
-                       .OrderByDescending(a=> a.ApplicationStatus);
+                       .OrderByDescending(a => a.ApplicationStatus);
         }
     }
 }
