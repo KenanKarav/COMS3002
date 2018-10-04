@@ -1,8 +1,16 @@
-PGO
-The PGO is able to create an application using data from SIMS and add multiple documents to it. Each application is stored in a file, which is in turn stored in a central repository. The PGO is able to notify relevant supervisors and PGCs if their attention is required for an application through an automated process. The PGO also has the ability to view the application.
-
-Supervisor
-The Supervisor is able to be notified when an application is pending their approval. The Supervisor is able to review and accept or reject an application with an additional comment based on their supervision preference. The Supervisor is able to send the aforementoned decison to the PGO. The Supervisor is also able to view the application at any time.
-
-PGC
-The PGC is able to be notified when an application is pending their approval.The PGC is able to review and accept or reject an application with an additional comment based on the requirements of the program applied for. The PGC is able to send the aforementoned decison to the PGO. The PGC is also able to view the application at any time.
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[]
+\begin{tabular}{llll}
+\multicolumn{4}{l}{{\ul \textbf{Post Graduate Approval System User Stories}}}                                                   \\
+\textbf{User Story ID} & \textbf{As} & \textbf{I want to}                       & \textbf{So that I can}                        \\
+1                      & PGO         & Create an application and add documents. & Add an application to the application process \\
+                       &             & Store applications in files              & Create a central file repository              \\
+                       &             & Notify Supervisors and PGC               & Receive decisions                             \\
+2                      & Supervisor  & Be notified by the PGO                   & View an application                           \\
+                       &             & Make a Supervisor decision               & Accept or reject an applicant                 \\
+3                      & PGC         & Be notified by the PGO                   & View an application                           \\
+                       &             & Make a PGO decision                      & Accept or reject an applicant                
+\end{tabular}
+\end{table}
