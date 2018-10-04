@@ -1,4 +1,7 @@
 \documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[labelformat= empty]{caption}
 \begin{document}
 \include{epsf}
 \thispagestyle{empty}
@@ -16,7 +19,7 @@
 \tableofcontents
 
 %\bibliographystyle{plain}
-
+\newpage
 \section{Introduction}
 This introduction provides a brief overview of System Architecture Document for the current iteration of the Post Graduate Application Approval System. It consists of the purpose, scope, problem statement,project objectives, stakeholders and overview of the rest of the document.
 \subsection{Purpose}
@@ -26,11 +29,34 @@ This introduction provides a brief overview of System Architecture Document for 
 
 
 \subsection{Scope}
-The scope of this document is the design and implementation of the Post Graduate Application Approval System which consists of application upload by the Post Graduate Officer through to the final application decision made by the Post Graduate Coordinator.
+The scope of this document is the design and implementation of the Post Graduate Application Approval System which consists of the application upload by the Post Graduate Officer, the intermediary application review by the Supervisor and the final application review made by the Post Graduate Coordinator.
 
 \subsection{Problem Statement}
+Currently, the School of EIE uses a paper based method for the approval of post graduate applications. The primary reasons for this, is as a result of academics not being trained on the SIMS system and paper trail to be kept for transparency purposes. This paper based system involves manual filling and can result in misplacement of documentation. Supervisors are contacted to review applications when the PGO physically sees them or sends an email. The turnaround time of approval of a PG application, the physical space manual filing takes up and the risk for misplacement of documents are all issues with the current process. In order to alleviate these issues a web based system will be used as a central repository for all applications to the School of EIE and manage the process of approval within the school.
 \subsection{Project Objectives}
 \subsection{Stakeholders}
+The following lists the stakeholders in the development of this system.
+
+\paragraph{School of Electrical and Information Engineering}
+\begin{itemize}
+	
+	
+	
+	\item Mrs. Mumtaz Adam: The post graduate officer (PGO).
+	
+	\item Professor Ling Cheng: The post graduate coordinator (PGC).
+	
+	\item Supervisors: Various academics within the school who shall supervise applicants.
+	
+	\item The Applicant.
+	
+\end{itemize}
+
+\paragraph{Development Team}
+\begin{itemize}
+	\item Professor Ekow Otoo: The product owner.
+	
+\end{itemize}
 \subsection{Overview}
 describe the structure and content of rest of report
 \section{Architectural Goals and Constraints}
@@ -89,19 +115,113 @@ use case diagram plus short description of each use case.
 \subsubsection{Architecturally Significant Use Cases}
 describe in detail the use cases that use the most critical part of the system (possibly fully dressed use cases for this)
 \subsection{Design View}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{Diagrams/HardwareArchitecture}}
+	\caption{Hardware Architecture Diagram}
+\end{figure}
+
 architecture diagram, class view
 \subsubsection{Overview}
 \subsection{Process View}
-Activity diagram, ssds of significant use cases etc.
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/ActivityDiagramCreateApplication"}}
+	\caption{Activity Diagram for the Create Application Use Case}
+\end{figure}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/ActivityDiagramUpdateApplication"}}
+	\caption{Activity Diagram for the Update Application Use Case}
+\end{figure}
 \subsection{Component View}
-UI organization and organization of overall system.
-\subsubsection{Overview}
+This section describes the User Interface for each user:
+
+\subsubsection{Common User Screens}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/Loginscreen"}}
+	\caption{The Login Page}
+\end{figure}
+\subsubsection{Post Graduate Officer}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/PGOHomePage"}}
+	\caption{
+		The PGO Logs in and lands on this screen.}
+\end{figure}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/CreateApplication"}}
+	\caption{
+		The PGO lands here when they click Create Application.}
+\end{figure}
+
+
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/PGOViewApplications"}}
+	\caption{The PGO lands here when they click Pending Applications from the home page. Here a list of applications with pending decisions, from either a Supervisor or the PGC, is displayed.}
+\end{figure}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/PGOViewApplication"}}
+	\caption{Once the PGO selects an application to view, this screen is displayed. It displays applicant and application information as well as a file viewer.}
+\end{figure}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/PGOCompletedApplications"}}
+	\caption{This page displays applications where the PGC has made a final decision.}
+\end{figure}
+
+\subsubsection{Supervisor}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/SupervisorHomePage"}}
+	\caption{The Landing Page for a Supervisor}
+\end{figure}
+
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/SupervisorViewApplications"}}
+	\caption{The Supervisor can see all pending applications that need their decision.}
+\end{figure}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/SupervisorViewApplication"}}
+	\caption{The view application page for the Supervisor. It displays applicant and application information, a file viewer and a decision picker.}
+\end{figure}
+\subsubsection{Post Graduate Coordinator}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/PGCHomePage"}}
+	\caption{The Landing Page for the PGC}
+\end{figure}
+
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/PGCViewApplications"}}
+	\caption{The PGC can see all pending applications that have been accepted by a Supervisor that need final approval.}
+\end{figure}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/PGCViewApplication"}}
+	\caption{The view application page for the PGC. It displays applicant and application information, a file viewer and a decision picker.}
+\end{figure}
+
 \subsection{Database View}
-ERD
-\section{Size and Performance}
-any metrics for the size and performance of the current system go here.
+This section contains the Entity-Relationship diagram for the system:
+
+\section{Performance}
+A stress test was conducted on the system. The Microsoft Azure performance testing framework was used. 
+\subsection{Test Details and Results} The test details and results are as follows:
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/StressTestEssentials"}}
+	\caption{Test Details}
+\end{figure}
+
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/StressTestTemporalPlot"}}
+	\caption{Temporal Plot of Average response time, the user load and the requests per second.}
+\end{figure}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/StressTestRequests"}}
+	\caption{Test Results with 100\% request success.}
+\end{figure}
 \section{Quality}
-issues with system quality or concerns for future development go here.
+This sections describes system quality concerns for future development on the system:
+\begin{itemize}
+	\item Use bundling and minifying of static css/js files to improve performance, see microsoft docs.
+	\item Use caution when storing binary data in relational databases, as it can adversely impact performance.
+	\item Using base64 string from byte array impacts page load times severely (5-10 second load time on a 214kb file). 
+	
+\end{itemize}
+
 
 \end{document}
 

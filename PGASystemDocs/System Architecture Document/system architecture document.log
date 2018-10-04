@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  2 OCT 2018 12:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  4 OCT 2018 17:09
 entering extended mode
 **"./system architecture document.tex"
 ("system architecture document.tex"
@@ -21,42 +21,159 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count87
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+)
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
+)
+\c@ContinuedFloat=\count88
+Package caption Info: float package is loaded.
+)
 ("system architecture document.aux" (epsf.aux))
 \openout1 = `"system architecture document.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count89
+\scratchdimen=\dimen112
+\scratchbox=\box28
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count92
+\MPscratchDim=\dimen113
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks18
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 \openout2 = `epsf.aux'.
 
 
 (C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\generic\epsf\epsf.tex
 This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsffilein=\read1
-\epsfframemargin=\dimen103
-\epsfframethickness=\dimen104
-\epsfrsize=\dimen105
-\epsftmp=\dimen106
-\epsftsize=\dimen107
-\epsfxsize=\dimen108
-\epsfysize=\dimen109
-\pspoints=\dimen110
+\epsfframemargin=\dimen114
+\epsfframethickness=\dimen115
+\epsfrsize=\dimen116
+\epsftmp=\dimen117
+\epsftsize=\dimen118
+\epsfxsize=\dimen119
+\epsfysize=\dimen120
+\pspoints=\dimen121
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 14.
+(Font)              <12> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 14.
+(Font)              <8> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 14.
+(Font)              <6> on input line 17.
  ("system architecture document.toc" [1
 
 
@@ -68,33 +185,155 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `"system architecture document.toc"'.
 
- [2] [3] [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 77.
+ [2] [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 77.
- [5] [6]
-("system architecture document.aux" (epsf.aux)) ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+ [4] [5]
+<Diagrams/HardwareArchitecture.jpeg, id=23, 758.835pt x 519.3804pt>
+File: Diagrams/HardwareArchitecture.jpeg Graphic file (type jpg)
+<use Diagrams/HardwareArchitecture.jpeg>
+Package pdftex.def Info: Diagrams/HardwareArchitecture.jpeg  used on input line
+ 119.
+(pdftex.def)             Requested size: 359.9988pt x 246.39917pt.
+ [6]
+<"Diagrams/ActivityDiagramCreateApplication".png, id=27, 1100.11pt x 972.63374p
+t>
+File: "Diagrams/ActivityDiagramCreateApplication".png Graphic file (type png)
+<use "Diagrams/ActivityDiagramCreateApplication".png>
+Package pdftex.def Info: "Diagrams/ActivityDiagramCreateApplication".png  used 
+on input line 127.
+(pdftex.def)             Requested size: 359.9991pt x 318.28387pt.
+<"Diagrams/ActivityDiagramUpdateApplication".png, id=29, 1162.3425pt x 1218.552
+5pt>
+File: "Diagrams/ActivityDiagramUpdateApplication".png Graphic file (type png)
+<use "Diagrams/ActivityDiagramUpdateApplication".png>
+Package pdftex.def Info: "Diagrams/ActivityDiagramUpdateApplication".png  used 
+on input line 131.
+(pdftex.def)             Requested size: 360.0032pt x 377.41269pt.
+ [7 <./Diagrams/HardwareArchitecture.jpeg>] [8 <./Diagrams/ActivityDiagramCreat
+eApplication.png>]
+<"Diagrams/Loginscreen".png, id=38, 1011.78pt x 581.92406pt>
+File: "Diagrams/Loginscreen".png Graphic file (type png)
+<use "Diagrams/Loginscreen".png>
+Package pdftex.def Info: "Diagrams/Loginscreen".png  used on input line 139.
+(pdftex.def)             Requested size: 359.99493pt x 207.05066pt.
+ [9 <./Diagrams/ActivityDiagramUpdateApplication.png>]
+<"Diagrams/PGOHomePage".png, id=43, 979.40906pt x 483.30562pt>
+File: "Diagrams/PGOHomePage".png Graphic file (type png)
+<use "Diagrams/PGOHomePage".png>
+Package pdftex.def Info: "Diagrams/PGOHomePage".png  used on input line 144.
+(pdftex.def)             Requested size: 359.9995pt x 177.6477pt.
+<"Diagrams/CreateApplication".png, id=44, 975.645pt x 478.78876pt>
+File: "Diagrams/CreateApplication".png Graphic file (type png)
+<use "Diagrams/CreateApplication".png>
+Package pdftex.def Info: "Diagrams/CreateApplication".png  used on input line 1
+49.
+(pdftex.def)             Requested size: 360.00044pt x 176.66689pt.
+ [10 <./Diagrams/Loginscreen.png> <./Diagrams/PGOHomePage.png>]
+<"Diagrams/PGOViewApplications".png, id=50, 976.39781pt x 484.05844pt>
+File: "Diagrams/PGOViewApplications".png Graphic file (type png)
+<use "Diagrams/PGOViewApplications".png>
+Package pdftex.def Info: "Diagrams/PGOViewApplications".png  used on input line
+ 156.
+(pdftex.def)             Requested size: 359.99515pt x 178.471pt.
+<"Diagrams/PGOViewApplication".png, id=51, 966.61125pt x 442.65375pt>
+File: "Diagrams/PGOViewApplication".png Graphic file (type png)
+<use "Diagrams/PGOViewApplication".png>
+Package pdftex.def Info: "Diagrams/PGOViewApplication".png  used on input line 
+160.
+(pdftex.def)             Requested size: 360.00046pt x 164.86pt.
+<"Diagrams/PGOCompletedApplications".png, id=52, 968.11688pt x 478.03593pt>
+File: "Diagrams/PGOCompletedApplications".png Graphic file (type png)
+<use "Diagrams/PGOCompletedApplications".png>
+Package pdftex.def Info: "Diagrams/PGOCompletedApplications".png  used on input
+ line 164.
+(pdftex.def)             Requested size: 359.99985pt x 177.76042pt.
+ [11 <./Diagrams/CreateApplication.png> <./Diagrams/PGOViewApplications.png>]
+<"Diagrams/SupervisorHomePage".png, id=58, 974.13937pt x 474.27188pt>
+File: "Diagrams/SupervisorHomePage".png Graphic file (type png)
+<use "Diagrams/SupervisorHomePage".png>
+Package pdftex.def Info: "Diagrams/SupervisorHomePage".png  used on input line 
+170.
+(pdftex.def)             Requested size: 359.99486pt x 175.26797pt.
+ [12 <./Diagrams/PGOViewApplication.png> <./Diagrams/PGOCompletedApplications.p
+ng>]
+<"Diagrams/SupervisorViewApplications".png, id=64, 960.58875pt x 481.8pt>
+File: "Diagrams/SupervisorViewApplications".png Graphic file (type png)
+<use "Diagrams/SupervisorViewApplications".png>
+Package pdftex.def Info: "Diagrams/SupervisorViewApplications".png  used on inp
+ut line 175.
+(pdftex.def)             Requested size: 360.00003pt x 180.56427pt.
+<"Diagrams/SupervisorViewApplication".png, id=65, 966.61125pt x 448.67625pt>
+File: "Diagrams/SupervisorViewApplication".png Graphic file (type png)
+<use "Diagrams/SupervisorViewApplication".png>
+Package pdftex.def Info: "Diagrams/SupervisorViewApplication".png  used on inpu
+t line 179.
+(pdftex.def)             Requested size: 360.00046pt x 167.10301pt.
+ [13 <./Diagrams/SupervisorHomePage.png> <./Diagrams/SupervisorViewApplications
+.png>]
+<"Diagrams/PGCHomePage".png, id=72, 976.39781pt x 440.39531pt>
+File: "Diagrams/PGCHomePage".png Graphic file (type png)
+<use "Diagrams/PGCHomePage".png>
+Package pdftex.def Info: "Diagrams/PGCHomePage".png  used on input line 184.
+(pdftex.def)             Requested size: 359.99515pt x 162.37251pt.
+<"Diagrams/PGCViewApplications".png, id=73, 962.09438pt x 444.91219pt>
+File: "Diagrams/PGCViewApplications".png Graphic file (type png)
+<use "Diagrams/PGCViewApplications".png>
+Package pdftex.def Info: "Diagrams/PGCViewApplications".png  used on input line
+ 189.
+(pdftex.def)             Requested size: 360.00644pt x 166.48184pt.
+<"Diagrams/PGCViewApplication".png, id=74, 962.84718pt x 442.65375pt>
+File: "Diagrams/PGCViewApplication".png Graphic file (type png)
+<use "Diagrams/PGCViewApplication".png>
+Package pdftex.def Info: "Diagrams/PGCViewApplication".png  used on input line 
+193.
+(pdftex.def)             Requested size: 359.9943pt x 165.50166pt.
+ [14 <./Diagrams/SupervisorViewApplication.png> <./Diagrams/PGCHomePage.png>] [
+15 <./Diagrams/PGCViewApplications.png> <./Diagrams/PGCViewApplication.png>]
+<"Diagrams/StressTestEssentials".png, id=85, 619.56468pt x 123.46124pt>
+File: "Diagrams/StressTestEssentials".png Graphic file (type png)
+<use "Diagrams/StressTestEssentials".png>
+Package pdftex.def Info: "Diagrams/StressTestEssentials".png  used on input lin
+e 204.
+(pdftex.def)             Requested size: 360.00006pt x 71.73753pt.
+<"Diagrams/StressTestTemporalPlot".png, id=86, 464.4853pt x 305.64188pt>
+File: "Diagrams/StressTestTemporalPlot".png Graphic file (type png)
+<use "Diagrams/StressTestTemporalPlot".png>
+Package pdftex.def Info: "Diagrams/StressTestTemporalPlot".png  used on input l
+ine 209.
+(pdftex.def)             Requested size: 360.00783pt x 236.89331pt.
+<"Diagrams/StressTestRequests".png, id=87, 268.00125pt x 130.23656pt>
+File: "Diagrams/StressTestRequests".png Graphic file (type png)
+<use "Diagrams/StressTestRequests".png>
+Package pdftex.def Info: "Diagrams/StressTestRequests".png  used on input line 
+213.
+(pdftex.def)             Requested size: 359.99901pt x 174.94333pt.
+ [16 <./Diagrams/StressTestEssentials.png> <./Diagrams/StressTestTemporalPlot.p
+ng>] [17 <./Diagrams/StressTestRequests.png>] ("system architecture document.au
+x" (epsf.aux)) ) 
 Here is how much of TeX's memory you used:
- 330 strings out of 493303
- 4602 string characters out of 3138859
- 58826 words of memory out of 3000000
- 3943 multiletter control sequences out of 15000+200000
+ 2778 strings out of 493303
+ 46404 string characters out of 3138859
+ 100994 words of memory out of 3000000
+ 6295 multiletter control sequences out of 15000+200000
  9465 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 22i,7n,19p,432b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "system architecture document.pdf" (6 pages, 90564 bytes).
+ 41i,9n,39p,856b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "system architecture document.pdf" (17 pages, 1682048 bytes).
+
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 117 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
