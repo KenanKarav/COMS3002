@@ -8694,23 +8694,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/Preshen/.nuget/packages/": {},
+    "/Users/marc/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServicesTests/PGASystemServicesTests.csproj",
+      "projectUniqueName": "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemServicesTests/PGASystemServicesTests.csproj",
       "projectName": "PGASystemServicesTests",
-      "projectPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServicesTests/PGASystemServicesTests.csproj",
-      "packagesPath": "/Users/Preshen/.nuget/packages/",
-      "outputPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServicesTests/obj",
+      "projectPath": "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemServicesTests/PGASystemServicesTests.csproj",
+      "packagesPath": "/Users/marc/.nuget/packages/",
+      "outputPath": "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemServicesTests/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Preshen/.config/NuGet/NuGet.Config"
+        "/Users/marc/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -8721,11 +8721,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj": {
-              "projectPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj"
+            "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj": {
+              "projectPath": "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj"
             },
-            "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/PGASystemServices.csproj": {
-              "projectPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemServices/PGASystemServices.csproj"
+            "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemServices/PGASystemServices.csproj": {
+              "projectPath": "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemServices/PGASystemServices.csproj"
             }
           }
         }

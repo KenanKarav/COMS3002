@@ -145,6 +145,6 @@
 /Users/Preshen/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Auth/Index.g.cshtml.cs
 /Users/Preshen/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Application/ReviewedApplications.g.cshtml.cs
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Application/ReviewedApplications.g.cshtml.cs
-/Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Auth/Denied.g.cshtml.cs
 /Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Auth/Index.g.cshtml.cs
 /Users/Preshen/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Application/PendingApplications.g.cshtml.cs
+/Users/marc/Desktop/COMS3002/PGASystem/PGASystem/obj/Debug/netcoreapp2.1/Razor/Views/Application/PendingApplications.g.cshtml.cs
