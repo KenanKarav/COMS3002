@@ -1,0 +1,8 @@
+PGO
+The PGO is able to create an application using data from SIMS and add multiple documents to it. Each application is stored in a file, which is in turn stored in a central repository. The PGO is able to notify relevant supervisors and PGCs if their attention is required for an application through an automated process. The PGO also has the ability to view the application.
+
+Supervisor
+The Supervisor is able to be notified when an application is pending their approval. The Supervisor is able to review and accept or reject an application with an additional comment based on their supervision preference. The Supervisor is able to send the aforementoned decison to the PGO. The Supervisor is also able to view the application at any time.
+
+PGC
+The PGC is able to be notified when an application is pending their approval.The PGC is able to review and accept or reject an application with an additional comment based on the requirements of the program applied for. The PGC is able to send the aforementoned decison to the PGO. The PGC is also able to view the application at any time.
