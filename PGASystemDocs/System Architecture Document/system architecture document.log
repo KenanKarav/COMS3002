@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  4 OCT 2018 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  4 OCT 2018 17:18
 entering extended mode
 **"./system architecture document.tex"
 ("system architecture document.tex"
@@ -293,29 +293,41 @@ File: "Diagrams/PGCViewApplication".png Graphic file (type png)
 Package pdftex.def Info: "Diagrams/PGCViewApplication".png  used on input line 
 193.
 (pdftex.def)             Requested size: 359.9943pt x 165.50166pt.
- [14 <./Diagrams/SupervisorViewApplication.png> <./Diagrams/PGCHomePage.png>] [
-15 <./Diagrams/PGCViewApplications.png> <./Diagrams/PGCViewApplication.png>]
-<"Diagrams/StressTestEssentials".png, id=85, 619.56468pt x 123.46124pt>
+ [14 <./Diagrams/SupervisorViewApplication.png> <./Diagrams/PGCHomePage.png>]
+<"Diagrams/StressTestEssentials".png, id=80, 619.56468pt x 123.46124pt>
 File: "Diagrams/StressTestEssentials".png Graphic file (type png)
 <use "Diagrams/StressTestEssentials".png>
 Package pdftex.def Info: "Diagrams/StressTestEssentials".png  used on input lin
-e 204.
+e 200.
+(pdftex.def)             Requested size: 360.00006pt x 71.73753pt.
+
+Overfull \hbox (15.76797pt too wide) in paragraph at lines 198--202
+\OT1/cmr/m/n/10.95 This sec-tion con-tains the Entity-Relationship Di-a-gram fo
+r the Sys-tem Database: 
+ []
+
+[15 <./Diagrams/PGCViewApplications.png> <./Diagrams/PGCViewApplication.png>]
+File: "Diagrams/StressTestEssentials".png Graphic file (type png)
+<use "Diagrams/StressTestEssentials".png>
+Package pdftex.def Info: "Diagrams/StressTestEssentials".png  used on input lin
+e 209.
 (pdftex.def)             Requested size: 360.00006pt x 71.73753pt.
 <"Diagrams/StressTestTemporalPlot".png, id=86, 464.4853pt x 305.64188pt>
 File: "Diagrams/StressTestTemporalPlot".png Graphic file (type png)
 <use "Diagrams/StressTestTemporalPlot".png>
 Package pdftex.def Info: "Diagrams/StressTestTemporalPlot".png  used on input l
-ine 209.
+ine 214.
 (pdftex.def)             Requested size: 360.00783pt x 236.89331pt.
 <"Diagrams/StressTestRequests".png, id=87, 268.00125pt x 130.23656pt>
 File: "Diagrams/StressTestRequests".png Graphic file (type png)
 <use "Diagrams/StressTestRequests".png>
 Package pdftex.def Info: "Diagrams/StressTestRequests".png  used on input line 
-213.
+218.
 (pdftex.def)             Requested size: 359.99901pt x 174.94333pt.
- [16 <./Diagrams/StressTestEssentials.png> <./Diagrams/StressTestTemporalPlot.p
-ng>] [17 <./Diagrams/StressTestRequests.png>] ("system architecture document.au
-x" (epsf.aux)) ) 
+
+[16 <./Diagrams/StressTestEssentials.png>] [17 <./Diagrams/StressTestTemporalPl
+ot.png> <./Diagrams/StressTestRequests.png>] [18]
+("system architecture document.aux" (epsf.aux)) ) 
 Here is how much of TeX's memory you used:
  2778 strings out of 493303
  46404 string characters out of 3138859
@@ -324,16 +336,16 @@ Here is how much of TeX's memory you used:
  9465 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,39p,856b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "system architecture document.pdf" (17 pages, 1682048 bytes).
+<C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "system architecture document.pdf" (18 pages, 1682541 bytes).
 
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
