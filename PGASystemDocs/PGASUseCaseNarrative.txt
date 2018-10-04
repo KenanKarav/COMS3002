@@ -1,0 +1,9 @@
+A PGO downloads an application from SIMS. The application with additional documents is then uploaded onto PGA System wihth summarised information entered into the system, creating an Application. Once uploaded,
+the PGO then verifies all documentation for the relevant Application.
+The PGO will additionally enter in Supervisors(s). An email will then be sent
+to Supervisor(s), notifying them to review the Application. The Supervisor will
+review the Application and make a decision on whether to Accept or Reject the
+Application with comments. The PGC will then be notfied that a Supervisor
+has made a decision and is pending their approval. The PGC notes the Supervisor’s
+decision, reviews the documentation and makes a PGC decision with comments. The
+PGO is then notified and updates the Application accordingly with the relevant decision.
