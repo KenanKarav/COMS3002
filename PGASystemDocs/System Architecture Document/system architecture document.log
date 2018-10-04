@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  5 OCT 2018 01:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  5 OCT 2018 01:17
 entering extended mode
 **"./system architecture document.tex"
 ("system architecture document.tex"
@@ -303,13 +303,13 @@ Package pdftex.def Info: "Diagrams/PGCViewApplication".png  used on input line
 219.
 (pdftex.def)             Requested size: 360.00623pt x 187.54474pt.
  [15 <./Diagrams/SupervisorViewApplication.png> <./Diagrams/PGCHomePage.png>]
-<"Diagrams/PGASEntityRelationshipDiagram".png, id=84, 789.95125pt x 696.6025pt>
+<"Diagrams/PGASEntityRelationshipDiagram".png, id=84, 771.88374pt x 668.4975pt>
 
 File: "Diagrams/PGASEntityRelationshipDiagram".png Graphic file (type png)
 <use "Diagrams/PGASEntityRelationshipDiagram".png>
 Package pdftex.def Info: "Diagrams/PGASEntityRelationshipDiagram".png  used on 
 input line 226.
-(pdftex.def)             Requested size: 359.9949pt x 317.45421pt.
+(pdftex.def)             Requested size: 359.99402pt x 311.77637pt.
 
 Overfull \hbox (15.76797pt too wide) in paragraph at lines 224--228
 \OT1/cmr/m/n/10.95 This sec-tion con-tains the Entity-Relationship Di-a-gram fo
@@ -333,7 +333,7 @@ e1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "system architecture document.pdf" (18 pages, 1825997 bytes).
+Output written on "system architecture document.pdf" (18 pages, 1819393 bytes).
 
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
