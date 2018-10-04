@@ -58,7 +58,8 @@ The following lists the stakeholders in the development of this system.
 	
 \end{itemize}
 \subsection{Overview}
-describe the structure and content of rest of report
+The rest of the document will briefly discuss the architectural goals and constraints of the environment followed by a brief description of the chosen architectural views and patterns. The architectural views will then be displayed in detail. Finally, the performance and quality of the system will be discussed.
+
 \section{Architectural Goals and Constraints}
 The architecture of the system has been designed to achieve the following objectives:
 \begin{enumerate}
@@ -107,20 +108,45 @@ This framework and design pattern was chosen to enhance modularity of the system
 	
 \end{itemize} 
  
-\subsection{Architectural Process}
-what process was used to design the system.
 \section{Architectural View Decomposition}
 \subsection{Use-Case View}
 use case diagram plus short description of each use case.
 \subsubsection{Architecturally Significant Use Cases}
 describe in detail the use cases that use the most critical part of the system (possibly fully dressed use cases for this)
 \subsection{Design View}
+\subsubsection{Class Diagram}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{Diagrams/ClassDiagram}}
+	\caption{Class Diagram}
+	
+\paragraph{Description}
+The classes are described as follows:
+\begin{itemize}
+	\item AuthController: Handles authentication and displays the login page.
+	\item HomeController: The Controller for the home screens.
+	\item ApplicationController: Handles all Application related operations i.e create, view, update.
+	\item Application: The data structure that stores an application.
+	\item Programme: Stores the application's course option.
+	\item ApplicationFiles: Stores file metadata and the URL to the file on the Blob storage server.
+	\item Users: Stores system user data.
+	\item Position: Stores a user's position i.e PGO, Supervisor or PGC.
+\end{itemize}
+\end{figure}
+\subsubsection{Hardware Architecture Diagram}
 \begin{figure}[H]
 	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{Diagrams/HardwareArchitecture}}
 	\caption{Hardware Architecture Diagram}
 \end{figure}
+\paragraph{Description}
+The hardware architecture consists of:
 
-architecture diagram, class view
+\begin{itemize}
+	\item The clients web browser as the layer presenting the PGA System.
+\item An Azure web app service that hosts and executes the ASP.NET Core MVC web application (PGA System).
+\item An Azure Database server that contains a SQL database where application details are stored. 
+\item An Azure Storage Blob where application documents are stored.
+
+\end{itemize}
 \subsubsection{Overview}
 \subsection{Process View}
 \begin{figure}[H]
@@ -202,29 +228,29 @@ This section contains the Entity-Relationship Diagram for the System Database:
 \end{figure}
 
 
-\section{Performance}
-A stress test was conducted on the system. The Microsoft Azure performance testing framework was used. 
-\subsection{Test Details and Results} The test details and results are as follows:
-\begin{figure}[H]
-	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/StressTestEssentials"}}
-	\caption{Test Details}
-\end{figure}
+\section{Performance and Unit Testing}
 
-\begin{figure}[H]
-	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/StressTestTemporalPlot"}}
-	\caption{Temporal Plot of Average response time, the user load and the requests per second.}
-\end{figure}
-\begin{figure}[H]
-	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/StressTestRequests"}}
-	\caption{Test Results with 100\% request success.}
-\end{figure}
+\subsection{Performance Test Details and Results} 
+A stress test was conducted on the system. The Microsoft Azure performance testing framework was used. 
+The stress test simulated 40 concurrent users, each sending an average of 5 requests per second for a full minute.
+The test results were as follows:
+\begin{itemize}
+	\item Average response time: 0.08 seconds
+	\item Average total requests per second: 194.67
+	\item Total requests: 10927
+	\item Successful requests: 10927
+	\item Failed requests: 0 
+\end{itemize}
+\subsection{Unit Testing}
+A total of four test cases were implemented to show the feasibility of the testing framework. In future development of the system, it is expected that many more Unit tests will be implemented.
+
+
 \section{Quality}
 This sections describes system quality concerns for future development on the system:
 \begin{itemize}
 	\item Use bundling and minifying of static css/js files to improve performance, see microsoft docs.
 	\item Use caution when storing binary data in relational databases, as it can adversely impact performance.
-	\item Using base64 string from byte array impacts page load times severely (5-10 second load time on a 214kb file). 
-	
+	\item 
 \end{itemize}
 
 
