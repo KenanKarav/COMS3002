@@ -1,5 +1,6 @@
 ﻿@model UploadApplicationModel
 
+<!--Web page to create a PG Application with respective documents, done by PGO-->
 
 <form asp-controller="Application" asp-action="UploadNewFile"
       method="post"
@@ -49,6 +50,13 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Application Files</div>
                     <div class="panel-content-padding">
+
+                        <div class="form-group">
+                            <label asp-for="Title"></label>
+                            <input asp-for="Title" class="form-control" value="Curriculum Vitae" readonly="readonly" />
+                            <input type="file" name="file" />
+                        </div>
+
                         <div class="form-group">
                             <label asp-for="Title"></label>
                             <input asp-for="Title" class="form-control" value="Previous Qualification" readonly="readonly" />
@@ -85,6 +93,10 @@
 </form>
 
 <script>
+ /* 
+    This script disables the page by creating a a div box over the screen 
+    and adds a loading spinner
+ */ 
 document.getElementById("btn-upload").onclick = disableScreen;
 
 function disableScreen() {
@@ -101,19 +113,6 @@ function disableScreen() {
       var div3= document.createElement("div");
     div3.className += "ring-1";
     div2.appendChild(div3);
-
-
-
-    var para = document.createElement("p");
-var node = document.createTextNode("Submitting Application.");
-para.appendChild(node);
-
-var element = document.getElementById("div1");
-element.appendChild(para);
-
-
-
-
 
 }
 

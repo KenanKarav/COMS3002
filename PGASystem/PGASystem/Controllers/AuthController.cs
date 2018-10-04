@@ -39,17 +39,25 @@ namespace CaseManagement.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+
+        /* Login verifying user credentials 
+         * and storing credentials in a cookie
+         */
+         
         [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(string email, string password)
         {
+            /*retrieve user by email*/
             var user = _ctx.Users
                            .Include(us => us.Position)
                            .SingleOrDefault(m => m.Email == email);
           
             if(user != null)
             {
+                /*check if inputted password matches user password */
                 if (password == user.Password)
                 {
+                    /*Object containing list of identification characteristics for a specific user*/
                     var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.NameIdentifier, Convert.ToString(user.Id), ClaimValueTypes.Integer, ""),
@@ -60,8 +68,8 @@ namespace CaseManagement.Controllers
                 };
                     var userIdentity = new ClaimsIdentity(claims, "SecureLogin");
                     var userPrincipal = new ClaimsPrincipal(userIdentity);
-                    
 
+                    /*Create cookie*/
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
                         userPrincipal,
                         new AuthenticationProperties
@@ -87,10 +95,6 @@ namespace CaseManagement.Controllers
 
       
 
-        public IActionResult Denied()
-        {
-            return View();
-        }
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();

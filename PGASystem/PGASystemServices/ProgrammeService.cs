@@ -16,8 +16,8 @@ namespace PGASystemServices
             _ctx = ctx;
         }
 
-    
 
+        /* This method retrieves all the programmes in the context */
         public List<SelectListItem> GetAllProgrammes()
         {
             return _ctx.Programme.AsNoTracking().Select(u => new SelectListItem()

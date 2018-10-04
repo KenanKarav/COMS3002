@@ -41,7 +41,6 @@ namespace PGASystem.Controllers
         [Authorize]
         public IActionResult Index()
         {
-
             return View();
         }
 
@@ -104,8 +103,8 @@ namespace PGASystem.Controllers
             }
 
 
-
-            _email.sendEmail(application.Supervisor.Email, application.Supervisor.FirstName, "Pending Supervisor approval", "Please view https://localhost:5001/ViewFiles/" + _application.GetLastApplicationId());
+            /* Use service to send email to supervisor */ 
+            _email.sendEmail(application.Supervisor.Email, application.Supervisor.FirstName, "Pending Supervisor approval", "Please view https://pgasystem.azurewebsites.net/ViewFiles/?applicationId=" + _application.GetLastApplicationId());
             return RedirectToAction("Create");
         }
 
@@ -127,6 +126,8 @@ namespace PGASystem.Controllers
         [HttpPost]
         public IActionResult SupervisorApproval(ApplicationViewModel avm)
         {
+
+            /* Set supervisor approval to values retrived from HttpPost */ 
             _application.SetSupervisorApproval(avm.application.Id, avm.application.SupervisorApproval);
             if(avm.application.SupervisorApproval == "Reject")
             {
@@ -134,7 +135,10 @@ namespace PGASystem.Controllers
             }
             _application.SetApplicationStatus(avm.application.Id, "Pending_PGC_Approval");
 
-       
+
+         
+      
+
             return RedirectToAction("SupervisorViewApplications");
         }
 
@@ -142,6 +146,8 @@ namespace PGASystem.Controllers
         [HttpPost]
         public  IActionResult PGCApproval(ApplicationViewModel avm)
         {
+
+            /* Set PGC approval to values retrived from HttpPost */
             _application.SetPGCApproval(avm.application.Id, avm.application.PGCApproval);
             if (avm.application.PGCApproval == "Reject")
             {

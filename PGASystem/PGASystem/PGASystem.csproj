@@ -22,6 +22,7 @@
     <Content Remove="Views\Home\Contact.cshtml" />
     <Content Remove="Views\Home\Privacy.cshtml" />
     <Content Remove="Views\Application\Index.cshtml" />
+    <Content Remove="Views\Auth\Denied.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Application\" />

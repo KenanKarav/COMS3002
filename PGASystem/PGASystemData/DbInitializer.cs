@@ -6,6 +6,8 @@ namespace PGASystemData
         public static void Initialize(PGAContext context)
         {
 
+            /*Module not used in deployment, was used during development*/
+
             /*var fileList = new List<ApplicationFiles>()
             {
                  new ApplicationFiles()

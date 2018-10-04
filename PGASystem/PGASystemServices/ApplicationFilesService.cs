@@ -13,6 +13,7 @@ namespace PGASystemServices
     public class ApplicationFilesService : IApplicationFiles
     {
         private readonly PGAContext _ctx; 
+
         public ApplicationFilesService(PGAContext ctx)
         {
             _ctx = ctx;
@@ -28,6 +29,7 @@ namespace PGASystemServices
             return blobClient.GetContainerReference(containerName);
         }
 
+        /* Method adds a file to an Application. Note: URI is from Azure BLOB Storage */
         public async Task SetFile(string title, Uri uri)
         {
 
@@ -46,7 +48,7 @@ namespace PGASystemServices
             _ctx.ApplicationFile.Add(file);
             await _ctx.SaveChangesAsync();
         }
-
+        /* Method gets all files pertaining to a specific application */
         public List<SelectListItem> GetFilesForApplication(int applicationId)
         {
            

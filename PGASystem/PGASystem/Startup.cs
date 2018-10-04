@@ -37,7 +37,7 @@ namespace PGASystem
                 options.AccessDeniedPath = new PathString("/auth/denied");
             });
 
-            // Add application service 
+            // Add application services 
             services.AddScoped<IApplication, ApplicationService>();
             services.AddScoped<IApplicationFiles, ApplicationFilesService>();
             services.AddScoped<IUser, UserService>();
