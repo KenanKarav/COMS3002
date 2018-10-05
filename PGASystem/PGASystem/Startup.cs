@@ -30,12 +30,7 @@ namespace PGASystem
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-            .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme,
-            options =>
-            {
-                options.LoginPath = new PathString("/auth/login");
-                options.AccessDeniedPath = new PathString("/auth/denied");
-            });
+            .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme);
 
             // Add application services 
             services.AddScoped<IApplication, ApplicationService>();
