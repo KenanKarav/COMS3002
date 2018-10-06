@@ -2,20 +2,12 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[labelformat= empty]{caption}
-\begin{document}
-\include{epsf}
-\thispagestyle{empty}
-\title{{\LARGE\bf System Architecture Document}}
-\author{{\Large\it Authors} \\
-\vspace*{2.5in} 
-\mbox{} \\
-{\Large Title of Project}
-\vspace*{2.5in} 
-\mbox{} \\
-\date{\today}
-}
-\maketitle
 
+\title{ System Architecture Document}
+\author{ Kenan Karavoussanos \\ Shaylin Pillay \\ Preshen Goobiah \\ Marc Karp}
+\date{\today}
+\begin{document}
+\maketitle
 \tableofcontents
 
 %\bibliographystyle{plain}
@@ -31,34 +23,9 @@ This introduction provides a brief overview of System Architecture Document for 
 \subsection{Scope}
 The scope of this document is the design and implementation of the software based Post Graduate Application Approval System which consists of the application upload by the Post Graduate Officer, the intermediary application review by the Supervisor and the final application review made by the Post Graduate Coordinator.
 
-\subsection{Problem Statement}
-Currently, the School of EIE uses a paper based method for the approval of post graduate applications. The primary reasons for this, is as a result of academics not being trained on the SIMS system and paper trail to be kept for transparency purposes. This paper based system involves manual filling and can result in misplacement of documentation. Supervisors are contacted to review applications when the PGO physically sees them or sends an email. The turnaround time of approval of a PG application, the physical space manual filing takes up and the risk for misplacement of documents are all issues with the current process. In order to alleviate these issues a web based system will be used as a central repository for all applications to the School of EIE and manage the process of approval within the school.
-\subsection{Project Objectives}
-\subsection{Stakeholders}
-The following lists the stakeholders in the development of this system.
 
-\paragraph{School of Electrical and Information Engineering}
-\begin{itemize}
-	
-	
-	
-	\item Mrs. Mumtaz Adam: The post graduate officer (PGO).
-	
-	\item Professor Ling Cheng: The post graduate coordinator (PGC).
-	
-	\item Supervisors: Various academics within the school who shall supervise applicants.
-	
-	\item The Applicant.
-	
-\end{itemize}
-
-\paragraph{Development Team}
-\begin{itemize}
-	\item Professor Ekow Otoo: The product owner.
-	
-\end{itemize}
 \subsection{Overview}
-The rest of the document will briefly discuss the architectural goals and constraints of the environment followed by a brief description of the chosen architectural views and patterns. The architectural views will then be displayed in detail. Finally, the performance and quality of the system will be discussed.
+The rest of the document will briefly discuss the architectural goals and constraints of the environment followed by a brief description of the chosen architectural views and patterns. The architectural views will then be displayed in detail. Finally, the performance evaluation of the system and a description of the software testing will be discussed.
 
 \section{Architectural Goals and Constraints}
 The architecture of the system has been designed to achieve the following objectives:
@@ -74,19 +41,19 @@ The significant constraints kept in mind when developing the system were as foll
 
 \begin{enumerate}
 	\item Security
-	\item Ease of Use
-	\item Paperless
+\item Ease of Use
+\item Paperless
 \end{enumerate}
 \section{Architectural Representation}
 \subsection{Architectural Views}
 The development of the system has various contributors each with their own priorities and tasks. As such, the system needs to be documented from various perspectives to aid, and eventually validate, the completion of a contributor's tasks. The system architecture shall be represented from the following views:
 
 \begin{enumerate}
-	\item Use Case View: This defines the high-level interactions between various actors and the system.
-	\item Design View: This contains the class and architecture diagrams of the system.
-	\item Process View: This displays the processes within the system that combine to perform the various interactions defined in the Use Case View.
-	\item Component View: This displays the User Interface of the system.
-	\item Database View: This contains the Entity-Relationship Diagram for the system database.
+\item Use Case View: This defines the high-level interactions between various actors and the system.
+\item Design View: This contains the class and architecture diagrams of the system.
+\item Process View: This displays the processes within the system that combine to perform the various interactions defined in the Use Case View.
+\item Component View: This displays the User Interface of the system.
+\item Database View: This contains the Entity-Relationship Diagram for the system database.
 \end{enumerate} 
 \subsection{Architectural Design Patterns}
 ASP.NET Core framework was used in the implementation of the system. This follows the Model-View-Controller(MVC) design pattern. This design pattern separates the project into three distinct layers:
@@ -110,8 +77,11 @@ This framework and design pattern was chosen to enhance modularity of the system
  
 \section{Architectural View Decomposition}
 \subsection{Use-Case View}
-use case diagram plus short description of each use case.
-\subsubsection{Architecturally Significant Use Cases}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{Diagrams/PGASUseCases}}
+	\caption{Use Case Diagram}
+\end{figure}
+\subsubsection{Use Case Narrative}
 describe in detail the use cases that use the most critical part of the system (possibly fully dressed use cases for this)
 \subsection{Design View}
 \subsubsection{Class Diagram}
@@ -141,18 +111,21 @@ The classes are described as follows:
 The hardware architecture consists of:
 
 \begin{itemize}
-	\item The clients web browser as the layer presenting the PGA System.
+\item The clients web browser as the layer presenting the PGA System.
 \item An Azure web app service that hosts and executes the ASP.NET Core MVC web application (PGA System).
 \item An Azure Database server that contains a SQL database where application details are stored. 
-\item An Azure Storage Blob where application documents are stored.
+\item An Azure Blob Storage server where application documents are stored.
 
 \end{itemize}
-\subsubsection{Overview}
 \subsection{Process View}
+The following activity diagrams describe the dynamic interactions of the two most architecturally significant use cases, namely, Create Application and Update Application.
+\subsubsection{Create Application}
+
 \begin{figure}[H]
 	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/ActivityDiagramCreateApplication"}}
 	\caption{Activity Diagram for the Create Application Use Case}
 \end{figure}
+\subsubsection{Update Application}
 \begin{figure}[H]
 	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{"Diagrams/ActivityDiagramUpdateApplication"}}
 	\caption{Activity Diagram for the Update Application Use Case}
@@ -244,14 +217,31 @@ The test results were as follows:
 \subsection{Unit Testing}
 A total of four test cases were implemented to show the feasibility of the testing framework. In future development of the system, it is expected that many more Unit tests will be implemented.
 
+The following Unit Test Scenarios have been tested:
 
-\section{Quality}
-This sections describes system quality concerns for future development on the system:
 \begin{itemize}
-	\item Use bundling and minifying of static css/js files to improve performance, see microsoft docs.
-	\item Use caution when storing binary data in relational databases, as it can adversely impact performance.
-	\item 
+\item Get Application:
+
+This scenario ensures that users can view applications seemlessly when required. Two test cases are used to achieve this. The first test checks if the system returns a valid applicant by passing an application Id. The second test, tests that system throws a valid exception with a description if an invalid (negative id or non-existent) applicationId is accessed. Both these tests ensure that the prototype functions correctly in every scenario that requires it to retrieve an application.
+
+
+\item Get Files:
+
+This scenario ensures that all corresponding applicant documents can be viewed by the user. Three test cases are used to achieve this. The first test tests if the correct number of files is returned for valid application Id. This is important to ensure that files from an applicant do not go missing. The second case tests if the correct file data is returned for valid application Id. This is important to ensure that documents from applicants do not get mixed up. Lastly, the third test tests if a valid exception is thrown if an application does not exist. All these tests in conjunction ensure that the prototype works correctly when required to retrieve application files.
+
+
+\item Add Application:
+
+This scenario tests whether a PGO can add an application to the system without any errors. One test case is used for this, which tests if the application has been added to the context. This is important as the test will fail if the application is not added and hence it ensures that applications do not go missing when added to the system.
+
+
+\item Get Supervisor:
+
+This scenario tests if a valid supervisor is returned when requested by passing a supervisor Id. This ensures that supervisors can be correctly allocated and notified when required. Two test cases are used to achieve this. The first tests if a valid supervisor is returned when entering a supervisor id and the second tests if an error is thrown if an invalid supervisor Id is entered. This is important to ensure that supervisors are correctly identified by their Id in the system.
+
+
 \end{itemize}
+
 
 
 \end{document}

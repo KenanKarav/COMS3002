@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  5 OCT 2018 01:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  6 OCT 2018 20:57
 entering extended mode
 **"./system architecture document.tex"
 ("system architecture document.tex"
@@ -70,21 +70,21 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@ContinuedFloat=\count88
 Package caption Info: float package is loaded.
 )
-("system architecture document.aux" (epsf.aux))
+("system architecture document.aux")
 \openout1 = `"system architecture document.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
 
 (C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -153,190 +153,181 @@ G,.JBIG2,.JB2,.eps]
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-\openout2 = `epsf.aux'.
-
-
-(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\generic\epsf\epsf.tex
-This is `epsf.tex' v2.7.4 <14 February 2011>
-\epsffilein=\read1
-\epsfframemargin=\dimen114
-\epsfframethickness=\dimen115
-\epsfrsize=\dimen116
-\epsftmp=\dimen117
-\epsftsize=\dimen118
-\epsfxsize=\dimen119
-\epsfysize=\dimen120
-\pspoints=\dimen121
-)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 17.
+(Font)              <12> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 17.
+(Font)              <8> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 17.
- ("system architecture document.toc" [1
+(Font)              <6> on input line 10.
 
-
-
-{C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("system architecture document.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 2.
-)
+ [1
+
+{C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
 \tf@toc=\write3
 \openout3 = `"system architecture document.toc"'.
 
  [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
  [4] [5]
-<Diagrams/ClassDiagram.jpg, id=23, 1278.7775pt x 825.0825pt>
+<Diagrams/PGASUseCases.png, id=23, 840.13875pt x 552.0625pt>
+File: Diagrams/PGASUseCases.png Graphic file (type png)
+<use Diagrams/PGASUseCases.png>
+Package pdftex.def Info: Diagrams/PGASUseCases.png  used on input line 105.
+(pdftex.def)             Requested size: 359.9963pt x 236.5567pt.
+ [6 <./Diagrams/PGASUseCases.png>]
+<Diagrams/ClassDiagram.jpg, id=29, 1278.7775pt x 825.0825pt>
 File: Diagrams/ClassDiagram.jpg Graphic file (type jpg)
 <use Diagrams/ClassDiagram.jpg>
-Package pdftex.def Info: Diagrams/ClassDiagram.jpg  used on input line 119.
+Package pdftex.def Info: Diagrams/ClassDiagram.jpg  used on input line 113.
 (pdftex.def)             Requested size: 360.00652pt x 232.2805pt.
- [6]
+ [7]
 Overfull \vbox (10.32468pt too high) has occurred while \output is active []
 
 
-[7 <./Diagrams/ClassDiagram.jpg>]
-<Diagrams/HardwareArchitecture.jpeg, id=31, 758.835pt x 519.3804pt>
+[8 <./Diagrams/ClassDiagram.jpg>]
+<Diagrams/HardwareArchitecture.jpeg, id=37, 758.835pt x 519.3804pt>
 File: Diagrams/HardwareArchitecture.jpeg Graphic file (type jpg)
 <use Diagrams/HardwareArchitecture.jpeg>
 Package pdftex.def Info: Diagrams/HardwareArchitecture.jpeg  used on input line
- 137.
+ 131.
 (pdftex.def)             Requested size: 359.9988pt x 246.39917pt.
-<"Diagrams/ActivityDiagramCreateApplication".png, id=32, 1100.11pt x 972.63374p
+<"Diagrams/ActivityDiagramCreateApplication".png, id=38, 1100.11pt x 972.63374p
 t>
 File: "Diagrams/ActivityDiagramCreateApplication".png Graphic file (type png)
 <use "Diagrams/ActivityDiagramCreateApplication".png>
 Package pdftex.def Info: "Diagrams/ActivityDiagramCreateApplication".png  used 
-on input line 153.
+on input line 149.
 (pdftex.def)             Requested size: 359.9991pt x 318.28387pt.
-<"Diagrams/ActivityDiagramUpdateApplication".png, id=34, 1162.3425pt x 1218.552
+ [9 <./Diagrams/HardwareArchitecture.jpeg>]
+<"Diagrams/ActivityDiagramUpdateApplication".png, id=42, 1162.3425pt x 1218.552
 5pt>
 File: "Diagrams/ActivityDiagramUpdateApplication".png Graphic file (type png)
 <use "Diagrams/ActivityDiagramUpdateApplication".png>
 Package pdftex.def Info: "Diagrams/ActivityDiagramUpdateApplication".png  used 
-on input line 157.
+on input line 154.
 (pdftex.def)             Requested size: 360.0032pt x 377.41269pt.
- [8 <./Diagrams/HardwareArchitecture.jpeg>]
-[9 <./Diagrams/ActivityDiagramCreateApplication.png>]
-<"Diagrams/Loginscreen".png, id=42, 1011.78pt x 581.92406pt>
+
+[10 <./Diagrams/ActivityDiagramCreateApplication.png>]
+<"Diagrams/Loginscreen".png, id=47, 1011.78pt x 581.92406pt>
 File: "Diagrams/Loginscreen".png Graphic file (type png)
 <use "Diagrams/Loginscreen".png>
-Package pdftex.def Info: "Diagrams/Loginscreen".png  used on input line 165.
+Package pdftex.def Info: "Diagrams/Loginscreen".png  used on input line 162.
 (pdftex.def)             Requested size: 359.99493pt x 207.05066pt.
- [10 <./Diagrams/ActivityDiagramUpdateApplication.png>]
-<"Diagrams/PGOHomePage".png, id=47, 979.40906pt x 483.30562pt>
+ [11 <./Diagrams/ActivityDiagramUpdateApplication.png>]
+<"Diagrams/PGOHomePage".png, id=52, 979.40906pt x 483.30562pt>
 File: "Diagrams/PGOHomePage".png Graphic file (type png)
 <use "Diagrams/PGOHomePage".png>
-Package pdftex.def Info: "Diagrams/PGOHomePage".png  used on input line 170.
+Package pdftex.def Info: "Diagrams/PGOHomePage".png  used on input line 167.
 (pdftex.def)             Requested size: 359.9995pt x 177.6477pt.
-<"Diagrams/CreateApplication".png, id=48, 975.645pt x 478.78876pt>
+<"Diagrams/CreateApplication".png, id=53, 975.645pt x 478.78876pt>
 File: "Diagrams/CreateApplication".png Graphic file (type png)
 <use "Diagrams/CreateApplication".png>
 Package pdftex.def Info: "Diagrams/CreateApplication".png  used on input line 1
-75.
+72.
 (pdftex.def)             Requested size: 360.00044pt x 176.66689pt.
- [11 <./Diagrams/Loginscreen.png> <./Diagrams/PGOHomePage.png>]
-<"Diagrams/PGOViewApplications".png, id=54, 977.15062pt x 492.33937pt>
+ [12 <./Diagrams/Loginscreen.png> <./Diagrams/PGOHomePage.png>]
+<"Diagrams/PGOViewApplications".png, id=59, 977.15062pt x 492.33937pt>
 File: "Diagrams/PGOViewApplications".png Graphic file (type png)
 <use "Diagrams/PGOViewApplications".png>
 Package pdftex.def Info: "Diagrams/PGOViewApplications".png  used on input line
- 182.
+ 179.
 (pdftex.def)             Requested size: 360.00433pt x 181.38892pt.
-<"Diagrams/PGOViewApplication".png, id=55, 967.36406pt x 499.11469pt>
+<"Diagrams/PGOViewApplication".png, id=60, 967.36406pt x 499.11469pt>
 File: "Diagrams/PGOViewApplication".png Graphic file (type png)
 <use "Diagrams/PGOViewApplication".png>
 Package pdftex.def Info: "Diagrams/PGOViewApplication".png  used on input line 
-186.
+183.
 (pdftex.def)             Requested size: 360.00037pt x 185.74336pt.
-<"Diagrams/PGOCompletedApplications".png, id=56, 967.36406pt x 486.31688pt>
+<"Diagrams/PGOCompletedApplications".png, id=61, 967.36406pt x 486.31688pt>
 File: "Diagrams/PGOCompletedApplications".png Graphic file (type png)
 <use "Diagrams/PGOCompletedApplications".png>
 Package pdftex.def Info: "Diagrams/PGOCompletedApplications".png  used on input
- line 190.
+ line 187.
 (pdftex.def)             Requested size: 360.00037pt x 180.98073pt.
- [12 <./Diagrams/CreateApplication.png> <./Diagrams/PGOViewApplications.png>]
-<"Diagrams/SupervisorHomePage".png, id=62, 970.3753pt x 441.14813pt>
+ [13 <./Diagrams/CreateApplication.png> <./Diagrams/PGOViewApplications.png>]
+<"Diagrams/SupervisorHomePage".png, id=68, 970.3753pt x 441.14813pt>
 File: "Diagrams/SupervisorHomePage".png Graphic file (type png)
 <use "Diagrams/SupervisorHomePage".png>
 Package pdftex.def Info: "Diagrams/SupervisorHomePage".png  used on input line 
-196.
+193.
 (pdftex.def)             Requested size: 360.01048pt x 163.66652pt.
- [13 <./Diagrams/PGOViewApplication.png> <./Diagrams/PGOCompletedApplications.p
+ [14 <./Diagrams/PGOViewApplication.png> <./Diagrams/PGOCompletedApplications.p
 ng>]
-<"Diagrams/SupervisorViewApplications".png, id=69, 975.645pt x 441.90094pt>
+<"Diagrams/SupervisorViewApplications".png, id=74, 975.645pt x 441.90094pt>
 File: "Diagrams/SupervisorViewApplications".png Graphic file (type png)
 <use "Diagrams/SupervisorViewApplications".png>
 Package pdftex.def Info: "Diagrams/SupervisorViewApplications".png  used on inp
-ut line 201.
+ut line 198.
 (pdftex.def)             Requested size: 360.00044pt x 163.05576pt.
-<"Diagrams/SupervisorViewApplication".png, id=70, 954.56625pt x 494.59781pt>
+<"Diagrams/SupervisorViewApplication".png, id=75, 954.56625pt x 494.59781pt>
 File: "Diagrams/SupervisorViewApplication".png Graphic file (type png)
 <use "Diagrams/SupervisorViewApplication".png>
 Package pdftex.def Info: "Diagrams/SupervisorViewApplication".png  used on inpu
-t line 205.
+t line 202.
 (pdftex.def)             Requested size: 359.98607pt x 186.52274pt.
- [14 <./Diagrams/SupervisorHomePage.png> <./Diagrams/SupervisorViewApplications
+ [15 <./Diagrams/SupervisorHomePage.png> <./Diagrams/SupervisorViewApplications
 .png>]
-<"Diagrams/PGCHomePage".png, id=76, 963.6pt x 490.83376pt>
+<"Diagrams/PGCHomePage".png, id=81, 963.6pt x 490.83376pt>
 File: "Diagrams/PGCHomePage".png Graphic file (type png)
 <use "Diagrams/PGCHomePage".png>
-Package pdftex.def Info: "Diagrams/PGCHomePage".png  used on input line 210.
+Package pdftex.def Info: "Diagrams/PGCHomePage".png  used on input line 207.
 (pdftex.def)             Requested size: 359.99641pt x 183.37317pt.
-<"Diagrams/PGCViewApplications".png, id=77, 972.63374pt x 497.60907pt>
+<"Diagrams/PGCViewApplications".png, id=82, 972.63374pt x 497.60907pt>
 File: "Diagrams/PGCViewApplications".png Graphic file (type png)
 <use "Diagrams/PGCViewApplications".png>
 Package pdftex.def Info: "Diagrams/PGCViewApplications".png  used on input line
- 215.
+ 212.
 (pdftex.def)             Requested size: 359.98758pt x 184.1732pt.
-<"Diagrams/PGCViewApplication".png, id=78, 952.30782pt x 496.10344pt>
+<"Diagrams/PGCViewApplication".png, id=83, 952.30782pt x 496.10344pt>
 File: "Diagrams/PGCViewApplication".png Graphic file (type png)
 <use "Diagrams/PGCViewApplication".png>
 Package pdftex.def Info: "Diagrams/PGCViewApplication".png  used on input line 
-219.
+216.
 (pdftex.def)             Requested size: 360.00623pt x 187.54474pt.
- [15 <./Diagrams/SupervisorViewApplication.png> <./Diagrams/PGCHomePage.png>]
-<"Diagrams/PGASEntityRelationshipDiagram".png, id=84, 771.88374pt x 668.4975pt>
+ [16 <./Diagrams/SupervisorViewApplication.png> <./Diagrams/PGCHomePage.png>]
+<"Diagrams/PGASEntityRelationshipDiagram".png, id=89, 771.88374pt x 668.4975pt>
 
 File: "Diagrams/PGASEntityRelationshipDiagram".png Graphic file (type png)
 <use "Diagrams/PGASEntityRelationshipDiagram".png>
 Package pdftex.def Info: "Diagrams/PGASEntityRelationshipDiagram".png  used on 
-input line 226.
+input line 223.
 (pdftex.def)             Requested size: 359.99402pt x 311.77637pt.
 
-Overfull \hbox (15.76797pt too wide) in paragraph at lines 224--228
+Overfull \hbox (15.76797pt too wide) in paragraph at lines 221--225
 \OT1/cmr/m/n/10.95 This sec-tion con-tains the Entity-Relationship Di-a-gram fo
 r the Sys-tem Database: 
  []
 
-[16 <./Diagrams/PGCViewApplications.png> <./Diagrams/PGCViewApplication.png>]
-[17 <./Diagrams/PGASEntityRelationshipDiagram.png>] [18]
-("system architecture document.aux" (epsf.aux)) ) 
+[17 <./Diagrams/PGCViewApplications.png> <./Diagrams/PGCViewApplication.png>]
+[18 <./Diagrams/PGASEntityRelationshipDiagram.png>] [19] [20]
+("system architecture document.aux") ) 
 Here is how much of TeX's memory you used:
- 2773 strings out of 493303
- 46218 string characters out of 3138859
- 100994 words of memory out of 3000000
- 6291 multiletter control sequences out of 15000+200000
- 9465 words of font info for 33 fonts, out of 3000000 for 9000
+ 2704 strings out of 493303
+ 45217 string characters out of 3138859
+ 100790 words of memory out of 3000000
+ 6230 multiletter control sequences out of 15000+200000
+ 8811 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,39p,856b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "system architecture document.pdf" (18 pages, 1819393 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "system architecture document.pdf" (20 pages, 1857058 bytes).
 
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
