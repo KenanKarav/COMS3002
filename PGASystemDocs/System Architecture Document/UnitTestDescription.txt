@@ -1,0 +1,14 @@
+Unit test descriptions:
+   
+public void TestGetApplication()
+This test ensures that users can view applications seemlessly when required. Two sub-tests are used to achieve  this. The first sub-test checks if the GetApplicatoin method returns a valid applicant by passing an applicationId. The second test tests that GetApplication throws a valid exception with a description if an invalid (negative id or non-existent applicationId) applicationId is accessed. Both these tests ensure that the prototype functions correctly in every scenario that requires it to retrieve an application.
+
+
+public void TestGetAllFiles()
+This test ensures that all corresponding applicant documents can be viewed by the user. Three test cases are used to achieve this. The first test tests if the correct number of files is returned for valid application id. This is important to ensure that files from an applicant do not go missing. The second case tests if the correct file data is returned for valid application id. This is important to ensure that documents from applicants do not get mixed up. Lastly, the third test tests if a valid exception is thrown if an application does not exist. All these tests in conjunction ensure that the prototype works correctly when required to retreive application files.
+
+public void TestAddApplication()
+This scenario tests whether a PGO can add an applicaton to the system without any errors. One test case is used for this, which tests if the application has been added to the context. This is important as the test will fail if the application is not added and hence it ensures thatg applications do not go missing when added to the prototype.
+
+public void TestGetSupervisorById()
+This scenario tests if a valid supervisor is returned when requested by a supervisor id by a PGO. This ensures that supervisors can be correctly allocated and notified when required. Two test cases are used to achieve this. The first tests if a valid supervisor is returned when entering a supervisor id and the second tests if an error is thrown if an invalid supervisor id is entered. This is important to ensure that supervisors are correctly identified by their id in the prototype.
