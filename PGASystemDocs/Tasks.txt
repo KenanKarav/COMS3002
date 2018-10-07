@@ -1,0 +1,73 @@
+Kenan
+Latek document quality conversion assurance
+Problem scope determination and writing
+System features analysis and drafting
+Project requirements determination and writing
+Ensuring design conventions are met
+Model design
+Integration test development
+Quality assurance of software
+Ticket creation
+Authentication for login
+Authoring Quality
+Authoring component view
+Authoring achitechtural design patterns and views
+Authoring architechtural goals and constraints
+Authoring of scope of report
+Authoring purpose of report
+Creation of basic project structure
+FileUploader logic and validation
+Research of applicable testing framework
+
+Shaylin
+Purpose statement writing
+Problem statement determination and writing
+Initial document structuring
+Use case narrative development and writing
+Unit testing description reporting
+Task report drafting
+Quality Assurance of documents
+User stories drafting and report
+Author Deployment View
+Author Architectural Process
+FileUploader model required files
+ERD report creation
+ERD model creation and development
+
+Preshen
+Document conventions writing
+Product features determination and drafting
+Proposed software architechture model development
+Use case model development
+Design of views
+Relevant data capture
+Unit testing development
+Meeting administration
+Creation of basic project structure
+FileUploader logic and validation
+FileUploader front end components
+Email to supervisor and PGC generation
+Creating Pending applications View,Controller, Interface, Service
+Design Login
+Create Interfaces and Services for User and programme
+Create Models for Azure SQL DB
+Store files in Azure Blob Storage
+Setup Azure SQL Db and Azure Blob storage on MS Imagine Students Account 
+
+Marc
+Indentend audience and stakeholder determination and writing
+User classes determionation and drafting
+Proposed hardware architechture model development
+Hardware and softwware architechture model narrative writing
+Front end validation
+Verification of correct data transfer
+Ticket reviews
+Creation of basic project structure
+Database Applicatonj API service creation
+Email to supervisor and PGC generation
+Creating Pending applications View,Controller, Interface, Service
+Create Interfaces and Services for User and programme
+Design Login
+Create Models for Azure SQL DB
+Setup Azure SQL Db and Azure Blob storage on MS Imagine Students Account 
+Store files in Azure Blob Storage
