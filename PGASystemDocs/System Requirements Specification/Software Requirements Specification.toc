@@ -1,0 +1,33 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Purpose}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Intended audience and reading suggestions}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}Overall Description}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Product Perspective}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Product Features}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}User classes}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Operating Environment}{4}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Software Requirements}{4}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Hardware Requirements}{4}{subsubsection.2.4.2}
+\contentsline {subsection}{\numberline {2.5}System Requirements}{4}{subsection.2.5}
+\contentsline {section}{\numberline {3}System Features}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Document repository and management}{5}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1} Description: }{5}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2} Requirements:}{5}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Interface for the PGO to select a Research Group or an identified Supervisor}{5}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1} Description: }{5}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2} Requirements:}{5}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}Document verification system}{5}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1} Description: }{5}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2} Requirements:}{5}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Automatic Email Notification for users. }{5}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1} Description: }{5}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2} Requirements:}{6}{subsubsection.3.4.2}
+\contentsline {subsection}{\numberline {3.5}Bespoke views for each user class and Access permission management for each system view}{6}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1} Description: }{6}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2} Requirements:}{6}{subsubsection.3.5.2}
+\contentsline {subsection}{\numberline {3.6}Application minimum requirements description.}{6}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1} Description: }{6}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2} Requirements:}{6}{subsubsection.3.6.2}
+\contentsline {subsection}{\numberline {3.7}Application Summary}{6}{subsection.3.7}
+\contentsline {subsubsection}{\numberline {3.7.1} Description: }{6}{subsubsection.3.7.1}
+\contentsline {subsubsection}{\numberline {3.7.2} Requirements:}{6}{subsubsection.3.7.2}

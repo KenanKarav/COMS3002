@@ -1,0 +1,136 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\title{System Requirements Specification Document}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	linkcolor=blue,
+	filecolor = blue,
+	citecolor=red,
+	urlcolor=blue
+}
+\author{
+	Kenan Karavoussanos 1348582 \\Marc Karp 1356562 \\Preshen Goobiah 1355880\\Shaylin Pillay 1060478}
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents\newpage
+\section{Introduction}
+
+\subsection{Purpose}
+The purpose of this document is to provide a specification for the nn-line Post Graduate Application(PGA) Approval System for the School of Electrical and Information Engineering. This document will serve as a base for consideration of further design and development of the System. Additionally this documentation will provide initial elicited business rules. 
+
+The purpose of this project is to provide a centralized and paper free platform to replace the current paper-based approval process.  
+
+\subsection{Intended audience and reading suggestions}
+
+The software requirements document at this stage is intended for:
+\begin{itemize}
+\item	Developers who can review system requirements and consideration for further design and development of the system.
+\item	Clients who can verify the scope and requirements of the project.
+\end{itemize}
+
+\section{Overall Description}
+
+\subsection{Product Perspective}
+
+This system is self-contained and independent of any other systems or products available on the market.
+
+
+\subsection{Product Features}
+
+The basic version of the system should provide:
+\begin{itemize}
+\item	Applicant document repository and management.
+\item	Interface for the upload of Application related documentation.
+\item	Interface for the PGO to select a Research Group or an identified Supervisor
+\item	Automatic Email Notification for Users.
+\item	Bespoke views for each user class.
+\item 	Interface for the verification of Application documentation.
+\item 	Application Summary.
+\item 	Minimum application requirements display.
+\item	Access permission management for each system view.
+\end{itemize}
+\subsection{User classes}
+\begin{itemize}
+\item PGO  - The Post Graduate Officer who deals with the administration of each Application 
+\item Supervisor - The Research Group or Supervisor who evaluates whether they are willing to supervise the Applicant based on their Application.
+\item PGC - Post Graduate Coordinator who verifies that all university/faculty/school rules have been followed and acceptance criteria met. With consideration from the Supervisor and aforementioned rules and acceptance criteria signs off the final decision to accept or reject the application.
+
+\end{itemize}
+\subsection{Operating Environment}
+
+This proposed system is platform independent as it is an Azure web application accessed via browser. \\
+The web application is available at: \href{http://pgasystem.azurewebsites.net}{http://pgasystem.azurewebsites.net}
+
+\subsubsection{Software Requirements}
+
+\begin{itemize}
+	\item	The system should be an online web application.
+	\item 	The system should be platform independent.
+\end{itemize}
+\subsubsection{Hardware Requirements}
+Intentionally left blank
+
+\subsection{System Requirements}
+\begin{itemize}
+\item	The System should allow a PGO to capture PG Application supporting documents.
+\item   The System should allow a PGO to select a Supervisor or Research Group to forward the Application to. 
+\item   The System should allow for email notification to Applications for a Supervisor or Research Group of pending Applications to review.
+\item   The System should have custom views pertaining to each Actor of the System.
+\item	The System should enforce validation and verification on all data within the system.
+\end{itemize}
+
+\section{System Features}
+
+\subsection{Document repository and management}
+\subsubsection{ Description: }Upload Application document and supporting documents to a centralized repository
+\subsubsection{ Requirements:}
+\begin{itemize}
+\item  The System should allow a PGO to upload PG Application and supporting documents.
+\end{itemize}
+\subsection{Interface for the PGO to select a Research Group or an identified Supervisor}
+\subsubsection{ Description: }PGO selects a correct Research Group or Supervisor for a PG application
+\subsubsection{ Requirements:}
+\begin{itemize} 
+\item  The System should allow a PGO to select a Supervisor or research group to forward the Application to. 
+\end{itemize}
+\subsection{Document verification system}
+\subsubsection{ Description: }PGO verifies and labels application documents.
+\subsubsection{ Requirements:}
+\begin{itemize}
+\item  The system should allow a PGO label a document according to type.
+\item  The system should facilitate a means to verify that the necessary documents have been uploaded.
+\end{itemize}
+\subsection{Automatic Email Notification for users. }
+\subsubsection{ Description: }User is notified via email of pending tasks to complete for the PGA approval system.                          
+\subsubsection{ Requirements:} 
+\begin{itemize}
+\item The system should allow for email notification to a Supervisor or the PGC of an application to review.
+\item The system should allow for email notification to the PGC when an accept or reject decision on an application has been made by a supervisor.
+\item The system should allow for email notification to a PGO when a final decision has been made by the PGC.
+\end{itemize}
+\subsection{Bespoke views for each user class and Access permission management for each system view}
+\subsubsection{ Description: }Allow different users to access the system
+\subsubsection{ Requirements:} 
+\begin{itemize}
+\item The System should have custom views pertaining to each Actor of the System. 
+\item The System should enforce validation and verification on all data within the system.
+\end{itemize}
+\subsection{Application minimum requirements description.}
+\subsubsection{ Description: }The minimum requirements for application approval shall be displayed as a reminder for the users when considering an application
+\subsubsection{ Requirements:}
+\begin{itemize}
+\item  The system shall display minimum requirements for each individual application type ar multiple points in the application review process.
+\end{itemize}
+\subsection{Application Summary}
+\subsubsection{ Description: }An application summary will be generated and displayed for ease of use for different users in the performing of their respective tasks.
+\subsubsection{ Requirements:}
+\begin{itemize}
+\item The system shall display important application information when viewing an application.
+
+\end{itemize}
+
+\end{document}
+

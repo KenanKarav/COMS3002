@@ -3,6 +3,8 @@
 \usepackage{booktabs}
 \usepackage{enumitem}
 \usepackage{changepage}
+ \usepackage[normalem]{ulem}
+
 \begin{document}
 \include{epsf}
 \thispagestyle{empty}
@@ -22,10 +24,19 @@
 
 \section{Sprint Plan}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-
-	
+	\begin{table}[H]
+		\begin{tabular}{llll}
+			\multicolumn{4}{l}{{\textbf{Post Graduate Approval System User Stories}}}                                                   \\
+			\textbf{User Story ID} & \textbf{As} & \textbf{I want to}                       & \textbf{So that I can}                        \\
+			1                      & PGO         & Create an application and add documents. & Add an application to the application process \\
+			&             & Store applications in files              & Create a central file repository              \\
+			&             & Notify Supervisors and PGC               & Receive decisions                             \\
+			2                      & Supervisor  & Be notified by the PGO                   & View an application                           \\
+			&             & Make a Supervisor decision               & Accept or reject an applicant                 \\
+			3                      & PGC         & Be notified by the PGO                   & View an application                           \\
+			&             & Make a PGO decision                      & Accept or reject an applicant                
+		\end{tabular}
+	\end{table}
 
 \begin{table}[H]
 	\hskip-4.0cm\begin{tabular}[\textwidth]{@{}|l|l|l|l|@{}}

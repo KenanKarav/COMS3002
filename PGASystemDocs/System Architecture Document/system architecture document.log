@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  6 OCT 2018 20:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.23)  7 OCT 2018 12:58
 entering extended mode
 **"./system architecture document.tex"
 ("system architecture document.tex"
@@ -70,79 +70,157 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@ContinuedFloat=\count88
 Package caption Info: float package is loaded.
 )
-("system architecture document.aux")
-\openout1 = `"system architecture document.aux"'.
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
-(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count89
-\scratchdimen=\dimen112
-\scratchbox=\box28
-\nofMPsegments=\count90
-\nofMParguments=\count91
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count92
-\MPscratchDim=\dimen113
-\MPnumerator=\count93
-\makeMPintoPDFobject=\count94
-\everyMPtoPDFconversion=\toks18
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-)))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen112
+\Hy@linkcounter=\count89
+\Hy@pagecounter=\count90
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count91
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count92
+
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen113
+\Fld@menulength=\count93
+\Field@Width=\dimen114
+\Fld@charsize=\dimen115
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count94
+\c@Item=\count95
+\c@Hfootnote=\count96
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count97
+\c@bookmark@seq@number=\count98
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip43
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 16.
+
+("system architecture document.aux")
+\openout1 = `"system architecture document.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count99
+\scratchdimen=\dimen116
+\scratchbox=\box28
+\nofMPsegments=\count100
+\nofMParguments=\count101
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen117
+\MPnumerator=\count103
+\makeMPintoPDFobject=\count104
+\everyMPtoPDFconversion=\toks18
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
@@ -152,13 +230,42 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box29
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+Package hyperref Info: Link coloring ON on input line 17.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count105
+)
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
+
+("system architecture document.out") ("system architecture document.out")
+\@outlinefile=\write3
+\openout3 = `"system architecture document.out"'.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 10.
+(Font)              <12> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 10.
+(Font)              <8> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 10.
+(Font)              <6> on input line 19.
 
 ("system architecture document.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -166,168 +273,178 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
-\tf@toc=\write3
-\openout3 = `"system architecture document.toc"'.
+\tf@toc=\write4
+\openout4 = `"system architecture document.toc"'.
 
- [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
+ [2] [3] [4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 80.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
- [4] [5]
-<Diagrams/PGASUseCases.png, id=23, 840.13875pt x 552.0625pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 80.
+<Diagrams/PGASUseCases.png, id=171, 840.13875pt x 552.0625pt>
 File: Diagrams/PGASUseCases.png Graphic file (type png)
 <use Diagrams/PGASUseCases.png>
-Package pdftex.def Info: Diagrams/PGASUseCases.png  used on input line 105.
+Package pdftex.def Info: Diagrams/PGASUseCases.png  used on input line 90.
 (pdftex.def)             Requested size: 359.9963pt x 236.5567pt.
- [6 <./Diagrams/PGASUseCases.png>]
-<Diagrams/ClassDiagram.jpg, id=29, 1278.7775pt x 825.0825pt>
+ [5]
+<Diagrams/ClassDiagram.jpg, id=181, 1278.7775pt x 825.0825pt>
 File: Diagrams/ClassDiagram.jpg Graphic file (type jpg)
 <use Diagrams/ClassDiagram.jpg>
-Package pdftex.def Info: Diagrams/ClassDiagram.jpg  used on input line 113.
+Package pdftex.def Info: Diagrams/ClassDiagram.jpg  used on input line 98.
 (pdftex.def)             Requested size: 360.00652pt x 232.2805pt.
- [7]
+ [6 <./Diagrams/PGASUseCases.png>] [7]
 Overfull \vbox (10.32468pt too high) has occurred while \output is active []
 
 
 [8 <./Diagrams/ClassDiagram.jpg>]
-<Diagrams/HardwareArchitecture.jpeg, id=37, 758.835pt x 519.3804pt>
+<Diagrams/HardwareArchitecture.jpeg, id=199, 758.835pt x 519.3804pt>
 File: Diagrams/HardwareArchitecture.jpeg Graphic file (type jpg)
 <use Diagrams/HardwareArchitecture.jpeg>
 Package pdftex.def Info: Diagrams/HardwareArchitecture.jpeg  used on input line
- 131.
+ 116.
 (pdftex.def)             Requested size: 359.9988pt x 246.39917pt.
-<"Diagrams/ActivityDiagramCreateApplication".png, id=38, 1100.11pt x 972.63374p
-t>
+<"Diagrams/ActivityDiagramCreateApplication".png, id=200, 1100.11pt x 972.63374
+pt>
 File: "Diagrams/ActivityDiagramCreateApplication".png Graphic file (type png)
 <use "Diagrams/ActivityDiagramCreateApplication".png>
 Package pdftex.def Info: "Diagrams/ActivityDiagramCreateApplication".png  used 
-on input line 149.
+on input line 134.
 (pdftex.def)             Requested size: 359.9991pt x 318.28387pt.
  [9 <./Diagrams/HardwareArchitecture.jpeg>]
-<"Diagrams/ActivityDiagramUpdateApplication".png, id=42, 1162.3425pt x 1218.552
-5pt>
+<"Diagrams/ActivityDiagramUpdateApplication".png, id=207, 1162.3425pt x 1218.55
+25pt>
 File: "Diagrams/ActivityDiagramUpdateApplication".png Graphic file (type png)
 <use "Diagrams/ActivityDiagramUpdateApplication".png>
 Package pdftex.def Info: "Diagrams/ActivityDiagramUpdateApplication".png  used 
-on input line 154.
+on input line 139.
 (pdftex.def)             Requested size: 360.0032pt x 377.41269pt.
 
 [10 <./Diagrams/ActivityDiagramCreateApplication.png>]
-<"Diagrams/Loginscreen".png, id=47, 1011.78pt x 581.92406pt>
+<"Diagrams/Loginscreen".png, id=214, 1011.78pt x 581.92406pt>
 File: "Diagrams/Loginscreen".png Graphic file (type png)
 <use "Diagrams/Loginscreen".png>
-Package pdftex.def Info: "Diagrams/Loginscreen".png  used on input line 162.
+Package pdftex.def Info: "Diagrams/Loginscreen".png  used on input line 147.
 (pdftex.def)             Requested size: 359.99493pt x 207.05066pt.
  [11 <./Diagrams/ActivityDiagramUpdateApplication.png>]
-<"Diagrams/PGOHomePage".png, id=52, 979.40906pt x 483.30562pt>
+<"Diagrams/PGOHomePage".png, id=221, 979.40906pt x 483.30562pt>
 File: "Diagrams/PGOHomePage".png Graphic file (type png)
 <use "Diagrams/PGOHomePage".png>
-Package pdftex.def Info: "Diagrams/PGOHomePage".png  used on input line 167.
+Package pdftex.def Info: "Diagrams/PGOHomePage".png  used on input line 152.
 (pdftex.def)             Requested size: 359.9995pt x 177.6477pt.
-<"Diagrams/CreateApplication".png, id=53, 975.645pt x 478.78876pt>
+<"Diagrams/CreateApplication".png, id=222, 975.645pt x 478.78876pt>
 File: "Diagrams/CreateApplication".png Graphic file (type png)
 <use "Diagrams/CreateApplication".png>
 Package pdftex.def Info: "Diagrams/CreateApplication".png  used on input line 1
-72.
+57.
 (pdftex.def)             Requested size: 360.00044pt x 176.66689pt.
  [12 <./Diagrams/Loginscreen.png> <./Diagrams/PGOHomePage.png>]
-<"Diagrams/PGOViewApplications".png, id=59, 977.15062pt x 492.33937pt>
+<"Diagrams/PGOViewApplications".png, id=231, 977.15062pt x 492.33937pt>
 File: "Diagrams/PGOViewApplications".png Graphic file (type png)
 <use "Diagrams/PGOViewApplications".png>
 Package pdftex.def Info: "Diagrams/PGOViewApplications".png  used on input line
- 179.
+ 164.
 (pdftex.def)             Requested size: 360.00433pt x 181.38892pt.
-<"Diagrams/PGOViewApplication".png, id=60, 967.36406pt x 499.11469pt>
+<"Diagrams/PGOViewApplication".png, id=232, 967.36406pt x 499.11469pt>
 File: "Diagrams/PGOViewApplication".png Graphic file (type png)
 <use "Diagrams/PGOViewApplication".png>
 Package pdftex.def Info: "Diagrams/PGOViewApplication".png  used on input line 
-183.
+168.
 (pdftex.def)             Requested size: 360.00037pt x 185.74336pt.
-<"Diagrams/PGOCompletedApplications".png, id=61, 967.36406pt x 486.31688pt>
+<"Diagrams/PGOCompletedApplications".png, id=233, 967.36406pt x 486.31688pt>
 File: "Diagrams/PGOCompletedApplications".png Graphic file (type png)
 <use "Diagrams/PGOCompletedApplications".png>
 Package pdftex.def Info: "Diagrams/PGOCompletedApplications".png  used on input
- line 187.
+ line 172.
 (pdftex.def)             Requested size: 360.00037pt x 180.98073pt.
  [13 <./Diagrams/CreateApplication.png> <./Diagrams/PGOViewApplications.png>]
-<"Diagrams/SupervisorHomePage".png, id=68, 970.3753pt x 441.14813pt>
+<"Diagrams/SupervisorHomePage".png, id=243, 970.3753pt x 441.14813pt>
 File: "Diagrams/SupervisorHomePage".png Graphic file (type png)
 <use "Diagrams/SupervisorHomePage".png>
 Package pdftex.def Info: "Diagrams/SupervisorHomePage".png  used on input line 
-193.
+178.
 (pdftex.def)             Requested size: 360.01048pt x 163.66652pt.
  [14 <./Diagrams/PGOViewApplication.png> <./Diagrams/PGOCompletedApplications.p
 ng>]
-<"Diagrams/SupervisorViewApplications".png, id=74, 975.645pt x 441.90094pt>
+<"Diagrams/SupervisorViewApplications".png, id=252, 975.645pt x 441.90094pt>
 File: "Diagrams/SupervisorViewApplications".png Graphic file (type png)
 <use "Diagrams/SupervisorViewApplications".png>
 Package pdftex.def Info: "Diagrams/SupervisorViewApplications".png  used on inp
-ut line 198.
+ut line 183.
 (pdftex.def)             Requested size: 360.00044pt x 163.05576pt.
-<"Diagrams/SupervisorViewApplication".png, id=75, 954.56625pt x 494.59781pt>
+<"Diagrams/SupervisorViewApplication".png, id=253, 954.56625pt x 494.59781pt>
 File: "Diagrams/SupervisorViewApplication".png Graphic file (type png)
 <use "Diagrams/SupervisorViewApplication".png>
 Package pdftex.def Info: "Diagrams/SupervisorViewApplication".png  used on inpu
-t line 202.
+t line 187.
 (pdftex.def)             Requested size: 359.98607pt x 186.52274pt.
  [15 <./Diagrams/SupervisorHomePage.png> <./Diagrams/SupervisorViewApplications
 .png>]
-<"Diagrams/PGCHomePage".png, id=81, 963.6pt x 490.83376pt>
+<"Diagrams/PGCHomePage".png, id=262, 963.6pt x 490.83376pt>
 File: "Diagrams/PGCHomePage".png Graphic file (type png)
 <use "Diagrams/PGCHomePage".png>
-Package pdftex.def Info: "Diagrams/PGCHomePage".png  used on input line 207.
+Package pdftex.def Info: "Diagrams/PGCHomePage".png  used on input line 192.
 (pdftex.def)             Requested size: 359.99641pt x 183.37317pt.
-<"Diagrams/PGCViewApplications".png, id=82, 972.63374pt x 497.60907pt>
+<"Diagrams/PGCViewApplications".png, id=263, 972.63374pt x 497.60907pt>
 File: "Diagrams/PGCViewApplications".png Graphic file (type png)
 <use "Diagrams/PGCViewApplications".png>
 Package pdftex.def Info: "Diagrams/PGCViewApplications".png  used on input line
- 212.
+ 197.
 (pdftex.def)             Requested size: 359.98758pt x 184.1732pt.
-<"Diagrams/PGCViewApplication".png, id=83, 952.30782pt x 496.10344pt>
+<"Diagrams/PGCViewApplication".png, id=264, 952.30782pt x 496.10344pt>
 File: "Diagrams/PGCViewApplication".png Graphic file (type png)
 <use "Diagrams/PGCViewApplication".png>
 Package pdftex.def Info: "Diagrams/PGCViewApplication".png  used on input line 
-216.
+201.
 (pdftex.def)             Requested size: 360.00623pt x 187.54474pt.
  [16 <./Diagrams/SupervisorViewApplication.png> <./Diagrams/PGCHomePage.png>]
-<"Diagrams/PGASEntityRelationshipDiagram".png, id=89, 771.88374pt x 668.4975pt>
-
+<"Diagrams/PGASEntityRelationshipDiagram".png, id=273, 771.88374pt x 668.4975pt
+>
 File: "Diagrams/PGASEntityRelationshipDiagram".png Graphic file (type png)
 <use "Diagrams/PGASEntityRelationshipDiagram".png>
 Package pdftex.def Info: "Diagrams/PGASEntityRelationshipDiagram".png  used on 
-input line 223.
+input line 208.
 (pdftex.def)             Requested size: 359.99402pt x 311.77637pt.
 
-Overfull \hbox (15.76797pt too wide) in paragraph at lines 221--225
+Overfull \hbox (15.76797pt too wide) in paragraph at lines 206--210
 \OT1/cmr/m/n/10.95 This sec-tion con-tains the Entity-Relationship Di-a-gram fo
 r the Sys-tem Database: 
  []
 
 [17 <./Diagrams/PGCViewApplications.png> <./Diagrams/PGCViewApplication.png>]
-[18 <./Diagrams/PGASEntityRelationshipDiagram.png>] [19] [20]
-("system architecture document.aux") ) 
+[18 <./Diagrams/PGASEntityRelationshipDiagram.png>] [19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+ [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+
+("system architecture document.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
+Package rerunfilecheck Info: File `"system architecture document".out' has not 
+changed.
+(rerunfilecheck)             Checksum: 01113D82455C5C95BB162AE6EDACB153;1822.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
+ ) 
 Here is how much of TeX's memory you used:
- 2704 strings out of 493303
- 45217 string characters out of 3138859
- 100790 words of memory out of 3000000
- 6230 multiletter control sequences out of 15000+200000
+ 6392 strings out of 493303
+ 101046 string characters out of 3138859
+ 180438 words of memory out of 3000000
+ 9810 multiletter control sequences out of 15000+200000
  8811 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,39p,856b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "system architecture document.pdf" (20 pages, 1857058 bytes).
+ 36i,10n,39p,717b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb>
+Output written on "system architecture document.pdf" (20 pages, 1878653 bytes).
 
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 338 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 299 words of extra memory for PDF output out of 10000 (max. 10000000)
 

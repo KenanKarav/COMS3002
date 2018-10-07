@@ -1,34 +1,30 @@
-\contentsline {section}{\numberline {1}Introduction}{3}
-\contentsline {subsection}{\numberline {1.1}Purpose}{3}
-\contentsline {paragraph}{}{3}
-\contentsline {paragraph}{}{3}
-\contentsline {subsection}{\numberline {1.2}Scope}{3}
-\contentsline {subsection}{\numberline {1.3}Problem Statement}{3}
-\contentsline {subsection}{\numberline {1.4}Stakeholders}{4}
-\contentsline {paragraph}{School of Electrical and Information Engineering}{4}
-\contentsline {paragraph}{Development Team}{4}
-\contentsline {subsection}{\numberline {1.5}Overview}{4}
-\contentsline {section}{\numberline {2}Architectural Goals and Constraints}{4}
-\contentsline {section}{\numberline {3}Architectural Representation}{5}
-\contentsline {subsection}{\numberline {3.1}Architectural Views}{5}
-\contentsline {subsection}{\numberline {3.2}Architectural Design Patterns}{5}
-\contentsline {section}{\numberline {4}Architectural View Decomposition}{6}
-\contentsline {subsection}{\numberline {4.1}Use-Case View}{6}
-\contentsline {subsubsection}{\numberline {4.1.1}Use Case Narrative}{7}
-\contentsline {subsection}{\numberline {4.2}Design View}{8}
-\contentsline {subsubsection}{\numberline {4.2.1}Class Diagram}{8}
-\contentsline {paragraph}{Description}{8}
-\contentsline {subsubsection}{\numberline {4.2.2}Hardware Architecture Diagram}{9}
-\contentsline {paragraph}{Description}{9}
-\contentsline {subsection}{\numberline {4.3}Process View}{9}
-\contentsline {subsubsection}{\numberline {4.3.1}Create Application}{10}
-\contentsline {subsubsection}{\numberline {4.3.2}Update Application}{11}
-\contentsline {subsection}{\numberline {4.4}Component View}{11}
-\contentsline {subsubsection}{\numberline {4.4.1}Common User Screens}{12}
-\contentsline {subsubsection}{\numberline {4.4.2}Post Graduate Officer}{12}
-\contentsline {subsubsection}{\numberline {4.4.3}Supervisor}{15}
-\contentsline {subsubsection}{\numberline {4.4.4}Post Graduate Coordinator}{16}
-\contentsline {subsection}{\numberline {4.5}Database View}{17}
-\contentsline {section}{\numberline {5}Performance and Unit Testing}{18}
-\contentsline {subsection}{\numberline {5.1}Performance Test Details and Results}{18}
-\contentsline {subsection}{\numberline {5.2}Unit Testing}{19}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Purpose}{3}{subsection.1.1}
+\contentsline {paragraph}{}{3}{section*.2}
+\contentsline {paragraph}{}{3}{section*.3}
+\contentsline {subsection}{\numberline {1.2}Scope}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Overview}{3}{subsection.1.3}
+\contentsline {section}{\numberline {2}Architectural Goals and Constraints}{3}{section.2}
+\contentsline {section}{\numberline {3}Architectural Representation}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Architectural Views}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Architectural Design Patterns}{5}{subsection.3.2}
+\contentsline {section}{\numberline {4}Architectural View Decomposition}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Use-Case View}{6}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Use Case Narrative}{6}{subsubsection.4.1.1}
+\contentsline {subsection}{\numberline {4.2}Design View}{8}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Class Diagram}{8}{subsubsection.4.2.1}
+\contentsline {paragraph}{Description}{8}{section*.6}
+\contentsline {subsubsection}{\numberline {4.2.2}Hardware Architecture Diagram}{9}{subsubsection.4.2.2}
+\contentsline {paragraph}{Description}{9}{section*.8}
+\contentsline {subsection}{\numberline {4.3}Process View}{9}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Create Application}{10}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Update Application}{11}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}Component View}{11}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Common User Screens}{12}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Post Graduate Officer}{12}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}Supervisor}{15}{subsubsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.4}Post Graduate Coordinator}{16}{subsubsection.4.4.4}
+\contentsline {subsection}{\numberline {4.5}Database View}{17}{subsection.4.5}
+\contentsline {section}{\numberline {5}Performance and Unit Testing}{18}{section.5}
+\contentsline {subsection}{\numberline {5.1}Performance Test Details and Results}{18}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Unit Testing}{19}{subsection.5.2}

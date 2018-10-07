@@ -2,12 +2,21 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[labelformat= empty]{caption}
+\usepackage{hyperref}
 
 \title{ System Architecture Document}
 \author{ Kenan Karavoussanos \\ Shaylin Pillay \\ Preshen Goobiah \\ Marc Karp}
 \date{\today}
+\hypersetup{
+	colorlinks,
+	linkcolor=blue,
+	filecolor = blue,
+	citecolor=red,
+	urlcolor=blue
+}
 \begin{document}
 \maketitle
+
 \tableofcontents
 
 %\bibliographystyle{plain}
@@ -15,7 +24,7 @@
 \section{Introduction}
 This introduction provides a brief overview of System Architecture Document for the current iteration of the Post Graduate Application Approval System. It consists of the purpose, scope, problem statement,project objectives, stakeholders and overview of the rest of the document.
 \subsection{Purpose}
-\paragraph{}This document provides the reader with an architectural overview of the Post Graduate Application Approval System. The primary purpose of this project is to create a single integrated system that facilitates application review and decision making.
+\paragraph{}This document provides the reader with an architectural overview of the Post Graduate Application Approval System. The primary purpose of this project is to create a single integrated system that facilitates application review and decision making. For a full description of system requirements please see the \href{https://github.com/KenanKarav/}{Software Requirements Specification Document}
 
 \paragraph{}This document is intended to elucidate the major architectural decisions that have been made when designing and implementing the system. This is achieved by viewing the system architecture from various perspectives, called views. These views are intended to explain the system architecture through all levels of the development stack, from front-end to back-end.
 
