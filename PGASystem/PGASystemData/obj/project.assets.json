@@ -4734,23 +4734,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/Preshen/.nuget/packages/": {},
+    "/Users/marc/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj",
+      "projectUniqueName": "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj",
       "projectName": "PGASystemData",
-      "projectPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj",
-      "packagesPath": "/Users/Preshen/.nuget/packages/",
-      "outputPath": "/Users/Preshen/Desktop/COMS3002/PGASystem/PGASystemData/obj",
+      "projectPath": "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemData/PGASystemData.csproj",
+      "packagesPath": "/Users/marc/.nuget/packages/",
+      "outputPath": "/Users/marc/Desktop/COMS3002/PGASystem/PGASystemData/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Preshen/.config/NuGet/NuGet.Config"
+        "/Users/marc/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
