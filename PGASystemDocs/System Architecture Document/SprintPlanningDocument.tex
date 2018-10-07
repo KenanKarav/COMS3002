@@ -22,47 +22,130 @@
 
 %\bibliographystyle{plain}
 
-\section{Sprint Plan}
+\section{User Stories}
+This section describes the system features from a user perspective. These user stories drive the development as their completion verifies that system requirements have been met from the user perspective. The user stories describe the feature a user wants and why they want it. Each user stories are assigned an ID for tracking and sprint planning purposes. Features that are used by multiple users have been assigned a single ID with each reason being described separately by each user. Additionally, each user story is assigned a number of story points. These points describe the overall effort required to understand, research and implement the user story feature.
+\subsection{PGO}
+\begin{table}[H]
+	\hskip-4.0cm\begin{tabular}{@{}|l|l|l|@{}}
 
-	\begin{table}[H]
-		\begin{tabular}{llll}
-			\multicolumn{4}{l}{{\textbf{Post Graduate Approval System User Stories}}}                                                   \\
-			\textbf{User Story ID} & \textbf{As} & \textbf{I want to}                       & \textbf{So that I can}                        \\
-			1                      & PGO         & Create an application and add documents. & Add an application to the application process \\
-			&             & Store applications in files              & Create a central file repository              \\
-			&             & Notify Supervisors and PGC               & Receive decisions                             \\
-			2                      & Supervisor  & Be notified by the PGO                   & View an application                           \\
-			&             & Make a Supervisor decision               & Accept or reject an applicant                 \\
-			3                      & PGC         & Be notified by the PGO                   & View an application                           \\
-			&             & Make a PGO decision                      & Accept or reject an applicant                
-		\end{tabular}
-	\end{table}
+  \toprule                                                                            
+		\textbf{User Story ID}  & \textbf{I want to}                                & \textbf{So that I can}                                      \\ \midrule
 
+		  1                    & create an application                             & begin the the approval process.               \\ \midrule
+		  2                    & add documents to the application                  & store all documents in a single repository               \\ \midrule
+		  3                    & view an application				                      & verify that application creation was successful                    \\ \midrule
+		  4                    & view all applications in progress                  & check up on applications.                                   \\ \midrule
+		  5                    & be notified once a PGC has made a decision        & upload the decision to SIMS      \\ \midrule
+		  6                   & notify supervisors and the PGC      & receive decisions faster.                             \\ \midrule
+		  7                   & view all completed applications                   & review previous applications. \\ \midrule
+
+	\end{tabular}
+\end{table}
+\subsection{Supervisor}
+\begin{table}[H]
+	\hskip-4.0cm\begin{tabular}{@{}|l|l|l|@{}}
+		
+	 \toprule
+		\textbf{User Story ID}  & \textbf{I want to}                                & \textbf{So that I can}                                      \\ \midrule
+		
+	
+		6                    & be notified by the PGO                            & be reminded to view an application.                              \\  \midrule
+		3                    & view an application                      & make a decision on the application                    \\ \midrule
+		8                    & load my decision onto the system                     & give the applicant my feedback.                                  \\ \midrule
+		9                    & give a reason for rejection            & ensure  other Actors know my reasoning.                          \\ \midrule
+		
+		
+	\end{tabular}
+\end{table}
+\subsection{PGC}
+\begin{table}[H]
+	\hskip-4.0cm\begin{tabular}{@{}|l|l|l|@{}}
+	 \toprule
+		\textbf{User Story ID}  & \textbf{I want to}                                & \textbf{So that I can}                                      \\ \midrule
+
+		6                    & be notified once a supervisor has made a decision.                            & be reminded to view an application.                            \\ \midrule
+		3                    & view an application                     & verify the decision.                   \\ \midrule
+		8                    & load my decision onto the system                     & confirm or reject the supervisor's decision.                                         \\ \midrule
+	\end{tabular}
+\end{table}
+
+\subsection{User Story Points}
+This section describes the story points for each user story. Story points are a relative measure of overall effort required to implement the user story feature. A baseline user story is selected as a reference with assigned score of 1. Other features are assigned a score relative to the amount of work required for the base feature i.e twice as much work will yield a score of 2.
+
+\begin{table}[H]
+	\begin{tabular}{@{}|l||l|@{}}
+		\toprule
+			\textbf{User Story ID}          & \textbf{Story Points }         \\ \midrule
+		1 & 8	\\ \midrule
+		2 & 4	\\ \midrule
+	    3 & 4	\\ \midrule
+		4 & 4	\\ \midrule
+		5 & 1	\\ \midrule
+		6 & 1	\\ \midrule
+		7 & 4	\\ \midrule
+		8 & 1	\\ \midrule
+		9 & 1	\\ \bottomrule
+	\end{tabular}
+\end{table}
+\section{Backlog}
+This section is a list of all tasks to be completed for the completion of the project. This includes tasks that move towards completing a user story as well as tasks involving project management, research and documentation. The non-user-story tasks will be given an effort score where one point is the equivalent effort for a story point. This approach was chosen so as to reflect the efforts of non-development team members.
+\begin{table}[H]
+	\begin{tabular}{@{}|l|l|l|@{}}
+		\toprule
+		Task ID & Task Description & Effort Score \\ \midrule
+1		& Meet with PGO          & 1    \\ \midrule
+2		& Meet with PGC & 1       \\ \midrule
+3		& Create LaTeX Template for SRS& 2               \\ \midrule
+4		& System Feature Analysis and Decomposition                 & 4               \\ \midrule
+5		& Author SRS                 & 16               \\ \midrule
+6		& Create document structure and introduction for Software Architecture Document & 2               \\ \midrule
+7		& Author Use Case View                & 2             \\ \midrule
+8		& Author Component View&               4\\ \midrule
+9		& Author Process View&             2  \\ \midrule
+10		& Author Database View &            4   \\ \midrule
+11		& Author Design View&              4 \\ \midrule
+12		& Compile Software Architecture Document& 16              \\ \midrule
+13		& Compile Sprint Plan & 4             \\ \midrule
+				&Author Unit Test Description          &1     \\ \midrule
+				&Author Performance Testing Description           &1     \\ \midrule
+		& Compile Project Introduction                 & 2   \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\begin{tabular}{@{}|l|l|l|@{}}
+		\toprule
+		Task ID & Task Description & User Story \\ \midrule
+				&           &     \\ \midrule
+				&           &     \\ \midrule
+				&           &     \\ \midrule
+				&           &     \\ \midrule
+				&           &     \\ \midrule
+		
+				&           &     \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+\section{Sprint Description}
+The following table provides and overview of each sprint undertaken by the development team. The Sprints are arranged around deliverables for the final project i.e System Documentation and The System Prototype.
 \begin{table}[H]
 	\hskip-4.0cm\begin{tabular}[\textwidth]{@{}|l|l|l|l|@{}}
 		\toprule
-		Sprint Title & Sprint Goals & Start-End Date & Deliverable \\ \midrule
+		Sprint Title & Sprint Description & Start-End Date & Deliverable \\ \midrule
 		Requirements & \begin{minipage}{0.3\textwidth}
-		\begin{enumerate}[leftmargin= 0.1\textwidth]
-			\item Verify project brief with stakeholders.
-			\item Discuss additional requirements from stakeholders.
-			\item Complete first iteration of SRS.
-		\end{enumerate}
-		\end{minipage}& 17 August - 31 August & System Requirements Specification \\ \midrule
+		The requirements elicitation phase including domain knowledge research and client meetings.
+		\end{minipage} & 17 August - 31 August & System Requirements Specification \\ \midrule
 	System Design	&  \begin{minipage}{0.3\textwidth}
-		\begin{enumerate}[leftmargin= 0.1\textwidth]
-			\item Design System Architecture
-			\item Model system data structures.
-			\item Design user interface.
-			\item Author rough architecture models.
-		\end{enumerate}
-	\end{minipage} & 7 September 2018 & 20 September 2018 \\ \midrule
+		The design and documentation of the system prototype.
+	\end{minipage} & 7 September - 7 October & System Documentation\\ \midrule
 	System Implementation  &\begin{minipage}{0.3\textwidth}
-		\begin{enumerate}[leftmargin= 0.1\textwidth]
-			\item  
-		\end{enumerate}
-	\end{minipage}  & 21 September 2018 & 3 October 2018 \\ \bottomrule
+		The development of the system prototype.
+	\end{minipage}  & 21 September - 7 October & System Prototype\\ \bottomrule
 	\end{tabular}
 \end{table}
+
+\section{Sprint Plan}
+
+
 \end{document}
 
