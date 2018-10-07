@@ -16,15 +16,17 @@
 \contentsline {paragraph}{Description}{8}{section*.6}
 \contentsline {subsubsection}{\numberline {4.2.2}Hardware Architecture Diagram}{9}{subsubsection.4.2.2}
 \contentsline {paragraph}{Description}{9}{section*.8}
-\contentsline {subsection}{\numberline {4.3}Process View}{9}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Create Application}{10}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Update Application}{11}{subsubsection.4.3.2}
-\contentsline {subsection}{\numberline {4.4}Component View}{11}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Common User Screens}{12}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Post Graduate Officer}{12}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}Supervisor}{15}{subsubsection.4.4.3}
-\contentsline {subsubsection}{\numberline {4.4.4}Post Graduate Coordinator}{16}{subsubsection.4.4.4}
-\contentsline {subsection}{\numberline {4.5}Database View}{17}{subsection.4.5}
-\contentsline {section}{\numberline {5}Performance and Unit Testing}{18}{section.5}
-\contentsline {subsection}{\numberline {5.1}Performance Test Details and Results}{18}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Unit Testing}{19}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Software Architecture Diagram}{10}{subsubsection.4.2.3}
+\contentsline {paragraph}{Description}{10}{section*.10}
+\contentsline {subsection}{\numberline {4.3}Process View}{11}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Create Application}{12}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Update Application}{13}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}Component View}{13}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Common User Screens}{14}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Post Graduate Officer}{14}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}Supervisor}{17}{subsubsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.4}Post Graduate Coordinator}{18}{subsubsection.4.4.4}
+\contentsline {subsection}{\numberline {4.5}Database View}{19}{subsection.4.5}
+\contentsline {section}{\numberline {5}Performance and Unit Testing}{20}{section.5}
+\contentsline {subsection}{\numberline {5.1}Performance Test Details and Results}{20}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Unit Testing}{21}{subsection.5.2}

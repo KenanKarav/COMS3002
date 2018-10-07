@@ -4,24 +4,25 @@
 \usepackage{enumitem}
 \usepackage{changepage}
  \usepackage[normalem]{ulem}
-
-\begin{document}
-\include{epsf}
-\thispagestyle{empty}
-\title{{\LARGE\bf Sprint Planning Document}}
-\author{{\Large\it Authors} \\
-\vspace*{2.5in} 
-\mbox{} \\
-{\Large Title of Project}
-\vspace*{2.5in} 
-\mbox{} \\
+ \usepackage{hyperref}
+ \usepackage{multirow}
+ \usepackage{amssymb}
+\title{ System Architecture Document}
+\author{ Kenan Karavoussanos \\ Shaylin Pillay \\ Preshen Goobiah \\ Marc Karp}
 \date{\today}
+\hypersetup{
+	colorlinks,
+	linkcolor=blue,
+	filecolor = blue,
+	citecolor=red,
+	urlcolor=blue
 }
+\begin{document}
+
 \maketitle
-
-
-%\bibliographystyle{plain}
-
+\newpage
+\tableofcontents
+\newpage
 \section{User Stories}
 This section describes the system features from a user perspective. These user stories drive the development as their completion verifies that system requirements have been met from the user perspective. The user stories describe the feature a user wants and why they want it. Each user stories are assigned an ID for tracking and sprint planning purposes. Features that are used by multiple users have been assigned a single ID with each reason being described separately by each user. Additionally, each user story is assigned a number of story points. These points describe the overall effort required to understand, research and implement the user story feature.
 \subsection{PGO}
@@ -39,6 +40,7 @@ This section describes the system features from a user perspective. These user s
 		  6                   & notify supervisors and the PGC      & receive decisions faster.                             \\ \midrule
 		  7                   & view all completed applications                   & review previous applications. \\ \midrule
 
+			9 & login to my account & access my work exclusively. \\ \bottomrule
 	\end{tabular}
 \end{table}
 \subsection{Supervisor}
@@ -52,9 +54,8 @@ This section describes the system features from a user perspective. These user s
 		6                    & be notified by the PGO                            & be reminded to view an application.                              \\  \midrule
 		3                    & view an application                      & make a decision on the application                    \\ \midrule
 		8                    & load my decision onto the system                     & give the applicant my feedback.                                  \\ \midrule
-		9                    & give a reason for rejection            & ensure  other Actors know my reasoning.                          \\ \midrule
 		
-		
+		9 & login to my account & access my work exclusively. \\ \bottomrule
 	\end{tabular}
 \end{table}
 \subsection{PGC}
@@ -66,6 +67,7 @@ This section describes the system features from a user perspective. These user s
 		6                    & be notified once a supervisor has made a decision.                            & be reminded to view an application.                            \\ \midrule
 		3                    & view an application                     & verify the decision.                   \\ \midrule
 		8                    & load my decision onto the system                     & confirm or reject the supervisor's decision.                                         \\ \midrule
+		9 & login to my account & access my work exclusively. \\ \bottomrule
 	\end{tabular}
 \end{table}
 
@@ -84,7 +86,7 @@ This section describes the story points for each user story. Story points are a 
 		6 & 1	\\ \midrule
 		7 & 4	\\ \midrule
 		8 & 1	\\ \midrule
-		9 & 1	\\ \bottomrule
+		9 & 2 \\ \bottomrule
 	\end{tabular}
 \end{table}
 
@@ -135,14 +137,17 @@ This section describes the tasks required to deliver the System Prototype:
 \begin{table}[H]
 	\begin{tabular}{@{}|l|l|l|@{}}
 		\toprule
-		Task ID & Task Description & User Story \\ \midrule
-				&           &     \\ \midrule
-				&           &     \\ \midrule
-				&           &     \\ \midrule
-				&           &     \\ \midrule
-				&           &     \\ \midrule
-		
-				&           &     \\ \bottomrule
+		Task ID & Task Description & User Stories \\ \midrule
+			18	&      Create Application Model & 1     \\ \midrule
+			19	&      Create Application View & 1     \\ \midrule
+			20	&      Create Application Controller & 1     \\ \midrule
+			21	&      Create Application Service & 1,4    \\ \midrule
+			22	&      Set up Azure SQL DB and Blob Storage servers& 2     \\ \midrule
+			23	&      Create View Application Page & 4,7     \\ \midrule
+			24	&      Create Email Notification Service     & 5,6     \\ \midrule
+			25	&      Create Supervisor and PGC Views     &8  \\ \midrule
+			26  & 		Create Login Page			& 9 \\ \midrule
+			27  & Create Authentication Service		& 9  \\ \bottomrule
 	\end{tabular}
 \end{table}
 
@@ -166,6 +171,65 @@ The following table provides and overview of each sprint undertaken by the devel
 
 \section{Sprint Plan}
 
+\subsection{Sprint 1: Requirements}
 
+\begin{table}[H]
+	\begin{tabular}{@{}|l||l|l|l|l|@{}}
+		\toprule
+		\multirow{2}{*}{Task ID} & \multicolumn{4}{l|}{Assignee}    \\ \cmidrule(l){2-5} 
+		& Kenan & Marc & Preshen & Shaylin \\ \midrule
+	1	&   \checkmark    &\checkmark      &\checkmark         &     \checkmark    \\ \midrule
+	2	&   \checkmark    &    \checkmark  &   \checkmark      &      \checkmark   \\ \midrule
+	3	&     &      &         &     \checkmark    \\ \midrule
+	4	&   \checkmark    &    \checkmark  &    \checkmark     &         \\ \midrule
+	5	&   \checkmark    &      &         & \checkmark        \\ \bottomrule
+	\end{tabular}
+\end{table}
+\subsubsection{Sprint Retrospective}
+This sprint a lot of time was spent meeting with various stakeholders to determine the requirements of the System. Due to the sufficient note taking by our team members we were quickly able to compile and verify the list of requirements with our stakeholders. This set us up for a strong start for the next sprint and prevented us from designing unnecessary components to the system.
+
+\subsection{Sprint 2: System Design}
+
+\begin{table}[H]
+	\begin{tabular}{@{}|l||l|l|l|l|@{}}
+		\toprule
+		\multirow{2}{*}{Task ID} & \multicolumn{4}{l|}{Assignee}    \\ \cmidrule(l){2-5} 
+	    	& Kenan & Marc & Preshen & Shaylin \\ \midrule
+		6	&   \checkmark    &      &        &        \\ \midrule
+		7	&       &      &        & \checkmark       \\ \midrule
+		8	&   \checkmark    &      &        &        \\ \midrule
+		9	&       &  \checkmark    &        &         \\ \midrule
+		10	&       &      &        &\checkmark         \\ \midrule
+		11	&   \checkmark    &      &  \checkmark      &         \\ \midrule
+		12	&    \checkmark   &      &        & \checkmark        \\ \midrule
+		13	&    \checkmark   &      &        &\checkmark         \\ \midrule
+		14	&    \checkmark   &      & \checkmark       &         \\ \midrule
+		15	&      \checkmark &      &        &         \\ \midrule
+		16	&     \checkmark  & \checkmark     &\checkmark        &\checkmark         \\ \midrule
+		17	&     \checkmark  &      &        &  \checkmark       \\ \bottomrule
+	\end{tabular}     
+\end{table}
+\subsubsection{Sprint Retrospective}
+The assigning of tasks this sprint was difficult due to time constraints of the members. The dependencies between tasks prevented parallel working and it was difficult to coordinate the schedules of others. However, due to good communication and meeting practices the mistakes and inconsistencies between tasks were corrected efficiently. The process of mapping our requirements into a fully fledged design was relatively smooth due to the team's experience with web application development. However, documenting the design in such detail was an area where the team was not as experienced, as such a lot of time was spent learning about the documentation procedures. In conclusion, the sprint was marked with various issues but good communication and our previous experience minimized the impact of said issues. 
+\subsection{Sprint 3: System Implementation}
+\begin{table}[H]
+	\begin{tabular}{@{}|l||l|l|l|l|@{}}
+		\toprule
+		\multirow{2}{*}{Task ID} & \multicolumn{4}{l|}{Assignee}    \\ \cmidrule(l){2-5} 
+		& Kenan & Marc & Preshen & Shaylin \\ \midrule
+		18	&     &  \checkmark   &    \checkmark    &        \\ \midrule
+		19	&  \checkmark   &   \checkmark  & \checkmark       & \checkmark   \\ \midrule
+		20	&     &   \checkmark  &   \checkmark     &    \\ \midrule
+		21	&     &  \checkmark   &   \checkmark     &     \\ \midrule
+		22	&     &  \checkmark   &   \checkmark     &     \\ \midrule
+		23	&   \checkmark  &  \checkmark   &   \checkmark     &  \checkmark   \\ \midrule
+		24	&     &  \checkmark   &   \checkmark     &     \\ \midrule
+		25	&     &  \checkmark   &   \checkmark     &     \\ \midrule
+		26	&     &  \checkmark   &   \checkmark     &     \\ \midrule
+		27	&   \checkmark  &   \checkmark  &   \checkmark     &    \\ \bottomrule
+	\end{tabular}
+\end{table}
+\subsubsection{Sprint Retrospective}
+The document file storage was a big design and architecture concern throughout this sprint. Initially, storing the files in the SQL Database caused unacceptable performance issues. As such, it was decided upon to store the files in an Azure Blob Storage container and store the URL to the file within the SQL Database. Additionally, Azure Blob Storage uses Geo-Redundant storage which automatically provides safe back up for files. It is important to note for future projects that storage of binary data in relational databases causes impacts performance significantly. For future development, all CSS and JS files should be bundled and minified to improve the load time of the web application.
 \end{document}
 

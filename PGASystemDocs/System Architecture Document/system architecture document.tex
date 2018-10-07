@@ -91,7 +91,14 @@ This framework and design pattern was chosen to enhance modularity of the system
 	\caption{Use Case Diagram}
 \end{figure}
 \subsubsection{Use Case Narrative}
-describe in detail the use cases that use the most critical part of the system (possibly fully dressed use cases for this)
+A PGO downloads an application from SIMS. The application with additional documents is then uploaded onto PGA System with summarized information entered into the system, creating an Application. Once uploaded,
+the PGO then verifies all documentation for the relevant Application.
+The PGO will additionally enter in Supervisors(s). An email will then be sent
+to Supervisor(s), notifying them to review the Application. The Supervisor will
+review the Application and make a decision on whether to Accept or Reject the
+Application with comments. The PGC will then be notfied that a Supervisor
+has made a decision and is pending their approval. The PGC notes the Supervisor’s
+decision, reviews the documentation and makes a PGC decision with comments. 
 \subsection{Design View}
 \subsubsection{Class Diagram}
 \begin{figure}[H]
@@ -126,6 +133,36 @@ The hardware architecture consists of:
 \item An Azure Blob Storage server where application documents are stored.
 
 \end{itemize}
+\subsubsection{Software Architecture Diagram}
+\begin{figure}[H]
+	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{Diagrams/SoftwareArchitecture}}
+	\caption{Software Architecture Diagram}
+\end{figure}
+\paragraph{Description}
+The PGASystem is divided into 3 layers:
+\begin{itemize}
+	\item Presentation Layer (PGASystem)
+	\item Data Access Layer (PGASystemData) 
+	\item Business Layer (PGASystemServices)
+\end{itemize}
+\textbf{The Presentation Layer contains:}
+\begin{itemize}
+\item Views: Web pages in HTML/CSS
+\item Controllers: which handle user requests. The controllers utilize methods defined in the Interfaces of the Data Access Layer.
+\item View Models: which define what data is sent/received from respective web pages. 
+\end{itemize}
+
+\textbf{The Data Access Layer contains:}
+\begin{itemize}
+	\item  Interfaces: which contain the definitions for methods that will be written in the Business layer
+	\item  Models: which define the structure of data that is stored in the SQL database and used by the application
+	\item Database Context: which interacts directly with the SQL database.
+\end{itemize}
+
+\textbf{The Business Layer contains:}
+\begin{itemize}
+	\item  Services in which all of the business logic is written, it utilizes the context of the Data Access Layer. 
+\end{itemize}
 \subsection{Process View}
 The following activity diagrams describe the dynamic interactions of the two most architecturally significant use cases, namely, Create Application and Update Application.
 \subsubsection{Create Application}
@@ -140,7 +177,7 @@ The following activity diagrams describe the dynamic interactions of the two mos
 	\caption{Activity Diagram for the Update Application Use Case}
 \end{figure}
 \subsection{Component View}
-This section describes the User Interface for each user:
+This section displays the User Interfaces for each user:
 
 \subsubsection{Common User Screens}
 \begin{figure}[H]
