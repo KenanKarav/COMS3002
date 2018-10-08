@@ -4,7 +4,7 @@
 \usepackage[labelformat= empty]{caption}
 \usepackage{hyperref}
 
-\title{ System Architecture Document}
+\title{ Software Architecture Document}
 \author{ Kenan Karavoussanos \\ Shaylin Pillay \\ Preshen Goobiah \\ Marc Karp}
 \date{\today}
 \hypersetup{
@@ -16,7 +16,7 @@
 }
 \begin{document}
 \maketitle
-
+\newpage
 \tableofcontents
 
 %\bibliographystyle{plain}
@@ -24,7 +24,7 @@
 \section{Introduction}
 This introduction provides a brief overview of System Architecture Document for the current iteration of the Post Graduate Application Approval System. It consists of the purpose, scope, problem statement,project objectives, stakeholders and overview of the rest of the document.
 \subsection{Purpose}
-\paragraph{}This document provides the reader with an architectural overview of the Post Graduate Application Approval System. The primary purpose of this project is to create a single integrated system that facilitates application review and decision making. For a full description of system requirements please see the \href{https://github.com/KenanKarav/}{Software Requirements Specification Document}
+\paragraph{}This document provides the reader with an architectural overview of the Post Graduate Application Approval System. The primary purpose of this project is to create a single integrated system that facilitates application review and decision making. For a full description of system requirements please see the \href{https://github.com/KenanKarav/COMS3002/blob/master/PGASystemDocs/System\%20Requirements\%20Specification/Software\%20Requirements\%20Specification.pdf}{Software Requirements Specification Document}
 
 \paragraph{}This document is intended to elucidate the major architectural decisions that have been made when designing and implementing the system. This is achieved by viewing the system architecture from various perspectives, called views. These views are intended to explain the system architecture through all levels of the development stack, from front-end to back-end.
 
@@ -91,21 +91,16 @@ This framework and design pattern was chosen to enhance modularity of the system
 	\caption{Use Case Diagram}
 \end{figure}
 \subsubsection{Use Case Narrative}
-A PGO downloads an application from SIMS. The application with additional documents is then uploaded onto PGA System with summarized information entered into the system, creating an Application. Once uploaded,
-the PGO then verifies all documentation for the relevant Application.
-The PGO will additionally enter in Supervisors(s). An email will then be sent
-to Supervisor(s), notifying them to review the Application. The Supervisor will
-review the Application and make a decision on whether to Accept or Reject the
-Application with comments. The PGC will then be notfied that a Supervisor
-has made a decision and is pending their approval. The PGC notes the Supervisor’s
-decision, reviews the documentation and makes a PGC decision with comments. 
+\paragraph{}A PGO downloads an application from SIMS. The application with additional documents is then uploaded onto PGA System with summarized information entered into the system, creating an Application. Once uploaded,the PGO then verifies all documentation for the relevant Application. The PGO will additionally enter in Supervisors(s). An email will then be sent to Supervisor(s), notifying them to review the Application. The Supervisor will review the Application and make a decision on whether to Accept or Reject the Application. The PGC will then be notified that a Supervisor has made a decision and is pending their approval. The PGC notes the Supervisor’s decision, reviews the documentation and makes a final decision.
 \subsection{Design View}
 \subsubsection{Class Diagram}
 \begin{figure}[H]
 	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{Diagrams/ClassDiagram}}
 	\caption{Class Diagram}
 	
-\paragraph{Description}
+\end{figure}
+\paragraph{Description} \hfil\newline
+
 The classes are described as follows:
 \begin{itemize}
 	\item AuthController: Handles authentication and displays the login page.
@@ -117,13 +112,13 @@ The classes are described as follows:
 	\item Users: Stores system user data.
 	\item Position: Stores a user's position i.e PGO, Supervisor or PGC.
 \end{itemize}
-\end{figure}
 \subsubsection{Hardware Architecture Diagram}
 \begin{figure}[H]
 	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{Diagrams/HardwareArchitecture}}
 	\caption{Hardware Architecture Diagram}
 \end{figure}
-\paragraph{Description}
+\paragraph{Description}\hfil \newline
+
 The hardware architecture consists of:
 
 \begin{itemize}
@@ -138,7 +133,8 @@ The hardware architecture consists of:
 	\frame{\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{Diagrams/SoftwareArchitecture}}
 	\caption{Software Architecture Diagram}
 \end{figure}
-\paragraph{Description}
+\paragraph{Description}\hfil\newline
+
 The PGASystem is divided into 3 layers:
 \begin{itemize}
 	\item Presentation Layer (PGASystem)
